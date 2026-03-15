@@ -16,6 +16,22 @@
         "env": []
     },
     {
+        "id": "7de09f7e9474d780",
+        "type": "tab",
+        "label": "Cell data in TSAC",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7dade78592428d89",
+        "type": "tab",
+        "label": "Sensors",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "4197684541243468",
         "type": "tab",
         "label": "Communication",
@@ -527,7 +543,7 @@
         "type": "ui-group",
         "name": "Voltages",
         "page": "c4d6bd7733ec7aed",
-        "width": "12",
+        "width": 6,
         "height": "12",
         "order": 1,
         "showTitle": true,
@@ -605,6 +621,90 @@
         "width": 4,
         "height": 1,
         "className": ""
+    },
+    {
+        "id": "cf34db503580b747",
+        "type": "ui-spacer",
+        "group": "7ce9ca5952a94637",
+        "name": "spacer",
+        "order": 7,
+        "width": 1,
+        "height": 6,
+        "className": ""
+    },
+    {
+        "id": "cf34df5695ba3fda",
+        "type": "ui-spacer",
+        "group": "7ce9ca5952a94637",
+        "name": "spacer",
+        "order": 9,
+        "width": 1,
+        "height": 3,
+        "className": ""
+    },
+    {
+        "id": "1a52191c22f83d4f",
+        "type": "ui-group",
+        "name": "Temperatures",
+        "page": "c4d6bd7733ec7aed",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "547696f99c243db1",
+        "type": "ui-page",
+        "name": "Sensors",
+        "ui": "a1947a9da86cce22",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "a99d81eafbb77aba",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a9df5341a2cc8e73",
+        "type": "ui-group",
+        "name": "APPS",
+        "page": "547696f99c243db1",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
     },
     {
         "id": "c449922502408448",
@@ -5038,6 +5138,410 @@
         ]
     },
     {
+        "id": "45ee29288ff68b21",
+        "type": "ui-table",
+        "z": "7de09f7e9474d780",
+        "group": "8fe5ca59c52d6275",
+        "name": "voltages table",
+        "label": "",
+        "order": 1,
+        "width": 8,
+        "height": 0,
+        "maxrows": "0",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "",
+                "key": "",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 860,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab4acc7f57471db1",
+        "type": "link in",
+        "z": "7de09f7e9474d780",
+        "name": "link in 5",
+        "links": [],
+        "x": 185,
+        "y": 280,
+        "wires": [
+            [
+                "19150ae8e0992f23"
+            ]
+        ]
+    },
+    {
+        "id": "19150ae8e0992f23",
+        "type": "function",
+        "z": "7de09f7e9474d780",
+        "name": "Convert data to table",
+        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacVoltageTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC 1\": null,\n            \"TSAC 2\": null,\n            \"TSAC 3\": null,\n            \"TSAC 4\": null,\n            \"TSAC 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Voltages\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Voltages\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10000, force 4 decimal places, and append \" V\"\n                let formattedVoltage = (rawValue / 10000).toFixed(4) + \" V\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacVoltageTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "45ee29288ff68b21",
+                "b772ac2053979b0a"
+            ]
+        ]
+    },
+    {
+        "id": "5d0750c6db72464b",
+        "type": "function",
+        "z": "7de09f7e9474d780",
+        "name": "Reset table",
+        "func": "let emptyTable = [];\n\n// Rebuild the 22 empty rows\nfor (let i = 1; i <= 22; i++) {\n    emptyTable.push({\n        \"Cell\": i,\n        \"TSAC segment 1\": null,\n        \"TSAC segment 2\": null,\n        \"TSAC segment 3\": null,\n        \"TSAC segment 4\": null,\n        \"TSAC segment 5\": null\n    });\n}\n\n// Overwrite the saved global table with the empty one\nglobal.set(\"tsacVoltageTable\", emptyTable);\n\n// Send the empty table to the dashboard to clear the view\nmsg.payload = emptyTable;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [
+                "45ee29288ff68b21"
+            ]
+        ]
+    },
+    {
+        "id": "880c23ca013bae5b",
+        "type": "ui-button",
+        "z": "7de09f7e9474d780",
+        "group": "8fe5ca59c52d6275",
+        "name": "",
+        "label": "Reset voltages",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "5d0750c6db72464b"
+            ]
+        ]
+    },
+    {
+        "id": "06b80573d4a72543",
+        "type": "inject",
+        "z": "7de09f7e9474d780",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 340,
+        "wires": [
+            [
+                "06e2dde19ceb1603"
+            ]
+        ]
+    },
+    {
+        "id": "06e2dde19ceb1603",
+        "type": "function",
+        "z": "7de09f7e9474d780",
+        "name": "Test Data",
+        "func": "let testPayload = {};\n\n// Loop through the 5 possible TSAC segments\nfor (let tsac = 1; tsac <= 5; tsac++) {\n\n    // 80% chance to include this segment in the current message \n    // (This tests your system's ability to handle partial data)\n    if (Math.random() < 0.8) {\n        let tsacKey = `TSAC_Voltages${tsac}`;\n        testPayload[tsacKey] = {};\n\n        // Generate 22 cell voltages for this segment\n        for (let cell = 1; cell <= 22; cell++) {\n            // Generate a random raw integer between 30000 and 42000\n            // When divided by 10000 in your main node, this becomes 3.0 to 4.2\n            let randomRawVoltage = Math.floor(Math.random() * (42000 - 30000 + 1)) + 30000;\n\n            let voltageKey = `${tsacKey}_${cell}`;\n            testPayload[tsacKey][voltageKey] = randomRawVoltage;\n        }\n    }\n}\n\n// If by random chance no segments were generated, force TSAC 1 to generate \n// so the payload is never completely empty\nif (Object.keys(testPayload).length === 0) {\n    testPayload[\"TSAC_Voltages1\"] = {};\n    for (let cell = 1; cell <= 22; cell++) {\n        testPayload[\"TSAC_Voltages1\"][`TSAC_Voltages1_${cell}`] = 35000; // 3.5000 V\n    }\n}\n\nmsg.payload = testPayload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "19150ae8e0992f23",
+                "b772ac2053979b0a"
+            ]
+        ]
+    },
+    {
+        "id": "b772ac2053979b0a",
+        "type": "debug",
+        "z": "7de09f7e9474d780",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "de8e0d0f4e33439e",
+        "type": "ui-table",
+        "z": "7de09f7e9474d780",
+        "group": "1a52191c22f83d4f",
+        "name": "temperatures table",
+        "label": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "0",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "",
+                "key": "",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 870,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3cd8f095eb118145",
+        "type": "link in",
+        "z": "7de09f7e9474d780",
+        "name": "link in 6",
+        "links": [],
+        "x": 185,
+        "y": 520,
+        "wires": [
+            [
+                "ccfb079d7b8731a6"
+            ]
+        ]
+    },
+    {
+        "id": "ccfb079d7b8731a6",
+        "type": "function",
+        "z": "7de09f7e9474d780",
+        "name": "Convert data to table",
+        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacTempTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC segment 1\": null,\n            \"TSAC segment 2\": null,\n            \"TSAC segment 3\": null,\n            \"TSAC segment 4\": null,\n            \"TSAC segment 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Temperatures\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Temperatures\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10000, force 4 decimal places, and append \" V\"\n                let formattedVoltage = (rawValue / 10000).toFixed(4) + \" C\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacTempTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 520,
+        "wires": [
+            [
+                "de8e0d0f4e33439e",
+                "ba2b52471666ce14"
+            ]
+        ]
+    },
+    {
+        "id": "8cc61ed467800a12",
+        "type": "function",
+        "z": "7de09f7e9474d780",
+        "name": "Reset table",
+        "func": "let emptyTable = [];\n\n// Rebuild the 22 empty rows\nfor (let i = 1; i <= 22; i++) {\n    emptyTable.push({\n        \"Cell\": i,\n        \"TSAC segment 1\": null,\n        \"TSAC segment 2\": null,\n        \"TSAC segment 3\": null,\n        \"TSAC segment 4\": null,\n        \"TSAC segment 5\": null\n    });\n}\n\n// Overwrite the saved global table with the empty one\nglobal.set(\"tsacTempTable\", emptyTable);\n\n// Send the empty table to the dashboard to clear the view\nmsg.payload = emptyTable;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [
+                "de8e0d0f4e33439e"
+            ]
+        ]
+    },
+    {
+        "id": "75c60f0c1bbd6864",
+        "type": "ui-button",
+        "z": "7de09f7e9474d780",
+        "group": "1a52191c22f83d4f",
+        "name": "",
+        "label": "Reset temperatures",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "8cc61ed467800a12"
+            ]
+        ]
+    },
+    {
+        "id": "df33d0001e3e3c91",
+        "type": "inject",
+        "z": "7de09f7e9474d780",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "ac657d18c96cefe7"
+            ]
+        ]
+    },
+    {
+        "id": "ac657d18c96cefe7",
+        "type": "function",
+        "z": "7de09f7e9474d780",
+        "name": "Test Data",
+        "func": "let testPayload = {};\n\n// Loop through the 5 possible TSAC segments\nfor (let tsac = 1; tsac <= 5; tsac++) {\n\n    // 80% chance to include this segment in the current message \n    // (This tests your system's ability to handle partial data)\n    if (Math.random() < 0.8) {\n        let tsacKey = `TSAC_Temperatures${tsac}`;\n        testPayload[tsacKey] = {};\n\n        // Generate 22 cell voltages for this segment\n        for (let cell = 1; cell <= 22; cell++) {\n            // Generate a random raw integer between 30000 and 42000\n            // When divided by 10000 in your main node, this becomes 3.0 to 4.2\n            let randomRawVoltage = Math.floor(Math.random() * (42000 - 30000 + 1)) + 30000;\n\n            let voltageKey = `${tsacKey}_${cell}`;\n            testPayload[tsacKey][voltageKey] = randomRawVoltage;\n        }\n    }\n}\n\n// If by random chance no segments were generated, force TSAC 1 to generate \n// so the payload is never completely empty\nif (Object.keys(testPayload).length === 0) {\n    testPayload[\"TSAC_Temperaturess1\"] = {};\n    for (let cell = 1; cell <= 22; cell++) {\n        testPayload[\"TSAC_Temperatures1\"][`TSAC_Temperatures1_${cell}`] = 35000; // 3.5000 V\n    }\n}\n\nmsg.payload = testPayload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "ccfb079d7b8731a6",
+                "ba2b52471666ce14"
+            ]
+        ]
+    },
+    {
+        "id": "ba2b52471666ce14",
+        "type": "debug",
+        "z": "7de09f7e9474d780",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4108ddab8e21e287",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "name": "link in 7",
+        "links": [],
+        "x": 135,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "c4bb1a2a2469d4ac",
         "type": "udp in",
         "z": "4197684541243468",
@@ -5256,25 +5760,5 @@
                 "745cc10c0f361af6"
             ]
         ]
-    },
-    {
-        "id": "cf34db503580b747",
-        "type": "ui-spacer",
-        "group": "7ce9ca5952a94637",
-        "name": "spacer",
-        "order": 7,
-        "width": 1,
-        "height": 6,
-        "className": ""
-    },
-    {
-        "id": "cf34df5695ba3fda",
-        "type": "ui-spacer",
-        "group": "7ce9ca5952a94637",
-        "name": "spacer",
-        "order": 9,
-        "width": 1,
-        "height": 3,
-        "className": ""
     }
 ]
