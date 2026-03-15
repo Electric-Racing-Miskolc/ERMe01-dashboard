@@ -50,12 +50,13 @@
             "b8586a5d73abccfc",
             "22ba0cad4f15a88a",
             "1cc5e12316185997",
-            "92a6a44fd4471d8c"
+            "92a6a44fd4471d8c",
+            "e0e92b61642707d5"
         ],
         "x": 854,
-        "y": 179,
+        "y": 119,
         "w": 392,
-        "h": 322
+        "h": 382
     },
     {
         "id": "12d2f6354e0fbdfd",
@@ -104,7 +105,6 @@
             "794a7e65aa3b9130",
             "2d776543f5b95b12",
             "5a7f66cea22f5c1e",
-            "656c4806c6529f18",
             "98140860a5d0857f",
             "03d6871ae86bdc6d",
             "94514f472f5afa6b",
@@ -2404,10 +2404,11 @@
         "id": "e0e92b61642707d5",
         "type": "ui-gauge",
         "z": "58531eb4c616092e",
+        "g": "502c719c9684924f",
         "name": "Vehicle state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 2,
-        "value": "payload.Vehicle_State",
+        "value": "payload.Send_Vehicle_State.Vehicle_state",
         "valueType": "msg",
         "width": 3,
         "height": 3,
@@ -2461,7 +2462,7 @@
         "styleGlow": false,
         "className": "",
         "x": 950,
-        "y": 140,
+        "y": 160,
         "wires": [
             []
         ]
@@ -2474,7 +2475,7 @@
         "name": "APPS state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 11,
-        "value": "payload",
+        "value": "payload.MPCU_system_status_report.APPS",
         "valueType": "msg",
         "width": "1",
         "height": "2",
@@ -2664,7 +2665,7 @@
         "name": "TSAC state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 12,
-        "value": "payload",
+        "value": "payload.MPCU_system_status_report.TSAC",
         "valueType": "msg",
         "width": "1",
         "height": "2",
@@ -2725,7 +2726,7 @@
         "name": "RSU state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 13,
-        "value": "payload",
+        "value": "payload.MPCU_system_status_report.RSU",
         "valueType": "msg",
         "width": "1",
         "height": "2",
@@ -2786,7 +2787,7 @@
         "name": "FSU state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 14,
-        "value": "payload",
+        "value": "payload.MPCU_system_status_report.FSU",
         "valueType": "msg",
         "width": "1",
         "height": "2",
@@ -2847,7 +2848,7 @@
         "name": "Telemetry state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 15,
-        "value": "payload",
+        "value": "payload.MPCU_system_status_report.Telemetry",
         "valueType": "msg",
         "width": "1",
         "height": "2",
@@ -2908,7 +2909,7 @@
         "name": "Inverter state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 16,
-        "value": "payload",
+        "value": "payload.MPCU_system_status_report.Inverter",
         "valueType": "msg",
         "width": "1",
         "height": "2",
@@ -2969,7 +2970,7 @@
         "name": "Dash state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 17,
-        "value": "payload",
+        "value": "payload.MPCU_system_status_report.Dash",
         "valueType": "msg",
         "width": "1",
         "height": "2",
@@ -3216,9 +3217,9 @@
         "topicType": "msg",
         "thumbLabel": "true",
         "showTicks": "always",
-        "min": "1",
-        "max": "8",
-        "step": 1,
+        "min": "10",
+        "max": "80",
+        "step": "10",
         "className": "",
         "iconPrepend": "",
         "iconAppend": "",
@@ -3242,7 +3243,7 @@
         "name": "Power limiter",
         "group": "12dbcafb65a6e667",
         "order": 4,
-        "value": "payload.Power_limitter",
+        "value": "payload.MPCU_systems_settings_to_dash.Power_limitter",
         "valueType": "msg",
         "width": 4,
         "height": 4,
@@ -3300,7 +3301,7 @@
                 "t": "set",
                 "p": "Power_limitter",
                 "pt": "msg",
-                "to": "msg.payload*10000",
+                "to": "msg.payload*1000",
                 "tot": "jsonata"
             }
         ],
@@ -3335,9 +3336,9 @@
         "topicType": "msg",
         "thumbLabel": "true",
         "showTicks": "always",
-        "min": "0.5",
-        "max": "5.5",
-        "step": "0.5",
+        "min": "500",
+        "max": "5500",
+        "step": "500",
         "className": "",
         "iconPrepend": "",
         "iconAppend": "",
@@ -3349,7 +3350,7 @@
         "y": 760,
         "wires": [
             [
-                "656c4806c6529f18"
+                "da80081c3ceb03bf"
             ]
         ]
     },
@@ -3361,7 +3362,7 @@
         "name": "Max Motor RPM",
         "group": "12dbcafb65a6e667",
         "order": 5,
-        "value": "payload.Max_motor_RPM",
+        "value": "payload.MPCU_systems_settings_to_dash.Max_motor_RPM",
         "valueType": "msg",
         "width": 4,
         "height": 4,
@@ -3406,34 +3407,6 @@
         "y": 760,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "656c4806c6529f18",
-        "type": "change",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "msg.payload*1000",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 740,
-        "y": 760,
-        "wires": [
-            [
-                "da80081c3ceb03bf"
-            ]
         ]
     },
     {
@@ -3645,7 +3618,7 @@
         "name": "FAN M1",
         "group": "12dbcafb65a6e667",
         "order": 15,
-        "value": "payload.MPCU_FAN1_SPEED",
+        "value": "payload.MPCU_VALUES.MPCU_FAN1_SPEED",
         "valueType": "msg",
         "width": 2,
         "height": 3,
@@ -3771,7 +3744,7 @@
         "name": "FAN M2",
         "group": "12dbcafb65a6e667",
         "order": 16,
-        "value": "payload.MPCU_FAN2_SPEED",
+        "value": "payload.MPCU_VALUES.MPCU_FAN2_SPEED",
         "valueType": "msg",
         "width": 2,
         "height": 3,
@@ -3862,7 +3835,7 @@
         "name": "FAN I",
         "group": "12dbcafb65a6e667",
         "order": 17,
-        "value": "payload.MPCU_FAN3_SPEED\t",
+        "value": "payload.MPCU_VALUES.MPCU_FAN3_SPEED\t",
         "valueType": "msg",
         "width": 2,
         "height": 3,
@@ -4023,7 +3996,7 @@
         "name": "PUMP M",
         "group": "12dbcafb65a6e667",
         "order": 18,
-        "value": "payload.MPCU_MOTOR_PUMP_SPEED",
+        "value": "payload.MPCU_VALUES.MPCU_MOTOR_PUMP_SPEED",
         "valueType": "msg",
         "width": 2,
         "height": 3,
@@ -4065,7 +4038,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1480,
-        "y": 1100,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -4114,7 +4087,7 @@
         "name": "PUMP I",
         "group": "12dbcafb65a6e667",
         "order": 19,
-        "value": "payload.MPCU_INVERTER_PUMP_SPEED",
+        "value": "payload.MPCU_VALUES.MPCU_INVERTER_PUMP_SPEED",
         "valueType": "msg",
         "width": 2,
         "height": 3,
@@ -4170,7 +4143,7 @@
         "triggertopic": "override",
         "initializewith": "0",
         "autoToggle": "0",
-        "payloadPropName": "payload.Power_limitter",
+        "payloadPropName": "payload",
         "translatorConfig": "",
         "x": 990,
         "y": 640,
@@ -4753,11 +4726,18 @@
         "links": [
             "a98dc49a88f46c76"
         ],
-        "x": 665,
-        "y": 360,
+        "x": 705,
+        "y": 300,
         "wires": [
             [
-                "e0e92b61642707d5"
+                "e0e92b61642707d5",
+                "741ac3e0aaa824f5",
+                "c644ced362abf975",
+                "e49b49825ad2c064",
+                "2b8b76cbe9120ee2",
+                "808cf751c6ac1fec",
+                "f99e5d93708119d6",
+                "5bf6b1ab43c4c95b"
             ]
         ]
     },
@@ -4892,7 +4872,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.Power_limitter)/10000",
+                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Power_limitter)/1000",
                 "tot": "jsonata"
             }
         ],
@@ -4920,7 +4900,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.TSAC_BALANCING_STATE)\t",
+                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
                 "tot": "jsonata"
             }
         ],
@@ -4932,7 +4912,9 @@
         "x": 220,
         "y": 760,
         "wires": [
-            []
+            [
+                "2d776543f5b95b12"
+            ]
         ]
     },
     {
@@ -4946,7 +4928,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.TSAC_BALANCING_STATE)\t",
+                "to": "$number(msg.payload.MPCU_VALUES.MPCU_FAN1_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -4958,7 +4940,9 @@
         "x": 220,
         "y": 860,
         "wires": [
-            []
+            [
+                "98140860a5d0857f"
+            ]
         ]
     },
     {
@@ -4972,7 +4956,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.TSAC_BALANCING_STATE)\t",
+                "to": "$number(msg.payload.MPCU_VALUES.MPCU_FAN2_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -4984,7 +4968,9 @@
         "x": 220,
         "y": 940,
         "wires": [
-            []
+            [
+                "94514f472f5afa6b"
+            ]
         ]
     },
     {
@@ -4998,7 +4984,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.TSAC_BALANCING_STATE)\t",
+                "to": "$number(msg.payload.MPCU_VALUES.MPCU_FAN3_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -5010,7 +4996,9 @@
         "x": 220,
         "y": 1020,
         "wires": [
-            []
+            [
+                "1396e593e2543d35"
+            ]
         ]
     },
     {
@@ -5024,7 +5012,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.TSAC_BALANCING_STATE)\t",
+                "to": "$number(msg.payload.MPCU_VALUES.MPCU_MOTOR_PUMP_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -5036,7 +5024,9 @@
         "x": 220,
         "y": 1120,
         "wires": [
-            []
+            [
+                "5360c291ab721866"
+            ]
         ]
     },
     {
@@ -5050,7 +5040,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.TSAC_BALANCING_STATE)\t",
+                "to": "$number(msg.payload.MPCU_VALUES.MPCU_INVERTER_PUMP_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -5062,7 +5052,9 @@
         "x": 220,
         "y": 1200,
         "wires": [
-            []
+            [
+                "ba930b58741f6809"
+            ]
         ]
     },
     {
