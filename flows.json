@@ -443,7 +443,7 @@
         "type": "ui-group",
         "name": "TSAC Statistics",
         "page": "d9df23d6a6ef270f",
-        "width": "12",
+        "width": 6,
         "height": "2",
         "order": 5,
         "showTitle": true,
@@ -541,9 +541,9 @@
         "type": "ui-group",
         "name": "Settings",
         "page": "d9df23d6a6ef270f",
-        "width": "12",
+        "width": 12,
         "height": 1,
-        "order": 6,
+        "order": 7,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -575,9 +575,9 @@
         "type": "ui-spacer",
         "group": "4f140fe5ae232b4d",
         "name": "spacer",
-        "order": 6,
-        "width": 3,
-        "height": 1,
+        "order": 4,
+        "width": 2,
+        "height": 2,
         "className": ""
     },
     {
@@ -593,13 +593,47 @@
         "modules": {}
     },
     {
+        "id": "6d5d33ea848dfe82",
+        "type": "ui-group",
+        "name": "TSAC Balancing Statistics",
+        "page": "d9df23d6a6ef270f",
+        "width": 6,
+        "height": 1,
+        "order": 6,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cf2125cd0c2ffbb1",
+        "type": "ui-spacer",
+        "group": "6d5d33ea848dfe82",
+        "name": "spacer",
+        "order": 5,
+        "width": 2,
+        "height": 3,
+        "className": ""
+    },
+    {
+        "id": "cf211e448b9dffae",
+        "type": "ui-spacer",
+        "group": "ee22140f2902b281",
+        "name": "spacer",
+        "order": 2,
+        "width": 4,
+        "height": 4,
+        "className": ""
+    },
+    {
         "id": "c449922502408448",
         "type": "ui-gauge",
         "z": "f595383a0843f950",
         "name": "min_cell_temp",
         "group": "25cb88409ba9fd0d",
         "order": 4,
-        "value": "payload.TSAC_STAT_MIN_TEMP",
+        "value": "payload.TSAC_STAT.TSAC_STAT_MIN_TEMP",
         "valueType": "msg",
         "width": 1,
         "height": 2,
@@ -653,7 +687,7 @@
         "name": "avg_cell_temp",
         "group": "25cb88409ba9fd0d",
         "order": 2,
-        "value": "payload.TSAC_STAT_AVG_TEMP",
+        "value": "payload.TSAC_STAT.TSAC_STAT_AVG_TEMP",
         "valueType": "msg",
         "width": 4,
         "height": 5,
@@ -707,7 +741,7 @@
         "name": "max_cell_temp",
         "group": "25cb88409ba9fd0d",
         "order": 5,
-        "value": "payload.TSAC_STAT_MAX_TEMP",
+        "value": "payload.TSAC_STAT.TSAC_STAT_MAX_TEMP",
         "valueType": "msg",
         "width": 1,
         "height": 2,
@@ -761,7 +795,7 @@
         "name": "min_cell_voltage",
         "group": "8579c314567beff0",
         "order": 1,
-        "value": "payload.TSAC_STAT_MIN_VOLTAGE",
+        "value": "payload.TSAC_STAT.TSAC_STAT_MIN_VOLTAGE",
         "valueType": "msg",
         "width": 1,
         "height": "2",
@@ -815,7 +849,7 @@
         "name": "avg_cell_voltage",
         "group": "8579c314567beff0",
         "order": 2,
-        "value": "payload.TSAC_STAT_AVG_VOLTAGE",
+        "value": "payload.TSAC_STAT.TSAC_STAT_AVG_VOLTAGE",
         "valueType": "msg",
         "width": 1,
         "height": "2",
@@ -869,7 +903,7 @@
         "name": "max_cell_voltage",
         "group": "8579c314567beff0",
         "order": 3,
-        "value": "payload.TSAC_STAT_MAX_VOLTAGE",
+        "value": "payload.TSAC_STAT.TSAC_STAT_MAX_VOLTAGE",
         "valueType": "msg",
         "width": 1,
         "height": "2",
@@ -923,7 +957,7 @@
         "name": "sum_cell_voltage",
         "group": "8579c314567beff0",
         "order": 4,
-        "value": "payload.TSAC_STAT_SUM_VOLTAGE",
+        "value": "payload.TSAC_STAT.TSAC_STAT_SUM_VOLTAGE",
         "valueType": "msg",
         "width": "3",
         "height": 5,
@@ -983,7 +1017,7 @@
         "name": "battery SOC",
         "group": "8579c314567beff0",
         "order": 5,
-        "value": "payload.TSAC_SOC",
+        "value": "payload.TSAC_STAT.TSAC_SOC",
         "valueType": "msg",
         "width": "3",
         "height": "3",
@@ -1037,7 +1071,7 @@
         "name": "isa_voltage",
         "group": "ab3e0ca24f4ad4dc",
         "order": 1,
-        "value": "payload.TSAC_STAT_ISA_VOLTAGE",
+        "value": "payload.TSAC_STAT.TSAC_STAT_ISA_VOLTAGE",
         "valueType": "msg",
         "width": 2,
         "height": 3,
@@ -1097,7 +1131,7 @@
         "name": "isa_current",
         "group": "ab3e0ca24f4ad4dc",
         "order": 2,
-        "value": "payload.TSAC_STAT_ISA_CURRENT",
+        "value": "payload.TSAC_STAT.TSAC_STAT_ISA_CURRENT",
         "valueType": "msg",
         "width": 2,
         "height": 3,
@@ -1151,7 +1185,7 @@
         "name": "isa_power",
         "group": "ab3e0ca24f4ad4dc",
         "order": 3,
-        "value": "payload.TSAC_ISA_POWER",
+        "value": "payload.TSAC_STAT.TSAC_ISA_POWER",
         "valueType": "msg",
         "width": 2,
         "height": 3,
@@ -1205,7 +1239,7 @@
         "name": "discharge_limit",
         "group": "359d13a03a079e3c",
         "order": 1,
-        "value": "payload.TSAC_MAX_DISCHARGE_CURRENT",
+        "value": "payload.AVAILABLE_CURRENT.TSAC_MAX_DISCHARGE_CURRENT",
         "valueType": "msg",
         "width": 3,
         "height": 3,
@@ -1247,7 +1281,7 @@
         "name": "charge_limit",
         "group": "359d13a03a079e3c",
         "order": 2,
-        "value": "payload.TSAC_MAX_CHARGE_CURRENT",
+        "value": "payload.AVAILABLE_CURRENT.TSAC_MAX_CHARGE_CURRENT",
         "valueType": "msg",
         "width": 3,
         "height": 3,
@@ -1289,7 +1323,7 @@
         "name": "ts_state",
         "group": "4f140fe5ae232b4d",
         "order": 1,
-        "value": "payload.TSAC_TS_STATE",
+        "value": "payload.TSAC_STAT.TSAC_TS_STATE",
         "valueType": "msg",
         "width": 3,
         "height": 3,
@@ -1349,10 +1383,10 @@
         "name": "bender_state",
         "group": "4f140fe5ae232b4d",
         "order": 2,
-        "value": "payload.TSAC_BENDER_STATE",
+        "value": "payload.TSAC_STAT.TSAC_BENDER_STATE",
         "valueType": "msg",
         "width": 3,
-        "height": 2,
+        "height": 3,
         "gtype": "gauge-tile",
         "gstyle": "needle",
         "title": "Bender State",
@@ -1415,7 +1449,7 @@
         "styleGlow": false,
         "className": "",
         "x": 730,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -1425,12 +1459,12 @@
         "type": "ui-gauge",
         "z": "f595383a0843f950",
         "name": "being discharged",
-        "group": "4f140fe5ae232b4d",
-        "order": 5,
-        "value": "payload.TSAC_BEING_DISCHARGED",
+        "group": "6d5d33ea848dfe82",
+        "order": 1,
+        "value": "payload.TSAC_STAT.TSAC_BEING_DISCHARGED",
         "valueType": "msg",
         "width": "2",
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "rounded",
         "title": "Being discharged",
@@ -1469,7 +1503,7 @@
         "styleGlow": false,
         "className": "",
         "x": 750,
-        "y": 1080,
+        "y": 1120,
         "wires": [
             []
         ]
@@ -1480,9 +1514,9 @@
         "z": "f595383a0843f950",
         "name": "Balancing Override",
         "label": "Balancing Override",
-        "group": "ee22140f2902b281",
-        "order": 1,
-        "width": "2",
+        "group": "6d5d33ea848dfe82",
+        "order": 3,
+        "width": 2,
         "height": "1",
         "passthru": true,
         "decouple": false,
@@ -1513,10 +1547,10 @@
         "type": "ui-button-group",
         "z": "f595383a0843f950",
         "name": "Balancing Override",
-        "group": "ee22140f2902b281",
-        "order": 2,
-        "width": "2",
-        "height": 1,
+        "group": "6d5d33ea848dfe82",
+        "order": 4,
+        "width": 2,
+        "height": 2,
         "label": "",
         "className": "",
         "rounded": true,
@@ -1545,13 +1579,13 @@
                 "color": "#ff6666"
             }
         ],
-        "topic": "topic",
-        "topicType": "msg",
+        "topic": "Set_balancing_mode",
+        "topicType": "str",
         "x": 750,
         "y": 180,
         "wires": [
             [
-                "6f883bfd37ed20e8"
+                "141ade74adf429bb"
             ]
         ]
     },
@@ -1561,14 +1595,16 @@
         "z": "f595383a0843f950",
         "name": "Interrupt Flow",
         "triggertopic": "override",
-        "initializewith": "1",
+        "initializewith": "0",
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 1070,
-        "y": 140,
+        "x": 1230,
+        "y": 100,
         "wires": [
-            []
+            [
+                "e017eb4860ec0fc6"
+            ]
         ]
     },
     {
@@ -1599,7 +1635,10 @@
                 "f9ea881339d1f80c",
                 "6a622b708fe6ec88",
                 "de6c18673b2eb79b",
-                "379c09dc7a2437bc"
+                "379c09dc7a2437bc",
+                "91675be5fc91db85",
+                "aa83855f6803835f",
+                "d9fa83f922e148df"
             ]
         ]
     },
@@ -1613,7 +1652,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.TSAC_BALANCING_STATE)\t",
+                "to": "$number(msg.payload.TSAC_STAT.TSAC_BALANCING_STATE)\t",
                 "tot": "jsonata"
             }
         ],
@@ -1637,9 +1676,9 @@
         "name": "ts_error",
         "group": "4f140fe5ae232b4d",
         "order": 3,
-        "value": "payload.TSAC_ERROR",
+        "value": "payload.TSAC_ERROR.TSAC_ERROR",
         "valueType": "msg",
-        "width": 1,
+        "width": 2,
         "height": 2,
         "gtype": "gauge-tile",
         "gstyle": "needle",
@@ -1685,7 +1724,7 @@
         "styleGlow": false,
         "className": "",
         "x": 720,
-        "y": 1160,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -1696,10 +1735,10 @@
         "z": "f595383a0843f950",
         "name": "ts_warning",
         "group": "4f140fe5ae232b4d",
-        "order": 4,
-        "value": "payload.TSAC_WARNING",
+        "order": 5,
+        "value": "payload.TSAC_WARNING.TSAC_WARNING",
         "valueType": "msg",
-        "width": 1,
+        "width": 2,
         "height": 2,
         "gtype": "gauge-tile",
         "gstyle": "needle",
@@ -1745,7 +1784,7 @@
         "styleGlow": false,
         "className": "",
         "x": 730,
-        "y": 1200,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -1757,8 +1796,8 @@
         "group": "4f140fe5ae232b4d",
         "name": "",
         "label": "Reset error and warning",
-        "order": 7,
-        "width": 2,
+        "order": 6,
+        "width": 6,
         "height": 1,
         "emulateClick": false,
         "tooltip": "",
@@ -1767,7 +1806,7 @@
         "className": "",
         "icon": "",
         "iconPosition": "left",
-        "payload": "{\"TSAC_ERROR\":0,\"TSAC_WARNING\":0}",
+        "payload": "{\"TSAC_ERROR\":{\"TSAC_ERROR\":0},\"TSAC_WARNING\":{\"TSAC_WARNING\":0}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "str",
@@ -1782,12 +1821,201 @@
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
         "x": 470,
-        "y": 1180,
+        "y": 1260,
         "wires": [
             [
                 "91675be5fc91db85",
                 "aa83855f6803835f"
             ]
+        ]
+    },
+    {
+        "id": "e017eb4860ec0fc6",
+        "type": "link out",
+        "z": "f595383a0843f950",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "a340626bd648322b"
+        ],
+        "x": 1385,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "141ade74adf429bb",
+        "type": "change",
+        "z": "f595383a0843f950",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Set_balancing_mode.Set_balancing_mode",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "_client",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "_msgid",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 180,
+        "wires": [
+            [
+                "6f883bfd37ed20e8"
+            ]
+        ]
+    },
+    {
+        "id": "d9fa83f922e148df",
+        "type": "ui-gauge",
+        "z": "f595383a0843f950",
+        "name": "balancing_state",
+        "group": "6d5d33ea848dfe82",
+        "order": 2,
+        "value": "payload.TSAC_STAT.TSAC_BALANCING_STATE",
+        "valueType": "msg",
+        "width": 2,
+        "height": 4,
+        "gtype": "gauge-tile",
+        "gstyle": "needle",
+        "title": "TS Balancing State",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "OFF",
+                "textType": "str"
+            },
+            {
+                "from": "1",
+                "color": "#ffc800",
+                "text": "AUTO",
+                "textType": "str"
+            },
+            {
+                "from": "2",
+                "color": "#ff8000",
+                "text": "ON",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "3",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 740,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc0a8371bb6fc078",
+        "type": "ui-button",
+        "z": "f595383a0843f950",
+        "group": "ee22140f2902b281",
+        "name": "TSON",
+        "label": "TS ON",
+        "order": 3,
+        "width": 4,
+        "height": 4,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "s",
+        "icon": "power-plug-battery-outline",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 410,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25c1d4b07f5e98aa",
+        "type": "ui-button",
+        "z": "f595383a0843f950",
+        "group": "ee22140f2902b281",
+        "name": "TSOFF",
+        "label": "TS OFF",
+        "order": 1,
+        "width": 4,
+        "height": 4,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power-plug-off",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 420,
+        "y": 1440,
+        "wires": [
+            []
         ]
     },
     {
@@ -3558,7 +3786,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Interrupt Flow",
         "triggertopic": "override",
-        "initializewith": "1",
+        "initializewith": "0",
         "autoToggle": "0",
         "payloadPropName": "payload.Power_limitter",
         "translatorConfig": "",
@@ -3575,7 +3803,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Interrupt Flow",
         "triggertopic": "override",
-        "initializewith": "1",
+        "initializewith": "0",
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
@@ -3592,7 +3820,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Interrupt Flow",
         "triggertopic": "override",
-        "initializewith": "1",
+        "initializewith": "0",
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
@@ -3609,7 +3837,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Interrupt Flow",
         "triggertopic": "override",
-        "initializewith": "1",
+        "initializewith": "0",
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
@@ -3626,7 +3854,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Interrupt Flow",
         "triggertopic": "override",
-        "initializewith": "1",
+        "initializewith": "0",
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
@@ -3643,7 +3871,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Interrupt Flow",
         "triggertopic": "override",
-        "initializewith": "1",
+        "initializewith": "0",
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
@@ -3660,7 +3888,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Interrupt Flow",
         "triggertopic": "override",
-        "initializewith": "1",
+        "initializewith": "0",
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
@@ -4591,8 +4819,10 @@
         "type": "link in",
         "z": "4197684541243468",
         "name": "Outgoing messages",
-        "links": [],
-        "x": 225,
+        "links": [
+            "e017eb4860ec0fc6"
+        ],
+        "x": 175,
         "y": 340,
         "wires": [
             [
@@ -4663,7 +4893,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 340,
         "y": 340,
         "wires": [
             [
