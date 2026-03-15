@@ -571,16 +571,6 @@
         "className": ""
     },
     {
-        "id": "c7af6cffb86028b6",
-        "type": "ui-spacer",
-        "group": "4f140fe5ae232b4d",
-        "name": "spacer",
-        "order": 4,
-        "width": 2,
-        "height": 2,
-        "className": ""
-    },
-    {
         "id": "b3fa03189094dec6",
         "type": "global-config",
         "env": [
@@ -607,23 +597,33 @@
         "groupType": "default"
     },
     {
-        "id": "cf2125cd0c2ffbb1",
-        "type": "ui-spacer",
-        "group": "6d5d33ea848dfe82",
-        "name": "spacer",
-        "order": 5,
-        "width": 2,
-        "height": 3,
-        "className": ""
-    },
-    {
         "id": "cf211e448b9dffae",
         "type": "ui-spacer",
         "group": "ee22140f2902b281",
         "name": "spacer",
         "order": 2,
         "width": 4,
-        "height": 4,
+        "height": "2",
+        "className": ""
+    },
+    {
+        "id": "cf2bd1a3b66966bf",
+        "type": "ui-spacer",
+        "group": "359d13a03a079e3c",
+        "name": "spacer",
+        "order": 3,
+        "width": 1,
+        "height": 3,
+        "className": ""
+    },
+    {
+        "id": "cf2cb7b25b995f1b",
+        "type": "ui-spacer",
+        "group": "6d5d33ea848dfe82",
+        "name": "spacer",
+        "order": 5,
+        "width": 4,
+        "height": 1,
         "className": ""
     },
     {
@@ -1241,7 +1241,7 @@
         "order": 1,
         "value": "payload.AVAILABLE_CURRENT.TSAC_MAX_DISCHARGE_CURRENT",
         "valueType": "msg",
-        "width": 3,
+        "width": 1,
         "height": 3,
         "gtype": "gauge-half",
         "gstyle": "needle",
@@ -1283,7 +1283,7 @@
         "order": 2,
         "value": "payload.AVAILABLE_CURRENT.TSAC_MAX_CHARGE_CURRENT",
         "valueType": "msg",
-        "width": 3,
+        "width": 1,
         "height": 3,
         "gtype": "gauge-half",
         "gstyle": "needle",
@@ -1326,7 +1326,7 @@
         "value": "payload.TSAC_STAT.TSAC_TS_STATE",
         "valueType": "msg",
         "width": 3,
-        "height": 3,
+        "height": 2,
         "gtype": "gauge-tile",
         "gstyle": "needle",
         "title": "TS STATE",
@@ -1371,7 +1371,7 @@
         "styleGlow": false,
         "className": "",
         "x": 720,
-        "y": 1000,
+        "y": 1120,
         "wires": [
             []
         ]
@@ -1386,7 +1386,7 @@
         "value": "payload.TSAC_STAT.TSAC_BENDER_STATE",
         "valueType": "msg",
         "width": 3,
-        "height": 3,
+        "height": 2,
         "gtype": "gauge-tile",
         "gstyle": "needle",
         "title": "Bender State",
@@ -1449,7 +1449,7 @@
         "styleGlow": false,
         "className": "",
         "x": 730,
-        "y": 1080,
+        "y": 1200,
         "wires": [
             []
         ]
@@ -1464,7 +1464,7 @@
         "value": "payload.TSAC_STAT.TSAC_BEING_DISCHARGED",
         "valueType": "msg",
         "width": "2",
-        "height": 4,
+        "height": 3,
         "gtype": "gauge-half",
         "gstyle": "rounded",
         "title": "Being discharged",
@@ -1503,7 +1503,7 @@
         "styleGlow": false,
         "className": "",
         "x": 750,
-        "y": 1120,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -1515,15 +1515,15 @@
         "name": "Balancing Override",
         "label": "Balancing Override",
         "group": "6d5d33ea848dfe82",
-        "order": 3,
-        "width": 2,
+        "order": 4,
+        "width": 1,
         "height": "1",
         "passthru": true,
         "decouple": false,
         "topic": "override",
         "topicType": "str",
         "style": "",
-        "className": "white-border-group",
+        "className": "",
         "layout": "row-spread",
         "clickableArea": "switch",
         "onvalue": "true",
@@ -1548,9 +1548,9 @@
         "z": "f595383a0843f950",
         "name": "Balancing Override",
         "group": "6d5d33ea848dfe82",
-        "order": 4,
+        "order": 6,
         "width": 2,
-        "height": 2,
+        "height": 1,
         "label": "",
         "className": "",
         "rounded": true,
@@ -1599,7 +1599,7 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 1230,
+        "x": 1430,
         "y": 100,
         "wires": [
             [
@@ -1637,8 +1637,12 @@
                 "de6c18673b2eb79b",
                 "379c09dc7a2437bc",
                 "91675be5fc91db85",
-                "aa83855f6803835f",
-                "d9fa83f922e148df"
+                "d9fa83f922e148df",
+                "8772366b98e14280",
+                "6142f2446ed50862",
+                "800376c8f66fb21f",
+                "58ccc31dded11a02",
+                "b37a7ec90a408c11"
             ]
         ]
     },
@@ -1698,25 +1702,85 @@
             },
             {
                 "from": "1",
-                "color": "#ffc800",
-                "text": "TS PRECHARGE",
+                "color": "#ea5353",
+                "text": "OVERVOLTAGE",
                 "textType": "str"
             },
             {
                 "from": "2",
-                "color": "#ff8000",
-                "text": "TS ON",
+                "color": "#ea5353",
+                "text": "UNDERVOLTAGE",
                 "textType": "str"
             },
             {
                 "from": "3",
                 "color": "#ea5353",
-                "text": "TSERROR",
+                "text": "OVERTEMPERATURE",
+                "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ea5353",
+                "text": "TEMP OPENWIRE",
+                "textType": "str"
+            },
+            {
+                "from": "5",
+                "color": "#ea5353",
+                "text": "CELL OPENWIRE",
+                "textType": "str"
+            },
+            {
+                "from": "6",
+                "color": "#ea5353",
+                "text": "VOLTAGE DIFFERENCE",
+                "textType": "str"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "OVERTIME",
+                "textType": "str"
+            },
+            {
+                "from": "8",
+                "color": "#ea5353",
+                "text": "RELAY STUCK",
+                "textType": "str"
+            },
+            {
+                "from": "9",
+                "color": "#ea5353",
+                "text": "ISA OVERHEAT",
+                "textType": "str"
+            },
+            {
+                "from": "10",
+                "color": "#ea5353",
+                "text": "OVERCHARGE",
+                "textType": "str"
+            },
+            {
+                "from": "11",
+                "color": "#ea5353",
+                "text": "OVERDISCHARGE",
+                "textType": "str"
+            },
+            {
+                "from": "12",
+                "color": "#ea5353",
+                "text": "HARDWARE FAILURE",
+                "textType": "str"
+            },
+            {
+                "from": "13",
+                "color": "#ea5353",
+                "text": "PRECHARGE TIMEOUT",
                 "textType": "str"
             }
         ],
         "min": 0,
-        "max": 10,
+        "max": "13",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
@@ -1724,67 +1788,7 @@
         "styleGlow": false,
         "className": "",
         "x": 720,
-        "y": 1240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aa83855f6803835f",
-        "type": "ui-gauge",
-        "z": "f595383a0843f950",
-        "name": "ts_warning",
-        "group": "4f140fe5ae232b4d",
-        "order": 5,
-        "value": "payload.TSAC_WARNING.TSAC_WARNING",
-        "valueType": "msg",
-        "width": 2,
-        "height": 2,
-        "gtype": "gauge-tile",
-        "gstyle": "needle",
-        "title": "Last TS Warning",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
-        "units": "units",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#5cd65c",
-                "text": "NO WARNING",
-                "textType": "str"
-            },
-            {
-                "from": "1",
-                "color": "#ffc800",
-                "text": "TS PRECHARGE",
-                "textType": "str"
-            },
-            {
-                "from": "2",
-                "color": "#ff8000",
-                "text": "TS ON",
-                "textType": "str"
-            },
-            {
-                "from": "3",
-                "color": "#ea5353",
-                "text": "TSERROR",
-                "textType": "str"
-            }
-        ],
-        "min": 0,
-        "max": 10,
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 730,
-        "y": 1280,
+        "y": 1360,
         "wires": [
             []
         ]
@@ -1796,9 +1800,9 @@
         "group": "4f140fe5ae232b4d",
         "name": "",
         "label": "Reset error and warning",
-        "order": 6,
-        "width": 6,
-        "height": 1,
+        "order": 4,
+        "width": 2,
+        "height": 2,
         "emulateClick": false,
         "tooltip": "",
         "color": "",
@@ -1821,11 +1825,11 @@
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
         "x": 470,
-        "y": 1260,
+        "y": 1380,
         "wires": [
             [
                 "91675be5fc91db85",
-                "aa83855f6803835f"
+                "b37a7ec90a408c11"
             ]
         ]
     },
@@ -1838,7 +1842,7 @@
         "links": [
             "a340626bd648322b"
         ],
-        "x": 1385,
+        "x": 1585,
         "y": 100,
         "wires": []
     },
@@ -1855,26 +1859,6 @@
                 "to": "payload",
                 "tot": "msg",
                 "dc": true
-            },
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "_client",
-                "pt": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "_msgid",
-                "pt": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "topic",
-                "pt": "msg"
             }
         ],
         "action": "",
@@ -1882,7 +1866,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 960,
+        "x": 1070,
         "y": 180,
         "wires": [
             [
@@ -1896,11 +1880,11 @@
         "z": "f595383a0843f950",
         "name": "balancing_state",
         "group": "6d5d33ea848dfe82",
-        "order": 2,
+        "order": 3,
         "value": "payload.TSAC_STAT.TSAC_BALANCING_STATE",
         "valueType": "msg",
         "width": 2,
-        "height": 4,
+        "height": 2,
         "gtype": "gauge-tile",
         "gstyle": "needle",
         "title": "TS Balancing State",
@@ -1939,7 +1923,7 @@
         "styleGlow": false,
         "className": "",
         "x": 740,
-        "y": 1040,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -1953,7 +1937,7 @@
         "label": "TS ON",
         "order": 3,
         "width": 4,
-        "height": 4,
+        "height": "2",
         "emulateClick": false,
         "tooltip": "",
         "color": "",
@@ -1976,9 +1960,11 @@
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
         "x": 410,
-        "y": 1380,
+        "y": 1500,
         "wires": [
-            []
+            [
+                "57245c8bdbaad583"
+            ]
         ]
     },
     {
@@ -1990,7 +1976,7 @@
         "label": "TS OFF",
         "order": 1,
         "width": 4,
-        "height": 4,
+        "height": "2",
         "emulateClick": false,
         "tooltip": "",
         "color": "",
@@ -2013,7 +1999,403 @@
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
         "x": 420,
-        "y": 1440,
+        "y": 1560,
+        "wires": [
+            [
+                "b12ea23a44291178"
+            ]
+        ]
+    },
+    {
+        "id": "57245c8bdbaad583",
+        "type": "change",
+        "z": "f595383a0843f950",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "TS_ON_OFF.TS_ON_OFF",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1500,
+        "wires": [
+            [
+                "61bcb02cec7bbe36"
+            ]
+        ]
+    },
+    {
+        "id": "61bcb02cec7bbe36",
+        "type": "link out",
+        "z": "f595383a0843f950",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "a340626bd648322b"
+        ],
+        "x": 885,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "b12ea23a44291178",
+        "type": "change",
+        "z": "f595383a0843f950",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "TS_ON_OFF.TS_ON_OFF",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1560,
+        "wires": [
+            [
+                "64f6f01c27054c11"
+            ]
+        ]
+    },
+    {
+        "id": "64f6f01c27054c11",
+        "type": "link out",
+        "z": "f595383a0843f950",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "a340626bd648322b"
+        ],
+        "x": 885,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "8772366b98e14280",
+        "type": "ui-gauge",
+        "z": "f595383a0843f950",
+        "name": "thermal_reduction",
+        "group": "359d13a03a079e3c",
+        "order": 4,
+        "value": "payload.TSAC_STAT.TSAC_STAT_THERMAL_REDUCTION",
+        "valueType": "msg",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Thermal Reduction",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000",
+                "text": "",
+                "textType": "none"
+            },
+            {
+                "from": "10",
+                "color": "#00ff00",
+                "text": "",
+                "textType": "none"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 750,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6142f2446ed50862",
+        "type": "ui-gauge",
+        "z": "f595383a0843f950",
+        "name": "unbalance_reduction",
+        "group": "359d13a03a079e3c",
+        "order": 6,
+        "value": "payload.TSAC_STAT.TSAC_STAT_UNBALANCE_REDUCTION",
+        "valueType": "msg",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Unbalance Reduction",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000",
+                "text": "",
+                "textType": "none"
+            },
+            {
+                "from": "10",
+                "color": "#00ff00",
+                "text": "",
+                "textType": "none"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 760,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "800376c8f66fb21f",
+        "type": "ui-gauge",
+        "z": "f595383a0843f950",
+        "name": "voltage_reduction",
+        "group": "359d13a03a079e3c",
+        "order": 5,
+        "value": "payload.TSAC_STAT.TSAC_STAT_VOILTAGE_REDUCTION",
+        "valueType": "msg",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Voltage Reduction",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000",
+                "text": "",
+                "textType": "none"
+            },
+            {
+                "from": "10",
+                "color": "#00ff00",
+                "text": "",
+                "textType": "none"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 750,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58ccc31dded11a02",
+        "type": "ui-gauge",
+        "z": "f595383a0843f950",
+        "name": "unbalanced rate",
+        "group": "6d5d33ea848dfe82",
+        "order": 2,
+        "value": "payload.TSAC_STAT.TSAC_STAT_UNBALANCE_RATE",
+        "valueType": "msg",
+        "width": 2,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "Unbalanced rate",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "battery-unknown",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "5",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "10",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "15",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 740,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b37a7ec90a408c11",
+        "type": "ui-gauge",
+        "z": "f595383a0843f950",
+        "name": "ts_warning",
+        "group": "4f140fe5ae232b4d",
+        "order": 5,
+        "value": "payload.TSAC_ERROR.TSAC_ERROR",
+        "valueType": "msg",
+        "width": 2,
+        "height": 2,
+        "gtype": "gauge-tile",
+        "gstyle": "needle",
+        "title": "Last TS Error",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "NO ERROR",
+                "textType": "str"
+            },
+            {
+                "from": "1",
+                "color": "#ffc800",
+                "text": "OVERVOLTAGE",
+                "textType": "str"
+            },
+            {
+                "from": "2",
+                "color": "#ffc800",
+                "text": "UNDERVOLTAGE",
+                "textType": "str"
+            },
+            {
+                "from": "3",
+                "color": "#ffc800",
+                "text": "OVERTEMPERATURE",
+                "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "TEMP OPENWIRE",
+                "textType": "str"
+            },
+            {
+                "from": "5",
+                "color": "#ffc800",
+                "text": "CELL OPENWIRE",
+                "textType": "str"
+            },
+            {
+                "from": "6",
+                "color": "#ffc800",
+                "text": "VOLTAGE DIFFERENCE",
+                "textType": "str"
+            },
+            {
+                "from": "7",
+                "color": "#ffc800",
+                "text": "STATE CONTROL",
+                "textType": "str"
+            },
+            {
+                "from": "8",
+                "color": "#ffc800",
+                "text": "STARTUP",
+                "textType": "str"
+            },
+            {
+                "from": "9",
+                "color": "#ffc800",
+                "text": "SDC OPENED",
+                "textType": "str"
+            },
+            {
+                "from": "10",
+                "color": "#ffc800",
+                "text": "AIR + OPENED",
+                "textType": "str"
+            },
+            {
+                "from": "11",
+                "color": "#ffc800",
+                "text": "AIR - OPENED",
+                "textType": "str"
+            },
+            {
+                "from": "12",
+                "color": "#ffc800",
+                "text": "RELAY STUCK DURING ERROR",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "12",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 730,
+        "y": 1400,
         "wires": [
             []
         ]
@@ -4820,7 +5202,9 @@
         "z": "4197684541243468",
         "name": "Outgoing messages",
         "links": [
-            "e017eb4860ec0fc6"
+            "e017eb4860ec0fc6",
+            "61bcb02cec7bbe36",
+            "64f6f01c27054c11"
         ],
         "x": 175,
         "y": 340,
@@ -4898,109 +5282,6 @@
         "wires": [
             [
                 "745cc10c0f361af6"
-            ]
-        ]
-    },
-    {
-        "id": "a687c3ea7c84c64c",
-        "type": "inject",
-        "z": "4197684541243468",
-        "name": "",
-        "props": [
-            {
-                "p": "Power_limitter",
-                "v": "10000",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 390,
-        "y": 300,
-        "wires": [
-            [
-                "745cc10c0f361af6"
-            ]
-        ]
-    },
-    {
-        "id": "6ed23e92add02b8d",
-        "type": "debug",
-        "z": "4197684541243468",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "6d78d37b9c8f46c9",
-        "type": "udp out",
-        "z": "4197684541243468",
-        "name": "",
-        "addr": "192.168.1.69",
-        "iface": "",
-        "port": "6667",
-        "ipv": "udp4",
-        "outport": "",
-        "base64": false,
-        "multicast": "false",
-        "x": 930,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "a212bcf0b6b7e870",
-        "type": "inject",
-        "z": "4197684541243468",
-        "name": "",
-        "props": [
-            {
-                "p": "Power_limitter",
-                "v": "10000",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 470,
-        "y": 680,
-        "wires": [
-            [
-                "a169b1235e7dfa12"
-            ]
-        ]
-    },
-    {
-        "id": "a169b1235e7dfa12",
-        "type": "template",
-        "z": "4197684541243468",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "json",
-        "syntax": "mustache",
-        "template": "{\n    \"Send_Vehicle_State\": {\n        \"Vehicle_State\": 1\n    }\n}",
-        "output": "str",
-        "x": 680,
-        "y": 600,
-        "wires": [
-            [
-                "6d78d37b9c8f46c9",
-                "6ed23e92add02b8d"
             ]
         ]
     }
