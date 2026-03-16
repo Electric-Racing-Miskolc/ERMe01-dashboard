@@ -707,20 +707,6 @@
         "groupType": "default"
     },
     {
-        "id": "a802e8c773b0ec02",
-        "type": "ui-group",
-        "name": "Group 14",
-        "page": "d9df23d6a6ef270f",
-        "width": 6,
-        "height": 1,
-        "order": 8,
-        "showTitle": true,
-        "className": "",
-        "visible": true,
-        "disabled": false,
-        "groupType": "default"
-    },
-    {
         "id": "2516a70ee6240323",
         "type": "ui-page",
         "name": "Oscilloscope",
@@ -1729,7 +1715,7 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 1430,
+        "x": 1450,
         "y": 100,
         "wires": [
             [
@@ -1972,7 +1958,7 @@
         "links": [
             "a340626bd648322b"
         ],
-        "x": 1585,
+        "x": 1615,
         "y": 100,
         "wires": []
     },
@@ -4902,7 +4888,7 @@
         "links": [
             "a98dc49a88f46c76"
         ],
-        "x": 815,
+        "x": 1005,
         "y": 1580,
         "wires": [
             [
@@ -5605,7 +5591,7 @@
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "APPS 1",
-        "order": 2,
+        "order": 1,
         "width": 4,
         "height": 0,
         "color": "green",
@@ -5615,50 +5601,13 @@
         "wires": []
     },
     {
-        "id": "78a48e63fdcc8358",
-        "type": "ui-slider",
-        "z": "7dade78592428d89",
-        "group": "a9df5341a2cc8e73",
-        "name": "",
-        "label": "slider",
-        "tooltip": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "always",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "",
-        "colorTrack": "",
-        "colorThumb": "",
-        "showTextField": false,
-        "x": 490,
-        "y": 80,
-        "wires": [
-            [
-                "7c660ac8fad5f952",
-                "7e98e97e30f48bd7",
-                "9ba9777c8c1c10d7"
-            ]
-        ]
-    },
-    {
         "id": "7e98e97e30f48bd7",
         "type": "ui-progress",
         "z": "7dade78592428d89",
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "APPS 2",
-        "order": 5,
+        "order": 4,
         "width": 4,
         "height": 0,
         "color": "green",
@@ -5674,7 +5623,7 @@
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "APPS",
-        "order": 4,
+        "order": 3,
         "width": 4,
         "height": 2,
         "color": "red",
@@ -5689,7 +5638,7 @@
         "z": "7dade78592428d89",
         "name": "",
         "group": "a9df5341a2cc8e73",
-        "order": 3,
+        "order": 2,
         "value": "payload.APPS_Error_Data.APPS_Error",
         "valueType": "msg",
         "width": 2,
@@ -5756,7 +5705,7 @@
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "Reset Error",
-        "order": 6,
+        "order": 5,
         "width": "2",
         "height": "1",
         "emulateClick": true,
@@ -5884,8 +5833,7 @@
         "y": 220,
         "wires": [
             [
-                "6dd2403a0c096bf9",
-                "c9ad0774d2b6f520"
+                "6dd2403a0c096bf9"
             ]
         ]
     },
@@ -5894,7 +5842,7 @@
         "type": "debug",
         "z": "4197684541243468",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5934,7 +5882,7 @@
         "y": 220,
         "wires": [
             [
-                "8ef4097ab12553fa"
+                "c9ad0774d2b6f520"
             ]
         ]
     },
@@ -5950,7 +5898,6 @@
         "y": 340,
         "wires": [
             [
-                "2ee65640b6e5d428",
                 "dfcd529ef131a26f"
             ]
         ]
@@ -5968,37 +5915,9 @@
             "12bc8e4c1be8669f",
             "122e8bc88c49ef15"
         ],
-        "x": 775,
+        "x": 555,
         "y": 220,
         "wires": []
-    },
-    {
-        "id": "8ef4097ab12553fa",
-        "type": "change",
-        "z": "4197684541243468",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 540,
-        "y": 220,
-        "wires": [
-            [
-                "a98dc49a88f46c76",
-                "c9ad0774d2b6f520"
-            ]
-        ]
     },
     {
         "id": "a340626bd648322b",
@@ -6023,14 +5942,14 @@
         "type": "debug",
         "z": "4197684541243468",
         "name": "debug 3",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
+        "x": 420,
         "y": 140,
         "wires": []
     },
