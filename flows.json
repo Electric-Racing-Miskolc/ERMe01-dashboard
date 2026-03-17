@@ -313,26 +313,6 @@
         "groupType": "default"
     },
     {
-        "id": "c9a908eadf90667b",
-        "type": "ui-spacer",
-        "group": "e3b8cff4e6ddd0e6",
-        "name": "spacer",
-        "order": 1,
-        "width": 1,
-        "height": 3,
-        "className": ""
-    },
-    {
-        "id": "2e34658a90433139",
-        "type": "ui-spacer",
-        "group": "e3b8cff4e6ddd0e6",
-        "name": "spacer",
-        "order": 10,
-        "width": 1,
-        "height": 3,
-        "className": ""
-    },
-    {
         "id": "12dbcafb65a6e667",
         "type": "ui-group",
         "name": "Settings",
@@ -351,7 +331,7 @@
         "type": "ui-spacer",
         "group": "12dbcafb65a6e667",
         "name": "spacer",
-        "order": 6,
+        "order": 8,
         "width": 1,
         "height": 9,
         "className": ""
@@ -361,7 +341,7 @@
         "type": "ui-spacer",
         "group": "12dbcafb65a6e667",
         "name": "spacer",
-        "order": 10,
+        "order": 12,
         "width": 2,
         "height": 2,
         "className": ""
@@ -371,7 +351,7 @@
         "type": "ui-spacer",
         "group": "12dbcafb65a6e667",
         "name": "spacer",
-        "order": 9,
+        "order": 11,
         "width": 1,
         "height": 1,
         "className": ""
@@ -599,7 +579,7 @@
         "name": "spacer",
         "order": 2,
         "width": 4,
-        "height": "2",
+        "height": 1,
         "className": ""
     },
     {
@@ -1731,7 +1711,7 @@
         "links": [
             "a98dc49a88f46c76"
         ],
-        "x": 265,
+        "x": 195,
         "y": 620,
         "wires": [
             [
@@ -1758,7 +1738,8 @@
                 "6142f2446ed50862",
                 "800376c8f66fb21f",
                 "58ccc31dded11a02",
-                "b37a7ec90a408c11"
+                "b37a7ec90a408c11",
+                "2fe7df48a6a941da"
             ]
         ]
     },
@@ -1970,7 +1951,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "Set_balancing_mode.Set_balancing_mode",
+                "p": "send.Set_balancing_mode.Set_balancing_mode",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg",
@@ -1982,7 +1963,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1070,
+        "x": 1090,
         "y": 180,
         "wires": [
             [
@@ -2130,7 +2111,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "TS_ON_OFF.TS_ON_OFF",
+                "p": "send.TS_ON_OFF.TS_ON_OFF",
                 "pt": "msg",
                 "to": "1",
                 "tot": "num",
@@ -2142,7 +2123,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
+        "x": 720,
         "y": 1500,
         "wires": [
             [
@@ -2159,7 +2140,7 @@
         "links": [
             "a340626bd648322b"
         ],
-        "x": 885,
+        "x": 935,
         "y": 1500,
         "wires": []
     },
@@ -2171,7 +2152,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "TS_ON_OFF.TS_ON_OFF",
+                "p": "send.TS_ON_OFF.TS_ON_OFF",
                 "pt": "msg",
                 "to": "0",
                 "tot": "num",
@@ -2183,7 +2164,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
+        "x": 720,
         "y": 1560,
         "wires": [
             [
@@ -2200,7 +2181,7 @@
         "links": [
             "a340626bd648322b"
         ],
-        "x": 885,
+        "x": 935,
         "y": 1560,
         "wires": []
     },
@@ -2517,13 +2498,37 @@
         ]
     },
     {
+        "id": "2fe7df48a6a941da",
+        "type": "ui-text",
+        "z": "f595383a0843f950",
+        "group": "ee22140f2902b281",
+        "order": 4,
+        "width": 4,
+        "height": 0,
+        "name": "Timestamp",
+        "label": "Last AMS message received",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": true,
+        "className": "",
+        "value": "$exists(payload.TSAC_STAT.TSAC_TS_STATE) ? timestamp",
+        "valueType": "jsonata",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
         "id": "e0e92b61642707d5",
         "type": "ui-gauge",
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
         "name": "Vehicle state",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 2,
+        "order": 1,
         "value": "msg.payload.Send_Vehicle_State.Vehicle_State ? msg.payload.Send_Vehicle_State.Vehicle_State",
         "valueType": "jsonata",
         "width": 3,
@@ -2590,7 +2595,7 @@
         "g": "502c719c9684924f",
         "name": "APPS state",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 11,
+        "order": 10,
         "value": "msg.payload.MPCU_system_status_report.APPS ? msg.payload.MPCU_system_status_report.APPS",
         "valueType": "jsonata",
         "width": "1",
@@ -2754,7 +2759,7 @@
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 9,
+        "order": 8,
         "width": "1",
         "height": "1",
         "name": "",
@@ -2780,7 +2785,7 @@
         "g": "502c719c9684924f",
         "name": "TSAC state",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 12,
+        "order": 11,
         "value": "msg.payload.MPCU_system_status_report.TSAC ? msg.payload.MPCU_system_status_report.TSAC",
         "valueType": "jsonata",
         "width": "1",
@@ -2841,7 +2846,7 @@
         "g": "502c719c9684924f",
         "name": "RSU state",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 13,
+        "order": 12,
         "value": "msg.payload.MPCU_system_status_report.RSU ? msg.payload.MPCU_system_status_report.RSU",
         "valueType": "jsonata",
         "width": "1",
@@ -2902,7 +2907,7 @@
         "g": "502c719c9684924f",
         "name": "FSU state",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 14,
+        "order": 13,
         "value": "msg.payload.MPCU_system_status_report.FSU ? msg.payload.MPCU_system_status_report.FSU",
         "valueType": "jsonata",
         "width": "1",
@@ -2963,7 +2968,7 @@
         "g": "502c719c9684924f",
         "name": "Telemetry state",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 15,
+        "order": 14,
         "value": "msg.payload.MPCU_system_status_report.Telemetry ? msg.payload.MPCU_system_status_report.Telemetry",
         "valueType": "jsonata",
         "width": "1",
@@ -3024,7 +3029,7 @@
         "g": "502c719c9684924f",
         "name": "Inverter state",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 16,
+        "order": 15,
         "value": "msg.payload.MPCU_system_status_report.Inverter ? msg.payload.MPCU_system_status_report.Inverter",
         "valueType": "jsonata",
         "width": "1",
@@ -3085,7 +3090,7 @@
         "g": "502c719c9684924f",
         "name": "Dash state",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 17,
+        "order": 16,
         "value": "msg.payload.MPCU_system_status_report.Dash ? msg.payload.MPCU_system_status_report.Dash",
         "valueType": "jsonata",
         "width": "1",
@@ -3171,7 +3176,7 @@
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 8,
+        "order": 7,
         "width": "1",
         "height": "1",
         "name": "",
@@ -3196,7 +3201,7 @@
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 7,
+        "order": 6,
         "width": "1",
         "height": "1",
         "name": "",
@@ -3221,7 +3226,7 @@
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 6,
+        "order": 5,
         "width": "1",
         "height": "1",
         "name": "",
@@ -3246,7 +3251,7 @@
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 5,
+        "order": 4,
         "width": "1",
         "height": "1",
         "name": "",
@@ -3271,7 +3276,7 @@
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 4,
+        "order": 3,
         "width": "1",
         "height": "1",
         "name": "",
@@ -3296,7 +3301,7 @@
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
         "group": "e3b8cff4e6ddd0e6",
-        "order": 3,
+        "order": 2,
         "width": "1",
         "height": "1",
         "name": "",
@@ -3324,7 +3329,7 @@
         "name": "Power limiter",
         "label": "",
         "tooltip": "",
-        "order": 12,
+        "order": 14,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -3358,7 +3363,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Power limiter",
         "group": "12dbcafb65a6e667",
-        "order": 4,
+        "order": 6,
         "value": "msg.payload.MPCU_systems_settings_to_dash.Power_limitter ? msg.payload.MPCU_systems_settings_to_dash.Power_limitter",
         "valueType": "jsonata",
         "width": 4,
@@ -3443,7 +3448,7 @@
         "name": "Max Motor RPM",
         "label": "",
         "tooltip": "",
-        "order": 13,
+        "order": 15,
         "width": 4,
         "height": "1",
         "passthru": false,
@@ -3477,7 +3482,7 @@
         "g": "50019cb37f3dfa92",
         "name": "Max Motor RPM",
         "group": "12dbcafb65a6e667",
-        "order": 5,
+        "order": 7,
         "value": "msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM ? msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM",
         "valueType": "jsonata",
         "width": 4,
@@ -3533,7 +3538,7 @@
         "name": "PL override",
         "label": "PL",
         "group": "12dbcafb65a6e667",
-        "order": 7,
+        "order": 9,
         "width": "1",
         "height": "1",
         "passthru": true,
@@ -3566,7 +3571,7 @@
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
         "group": "12dbcafb65a6e667",
-        "order": 1,
+        "order": 3,
         "width": 1,
         "height": 0,
         "name": "",
@@ -3593,7 +3598,7 @@
         "name": "RPM override",
         "label": "RPM",
         "group": "12dbcafb65a6e667",
-        "order": 8,
+        "order": 10,
         "width": "1",
         "height": "1",
         "passthru": true,
@@ -3628,7 +3633,7 @@
         "name": "FAN M1 override",
         "label": "FAN-M1",
         "group": "12dbcafb65a6e667",
-        "order": 11,
+        "order": 13,
         "width": "1",
         "height": "1",
         "passthru": true,
@@ -3663,7 +3668,7 @@
         "name": "FAN M2 override",
         "label": "FAN-M2",
         "group": "12dbcafb65a6e667",
-        "order": 14,
+        "order": 16,
         "width": "1",
         "height": "1",
         "passthru": true,
@@ -3699,7 +3704,7 @@
         "name": "FAN M1",
         "label": "",
         "tooltip": "",
-        "order": 23,
+        "order": 25,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -3733,7 +3738,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN M1",
         "group": "12dbcafb65a6e667",
-        "order": 15,
+        "order": 17,
         "value": "msg.payload.MPCU_values.MPCU_FAN1_SPEED ? msg.payload.MPCU_values.MPCU_FAN1_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -3789,7 +3794,7 @@
         "name": "FAN I override",
         "label": "FAN-I",
         "group": "12dbcafb65a6e667",
-        "order": 20,
+        "order": 22,
         "width": "1",
         "height": "1",
         "passthru": true,
@@ -3825,7 +3830,7 @@
         "name": "FAN M2",
         "label": "",
         "tooltip": "",
-        "order": 24,
+        "order": 26,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -3859,7 +3864,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN M2",
         "group": "12dbcafb65a6e667",
-        "order": 16,
+        "order": 18,
         "value": "msg.payload.MPCU_values.MPCU_FAN2_SPEED ? msg.payload.MPCU_values.MPCU_FAN2_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -3916,7 +3921,7 @@
         "name": "FAN I",
         "label": "",
         "tooltip": "",
-        "order": 25,
+        "order": 27,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -3950,7 +3955,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN I",
         "group": "12dbcafb65a6e667",
-        "order": 17,
+        "order": 19,
         "value": "msg.payload.MPCU_values.MPCU_FAN3_SPEED ? msg.payload.MPCU_values.MPCU_FAN3_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4006,7 +4011,7 @@
         "name": "PUMP M override",
         "label": "PUMP-M",
         "group": "12dbcafb65a6e667",
-        "order": 21,
+        "order": 23,
         "width": "1",
         "height": "1",
         "passthru": true,
@@ -4041,7 +4046,7 @@
         "name": "PUMP I override",
         "label": "PUMP-I",
         "group": "12dbcafb65a6e667",
-        "order": 22,
+        "order": 24,
         "width": "1",
         "height": "1",
         "passthru": true,
@@ -4077,7 +4082,7 @@
         "name": "PUMP M",
         "label": "",
         "tooltip": "",
-        "order": 26,
+        "order": 28,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -4111,7 +4116,7 @@
         "g": "50019cb37f3dfa92",
         "name": "PUMP M",
         "group": "12dbcafb65a6e667",
-        "order": 18,
+        "order": 20,
         "value": "msg.payload.MPCU_values.MPCU_MOTOR_PUMP_SPEED ? msg.payload.MPCU_values.MPCU_MOTOR_PUMP_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4168,7 +4173,7 @@
         "name": "PUMP I",
         "label": "",
         "tooltip": "",
-        "order": 27,
+        "order": 29,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -4202,7 +4207,7 @@
         "g": "50019cb37f3dfa92",
         "name": "PUMP I",
         "group": "12dbcafb65a6e667",
-        "order": 19,
+        "order": 21,
         "value": "msg.payload.MPCU_values.MPCU_INVERTER_PUMP_SPEED ? msg.payload.MPCU_values.MPCU_INVERTER_PUMP_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4377,7 +4382,7 @@
         "group": "12dbcafb65a6e667",
         "name": "",
         "label": "DISABLE ALL",
-        "order": 3,
+        "order": 5,
         "width": 1,
         "height": 3,
         "emulateClick": false,
@@ -4423,7 +4428,7 @@
         "group": "12dbcafb65a6e667",
         "name": "",
         "label": "ENABLE ALL",
-        "order": 2,
+        "order": 4,
         "width": 1,
         "height": 3,
         "emulateClick": false,
@@ -4853,7 +4858,8 @@
                 "2b8b76cbe9120ee2",
                 "808cf751c6ac1fec",
                 "f99e5d93708119d6",
-                "5bf6b1ab43c4c95b"
+                "5bf6b1ab43c4c95b",
+                "654c17edae95981e"
             ]
         ]
     },
@@ -5171,6 +5177,199 @@
             [
                 "ba930b58741f6809"
             ]
+        ]
+    },
+    {
+        "id": "654c17edae95981e",
+        "type": "ui-text",
+        "z": "58531eb4c616092e",
+        "group": "e3b8cff4e6ddd0e6",
+        "order": 9,
+        "width": 2,
+        "height": 3,
+        "name": "Timestamp",
+        "label": "Last MPCU message received",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": true,
+        "className": "",
+        "value": "$exists(payload.MPCU_values.MPCU_INVERTER_TEMPERATURE) ? timestamp",
+        "valueType": "jsonata",
+        "x": 950,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f25714a912b22fb5",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "group": "12dbcafb65a6e667",
+        "name": "State OFF Request",
+        "label": "MPCU State Request",
+        "order": 1,
+        "width": 7,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "MPCU_REQUEST",
+        "payloadType": "flow",
+        "topic": "state_request",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 210,
+        "y": 1380,
+        "wires": [
+            [
+                "d3f39920a7ade53f",
+                "3a507942fba0ed58"
+            ]
+        ]
+    },
+    {
+        "id": "d3f39920a7ade53f",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.state_request.state_request",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 1380,
+        "wires": [
+            [
+                "1cece6039995bc6c"
+            ]
+        ]
+    },
+    {
+        "id": "1cece6039995bc6c",
+        "type": "link out",
+        "z": "58531eb4c616092e",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "a340626bd648322b"
+        ],
+        "x": 775,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "19df24033677651b",
+        "type": "ui-dropdown",
+        "z": "58531eb4c616092e",
+        "group": "12dbcafb65a6e667",
+        "name": "MPCU REQUEST ",
+        "label": "Select Option:",
+        "tooltip": "",
+        "order": 2,
+        "width": 5,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "STARTUP",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "STANDBY",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "TSON",
+                "value": "2",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "payload",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 210,
+        "y": 1500,
+        "wires": [
+            [
+                "3b5aebbceec5c8a6"
+            ]
+        ]
+    },
+    {
+        "id": "3a507942fba0ed58",
+        "type": "debug",
+        "z": "58531eb4c616092e",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "3b5aebbceec5c8a6",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "MPCU_REQUEST",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 1500,
+        "wires": [
+            []
         ]
     },
     {
@@ -5863,7 +6062,7 @@
         "type": "udp out",
         "z": "4197684541243468",
         "name": "",
-        "addr": "192.168.1.130",
+        "addr": "192.168.1.69",
         "iface": "",
         "port": "6667",
         "ipv": "udp4",
@@ -5886,7 +6085,6 @@
         "y": 220,
         "wires": [
             [
-                "c9ad0774d2b6f520",
                 "d33c98f46a9ae934"
             ]
         ]
@@ -5903,7 +6101,8 @@
         "y": 340,
         "wires": [
             [
-                "dfcd529ef131a26f"
+                "dfcd529ef131a26f",
+                "2ee65640b6e5d428"
             ]
         ]
     },
@@ -5935,7 +6134,8 @@
         "links": [
             "e017eb4860ec0fc6",
             "61bcb02cec7bbe36",
-            "64f6f01c27054c11"
+            "64f6f01c27054c11",
+            "1cece6039995bc6c"
         ],
         "x": 175,
         "y": 340,
@@ -5954,7 +6154,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
         "x": 800,
@@ -6001,6 +6202,18 @@
                 "t": "delete",
                 "p": "_event",
                 "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "send",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "timestamp",
+                "pt": "msg"
             }
         ],
         "action": "",
@@ -6028,6 +6241,13 @@
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "timestamp",
+                "pt": "msg",
+                "to": "$fromMillis($millis(), '[Y]/[M01]/[D01] [H01]:[m01]:[s01]', '+0100')",
+                "tot": "jsonata"
             }
         ],
         "action": "",
