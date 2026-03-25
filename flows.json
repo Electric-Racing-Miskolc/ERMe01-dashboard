@@ -593,6 +593,16 @@
         "className": ""
     },
     {
+        "id": "cf2cb7b25b995f1b",
+        "type": "ui-spacer",
+        "group": "6d5d33ea848dfe82",
+        "name": "spacer",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "className": ""
+    },
+    {
         "id": "cf34db503580b747",
         "type": "ui-spacer",
         "group": "7ce9ca5952a94637",
@@ -2611,9 +2621,9 @@
         "height": "2",
         "gtype": "gauge-tile",
         "gstyle": "needle",
-        "title": "APPS",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-right",
         "units": "units",
         "icon": "",
         "prefix": "",
@@ -2795,15 +2805,15 @@
         "name": "TSAC state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 11,
-        "value": " msg.payload.MPCU_system_status_report.TSAC",
+        "value": "msg.payload.MPCU_system_status_report.TSAC",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
         "gtype": "gauge-tile",
         "gstyle": "needle",
-        "title": "TSAC",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-right",
         "units": "units",
         "icon": "",
         "prefix": "",
@@ -2862,9 +2872,9 @@
         "height": "2",
         "gtype": "gauge-tile",
         "gstyle": "needle",
-        "title": "RSU",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-right",
         "units": "units",
         "icon": "",
         "prefix": "",
@@ -2923,9 +2933,9 @@
         "height": "2",
         "gtype": "gauge-tile",
         "gstyle": "needle",
-        "title": "FSU",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-right",
         "units": "units",
         "icon": "",
         "prefix": "",
@@ -2984,9 +2994,9 @@
         "height": "2",
         "gtype": "gauge-tile",
         "gstyle": "needle",
-        "title": "TELEM",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-right",
         "units": "units",
         "icon": "",
         "prefix": "",
@@ -3039,15 +3049,15 @@
         "name": "Inverter state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 15,
-        "value": " msg.payload.MPCU_system_status_report.Inverter",
+        "value": "msg.payload.MPCU_system_status_report.Inverter",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
         "gtype": "gauge-tile",
         "gstyle": "needle",
-        "title": "INV",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-right",
         "units": "units",
         "icon": "",
         "prefix": "",
@@ -3106,9 +3116,9 @@
         "height": "2",
         "gtype": "gauge-tile",
         "gstyle": "needle",
-        "title": "DASH",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-right",
         "units": "units",
         "icon": "",
         "prefix": "",
@@ -5365,8 +5375,8 @@
                 "t": "set",
                 "p": "MPCU_REQUEST",
                 "pt": "flow",
-                "to": "payload",
-                "tot": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata",
                 "dc": true
             }
         ],
@@ -5438,7 +5448,7 @@
         "type": "function",
         "z": "7de09f7e9474d780",
         "name": "Convert data to table",
-        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacVoltageTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC 1\": null,\n            \"TSAC 2\": null,\n            \"TSAC 3\": null,\n            \"TSAC 4\": null,\n            \"TSAC 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Voltages\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Voltages\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10000, force 4 decimal places, and append \" V\"\n                let formattedVoltage = (rawValue / 10000).toFixed(4) + \" V\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacVoltageTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
+        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacVoltageTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC 1\": null,\n            \"TSAC 2\": null,\n            \"TSAC 3\": null,\n            \"TSAC 4\": null,\n            \"TSAC 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Voltages\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Voltages\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10000, force 4 decimal places, and append \" V\"\n                let formattedVoltage = rawValue.toFixed(4) + \" V\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacVoltageTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5543,27 +5553,6 @@
         ]
     },
     {
-        "id": "06e2dde19ceb1603",
-        "type": "function",
-        "z": "7de09f7e9474d780",
-        "name": "Test Data",
-        "func": "let testPayload = {};\n\n// Loop through the 5 possible TSAC segments\nfor (let tsac = 1; tsac <= 5; tsac++) {\n\n    // 80% chance to include this segment in the current message \n    // (This tests your system's ability to handle partial data)\n    if (Math.random() < 0.8) {\n        let tsacKey = `TSAC_Voltages${tsac}`;\n        testPayload[tsacKey] = {};\n\n        // Generate 22 cell voltages for this segment\n        for (let cell = 1; cell <= 22; cell++) {\n            // Generate a random raw integer between 30000 and 42000\n            // When divided by 10000 in your main node, this becomes 3.0 to 4.2\n            let randomRawVoltage = Math.floor(Math.random() * (42000 - 30000 + 1)) + 30000;\n\n            let voltageKey = `${tsacKey}_${cell}`;\n            testPayload[tsacKey][voltageKey] = randomRawVoltage;\n        }\n    }\n}\n\n// If by random chance no segments were generated, force TSAC 1 to generate \n// so the payload is never completely empty\nif (Object.keys(testPayload).length === 0) {\n    testPayload[\"TSAC_Voltages1\"] = {};\n    for (let cell = 1; cell <= 22; cell++) {\n        testPayload[\"TSAC_Voltages1\"][`TSAC_Voltages1_${cell}`] = 35000; // 3.5000 V\n    }\n}\n\nmsg.payload = testPayload;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 340,
-        "wires": [
-            [
-                "19150ae8e0992f23",
-                "b772ac2053979b0a"
-            ]
-        ]
-    },
-    {
         "id": "b772ac2053979b0a",
         "type": "debug",
         "z": "7de09f7e9474d780",
@@ -5636,7 +5625,7 @@
         "type": "function",
         "z": "7de09f7e9474d780",
         "name": "Convert data to table",
-        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacTempTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC segment 1\": null,\n            \"TSAC segment 2\": null,\n            \"TSAC segment 3\": null,\n            \"TSAC segment 4\": null,\n            \"TSAC segment 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Temperatures\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Temperatures\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10, force 1 decimal places, and append \" C\"\n                let formattedVoltage = (rawValue / 10).toFixed(1) + \" C\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacTempTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
+        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacTempTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC segment 1\": null,\n            \"TSAC segment 2\": null,\n            \"TSAC segment 3\": null,\n            \"TSAC segment 4\": null,\n            \"TSAC segment 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Temperatures\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Temperatures\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10, force 1 decimal places, and append \" C\"\n                let formattedVoltage = rawValue.toFixed(1) + \" C\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacTempTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5745,7 +5734,7 @@
         "type": "function",
         "z": "7de09f7e9474d780",
         "name": "Test Data",
-        "func": "let testPayload = {};\n\n// Loop through the 5 possible TSAC segments\nfor (let tsac = 1; tsac <= 5; tsac++) {\n\n    // 80% chance to include this segment in the current message \n    // (This tests your system's ability to handle partial data)\n    if (Math.random() < 0.8) {\n        let tsacKey = `TSAC_Temperatures${tsac}`;\n        testPayload[tsacKey] = {};\n\n        // Generate 22 cell temperatures for this segment\n        for (let cell = 1; cell <= 22; cell++) {\n            // Generate a random raw integer between 150 and 500\n            // When divided by 10 in your main node, this becomes 15.0 to 50.0\n            let randomRawVoltage = Math.floor(Math.random() * (500 - 150 + 1)) + 150;\n\n            let voltageKey = `${tsacKey}_${cell}`;\n            testPayload[tsacKey][voltageKey] = randomRawVoltage;\n        }\n    }\n}\n\n// If by random chance no segments were generated, force TSAC 1 to generate \n// so the payload is never completely empty\nif (Object.keys(testPayload).length === 0) {\n    testPayload[\"TSAC_Temperaturess1\"] = {};\n    for (let cell = 1; cell <= 22; cell++) {\n        testPayload[\"TSAC_Temperatures1\"][`TSAC_Temperatures1_${cell}`] = 200; // 20.0 C\n    }\n}\n\nmsg.payload = testPayload;\nreturn msg;",
+        "func": "let testPayload = {};\n\n// Loop through the 5 possible TSAC segments\nfor (let tsac = 1; tsac <= 5; tsac++) {\n\n    // 80% chance to include this segment in the current message \n    // (This tests your system's ability to handle partial data)\n    if (Math.random() < 0.8) {\n        let tsacKey = `TSAC_Temperatures${tsac}`;\n        testPayload[tsacKey] = {};\n\n        // Generate 22 cell temperatures for this segment\n        for (let cell = 1; cell <= 22; cell++) {\n            // Generate a random raw integer between 150 and 500\n            // When divided by 10 in your main node, this becomes 15.0 to 50.0\n            let randomRawVoltage = (Math.floor(Math.random() * (500 - 150 + 1)) + 150)/10;\n\n            let voltageKey = `${tsacKey}_${cell}`;\n            testPayload[tsacKey][voltageKey] = randomRawVoltage;\n        }\n    }\n}\n\n// If by random chance no segments were generated, force TSAC 1 to generate \n// so the payload is never completely empty\nif (Object.keys(testPayload).length === 0) {\n    testPayload[\"TSAC_Temperaturess1\"] = {};\n    for (let cell = 1; cell <= 22; cell++) {\n        testPayload[\"TSAC_Temperatures1\"][`TSAC_Temperatures1_${cell}`] = 200; // 20.0 C\n    }\n}\n\nmsg.payload = testPayload;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5776,6 +5765,27 @@
         "x": 760,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "06e2dde19ceb1603",
+        "type": "function",
+        "z": "7de09f7e9474d780",
+        "name": "Test Data",
+        "func": "let testPayload = {};\n\n// Loop through the 5 possible TSAC segments\nfor (let tsac = 1; tsac <= 5; tsac++) {\n\n    // 80% chance to include this segment in the current message \n    // (This tests your system's ability to handle partial data)\n    if (Math.random() < 0.8) {\n        let tsacKey = `TSAC_Voltages${tsac}`;\n        testPayload[tsacKey] = {};\n\n        // Generate 22 cell voltages for this segment\n        for (let cell = 1; cell <= 22; cell++) {\n            // Generate a random raw integer between 30000 and 42000\n            // When divided by 10000 in your main node, this becomes 3.0 to 4.2\n            let randomRawVoltage = Math.floor(Math.random() * (42000 - 30000 + 1)) + 30000;\n\n            let voltageKey = `${tsacKey}_${cell}`;\n            testPayload[tsacKey][voltageKey] = randomRawVoltage;\n        }\n    }\n}\n\n// If by random chance no segments were generated, force TSAC 1 to generate \n// so the payload is never completely empty\nif (Object.keys(testPayload).length === 0) {\n    testPayload[\"TSAC_Voltages1\"] = {};\n    for (let cell = 1; cell <= 22; cell++) {\n        testPayload[\"TSAC_Voltages1\"][`TSAC_Voltages1_${cell}`] = 35000; // 3.5000 V\n    }\n}\n\nmsg.payload = testPayload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "19150ae8e0992f23",
+                "b772ac2053979b0a"
+            ]
+        ]
     },
     {
         "id": "4108ddab8e21e287",
@@ -5959,7 +5969,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "msg.payload.APPS_Normal_Data.APPS_Data ? $number(msg.payload.APPS_Normal_Data.APPS_Data)\t",
+                "to": "$number(msg.payload.APPS_Normal_Data.APPS_Data)\t",
                 "tot": "jsonata"
             }
         ],
@@ -5986,7 +5996,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "msg.payload.APPS_Normal_Data.APPS1_interpolated ? $number(msg.payload.APPS_Normal_Data.APPS1_interpolated)\t",
+                "to": "$number(msg.payload.APPS_Normal_Data.APPS1_interpolated)\t",
                 "tot": "jsonata"
             }
         ],
@@ -6013,7 +6023,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "msg.payload.APPS_Normal_Data.APPS2_interpolated ? $number(msg.payload.APPS_Normal_Data.APPS2_interpolated)\t",
+                "to": "$number(msg.payload.APPS_Normal_Data.APPS2_interpolated)\t",
                 "tot": "jsonata"
             }
         ],
@@ -6054,7 +6064,7 @@
         "type": "debug",
         "z": "4197684541243468",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6327,14 +6337,31 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"MPCU_modify_system_settings\": {\n        \"index\": 0,\n        \"value\": 1\n    }\n}",
+        "template": "{\n    \"state_request\": {\n        \"state_request\": 1\n    }\n}",
         "output": "str",
         "x": 520,
         "y": 480,
         "wires": [
             [
-                "59c69f1ec8cf8c4a"
+                "59c69f1ec8cf8c4a",
+                "c43b15e44e49f36f"
             ]
         ]
+    },
+    {
+        "id": "c43b15e44e49f36f",
+        "type": "debug",
+        "z": "4197684541243468",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 440,
+        "wires": []
     }
 ]
