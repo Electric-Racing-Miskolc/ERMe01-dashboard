@@ -153,11 +153,12 @@
             "f2cb36f28041e40f",
             "540a4116bae20c3d",
             "a4cce1a5a1f9625f",
-            "caa732739c9a9262"
+            "caa732739c9a9262",
+            "08c4fabbcdcd9b7c"
         ],
         "x": -6,
         "y": 539,
-        "w": 1612,
+        "w": 1752,
         "h": 742
     },
     {
@@ -1166,38 +1167,38 @@
         "title": "TSAC voltage",
         "alwaysShowTitle": false,
         "floatingTitlePosition": "top-left",
-        "units": "mV",
+        "units": "V",
         "icon": "flash-triangle",
         "prefix": "",
         "suffix": "",
         "segments": [
             {
-                "from": "300000",
+                "from": "300",
                 "color": "#ea5353",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "360000",
+                "from": "360",
                 "color": "#ffc800",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "390000",
+                "from": "390",
                 "color": "#5cd65c",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "463000",
+                "from": "463",
                 "color": "#d65c5c",
                 "text": "",
                 "textType": "label"
             }
         ],
-        "min": "300000",
-        "max": "500000",
+        "min": "300",
+        "max": "500",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
@@ -1226,7 +1227,7 @@
         "title": "TSAC Current",
         "alwaysShowTitle": false,
         "floatingTitlePosition": "top-left",
-        "units": "mA",
+        "units": "A",
         "icon": "battery",
         "prefix": "",
         "suffix": "",
@@ -1238,20 +1239,20 @@
                 "textType": "label"
             },
             {
-                "from": "200000",
+                "from": "200",
                 "color": "#ffc800",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "250000",
+                "from": "250",
                 "color": "#ea5353",
                 "text": "",
                 "textType": "label"
             }
         ],
         "min": "0",
-        "max": "300000",
+        "max": "300",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
@@ -3414,7 +3415,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1490,
+        "x": 1630,
         "y": 640,
         "wires": [
             []
@@ -3429,7 +3430,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "Power_limitter",
+                "p": "Power_limitter.Power_limitter",
                 "pt": "msg",
                 "to": "msg.payload*1000",
                 "tot": "jsonata"
@@ -3440,7 +3441,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
+        "x": 790,
         "y": 640,
         "wires": [
             [
@@ -3533,7 +3534,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1500,
+        "x": 1640,
         "y": 760,
         "wires": [
             []
@@ -3789,7 +3790,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1480,
+        "x": 1620,
         "y": 860,
         "wires": [
             []
@@ -3915,7 +3916,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1480,
+        "x": 1620,
         "y": 940,
         "wires": [
             []
@@ -4006,7 +4007,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1470,
+        "x": 1610,
         "y": 1000,
         "wires": [
             []
@@ -4167,7 +4168,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1480,
+        "x": 1620,
         "y": 1080,
         "wires": [
             []
@@ -4258,7 +4259,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1480,
+        "x": 1620,
         "y": 1200,
         "wires": [
             []
@@ -4275,10 +4276,12 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 990,
+        "x": 1090,
         "y": 640,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -4292,10 +4295,12 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 990,
+        "x": 1090,
         "y": 760,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -4309,10 +4314,12 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 990,
+        "x": 1090,
         "y": 860,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -4326,10 +4333,12 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 990,
+        "x": 1090,
         "y": 940,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -4343,10 +4352,12 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 990,
+        "x": 1090,
         "y": 1000,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -4360,10 +4371,12 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 990,
+        "x": 1090,
         "y": 1100,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -4377,10 +4390,12 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 990,
+        "x": 1090,
         "y": 1200,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -4881,7 +4896,7 @@
         "links": [
             "a98dc49a88f46c76"
         ],
-        "x": 1275,
+        "x": 1415,
         "y": 900,
         "wires": [
             [
@@ -5323,6 +5338,11 @@
                 "label": "TSON",
                 "value": "2",
                 "type": "str"
+            },
+            {
+                "label": "R2D",
+                "value": "3",
+                "type": "str"
             }
         ],
         "payload": "",
@@ -5380,6 +5400,20 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "08c4fabbcdcd9b7c",
+        "type": "link out",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "a340626bd648322b"
+        ],
+        "x": 1355,
+        "y": 900,
+        "wires": []
     },
     {
         "id": "45ee29288ff68b21",
@@ -5539,6 +5573,27 @@
         "wires": [
             [
                 "06e2dde19ceb1603"
+            ]
+        ]
+    },
+    {
+        "id": "06e2dde19ceb1603",
+        "type": "function",
+        "z": "7de09f7e9474d780",
+        "name": "Test Data",
+        "func": "let testPayload = {};\n\n// Loop through the 5 possible TSAC segments\nfor (let tsac = 1; tsac <= 5; tsac++) {\n\n    // 80% chance to include this segment in the current message \n    // (This tests your system's ability to handle partial data)\n    if (Math.random() < 0.8) {\n        let tsacKey = `TSAC_Voltages${tsac}`;\n        testPayload[tsacKey] = {};\n\n        // Generate 22 cell voltages for this segment\n        for (let cell = 1; cell <= 22; cell++) {\n            // Generate a random raw integer between 30000 and 42000\n            // When divided by 10000 in your main node, this becomes 3.0 to 4.2\n            let randomRawVoltage = Math.floor(Math.random() * (42000 - 30000 + 1)) + 30000;\n\n            let voltageKey = `${tsacKey}_${cell}`;\n            testPayload[tsacKey][voltageKey] = randomRawVoltage;\n        }\n    }\n}\n\n// If by random chance no segments were generated, force TSAC 1 to generate \n// so the payload is never completely empty\nif (Object.keys(testPayload).length === 0) {\n    testPayload[\"TSAC_Voltages1\"] = {};\n    for (let cell = 1; cell <= 22; cell++) {\n        testPayload[\"TSAC_Voltages1\"][`TSAC_Voltages1_${cell}`] = 35000; // 3.5000 V\n    }\n}\n\nmsg.payload = testPayload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "19150ae8e0992f23",
+                "b772ac2053979b0a"
             ]
         ]
     },
@@ -5755,27 +5810,6 @@
         "x": 760,
         "y": 580,
         "wires": []
-    },
-    {
-        "id": "06e2dde19ceb1603",
-        "type": "function",
-        "z": "7de09f7e9474d780",
-        "name": "Test Data",
-        "func": "let testPayload = {};\n\n// Loop through the 5 possible TSAC segments\nfor (let tsac = 1; tsac <= 5; tsac++) {\n\n    // 80% chance to include this segment in the current message \n    // (This tests your system's ability to handle partial data)\n    if (Math.random() < 0.8) {\n        let tsacKey = `TSAC_Voltages${tsac}`;\n        testPayload[tsacKey] = {};\n\n        // Generate 22 cell voltages for this segment\n        for (let cell = 1; cell <= 22; cell++) {\n            // Generate a random raw integer between 30000 and 42000\n            // When divided by 10000 in your main node, this becomes 3.0 to 4.2\n            let randomRawVoltage = Math.floor(Math.random() * (42000 - 30000 + 1)) + 30000;\n\n            let voltageKey = `${tsacKey}_${cell}`;\n            testPayload[tsacKey][voltageKey] = randomRawVoltage;\n        }\n    }\n}\n\n// If by random chance no segments were generated, force TSAC 1 to generate \n// so the payload is never completely empty\nif (Object.keys(testPayload).length === 0) {\n    testPayload[\"TSAC_Voltages1\"] = {};\n    for (let cell = 1; cell <= 22; cell++) {\n        testPayload[\"TSAC_Voltages1\"][`TSAC_Voltages1_${cell}`] = 35000; // 3.5000 V\n    }\n}\n\nmsg.payload = testPayload;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 340,
-        "wires": [
-            [
-                "19150ae8e0992f23",
-                "b772ac2053979b0a"
-            ]
-        ]
     },
     {
         "id": "4108ddab8e21e287",
@@ -6144,7 +6178,8 @@
             "e017eb4860ec0fc6",
             "61bcb02cec7bbe36",
             "64f6f01c27054c11",
-            "1cece6039995bc6c"
+            "1cece6039995bc6c",
+            "08c4fabbcdcd9b7c"
         ],
         "x": 175,
         "y": 340,
@@ -6327,7 +6362,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"state_request\": {\n        \"state_request\": 1\n    }\n}",
+        "template": "{\n    \"state_request\": {\n        \"state_request\": 2\n    }\n}",
         "output": "str",
         "x": 520,
         "y": 480,
