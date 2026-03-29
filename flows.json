@@ -689,42 +689,6 @@
         "className": ""
     },
     {
-        "id": "c463320fa4b23f97",
-        "type": "ui-page",
-        "name": "Secret settings",
-        "ui": "a1947a9da86cce22",
-        "path": "/secret",
-        "icon": "question",
-        "layout": "grid",
-        "theme": "a99d81eafbb77aba",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 6,
-        "className": "",
-        "visible": "false",
-        "disabled": "true"
-    },
-    {
         "id": "c449922502408448",
         "type": "ui-gauge",
         "z": "f595383a0843f950",
