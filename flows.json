@@ -121,45 +121,30 @@
             "794a7e65aa3b9130",
             "2d776543f5b95b12",
             "5a7f66cea22f5c1e",
-            "98140860a5d0857f",
             "03d6871ae86bdc6d",
-            "94514f472f5afa6b",
             "c3d1700752b1d443",
-            "1396e593e2543d35",
             "4872fd1e4fec1e01",
-            "5360c291ab721866",
             "bfe3078b728c50d9",
-            "ba930b58741f6809",
             "464a558d4c4d2808",
             "7ded3a3d92ad98ab",
             "cd3b6e7c07e1b0f8",
             "da80081c3ceb03bf",
             "ce47f0ed02af1ac3",
-            "86de6d8b89f486dc",
-            "5a12022b3e35152e",
-            "312f24aa2913faad",
-            "2f18b9db5ad919b6",
-            "d329f66b93bb2f72",
-            "2e3ebb260c611d4c",
-            "a121d251e5ca4507",
-            "25f7cc9fc13cea69",
-            "9a77df5dd0c540a4",
-            "38e4e9b76215ab7e",
             "63510a53b3c81696",
             "122e8bc88c49ef15",
             "34794d4b807c868d",
             "f937a48dafb7e4ce",
-            "f016e0fb0305f51d",
-            "f2cb36f28041e40f",
-            "540a4116bae20c3d",
-            "a4cce1a5a1f9625f",
-            "caa732739c9a9262",
-            "08c4fabbcdcd9b7c"
+            "08c4fabbcdcd9b7c",
+            "2ec8f7abe60963fe",
+            "63321d9bce378ae4",
+            "9c4118dcf7f9fda7",
+            "ae1a0a7a0c033d7b",
+            "988066609920e577"
         ],
         "x": -6,
         "y": 539,
         "w": 1752,
-        "h": 742
+        "h": 562
     },
     {
         "id": "2ed428752a2a8e1c",
@@ -328,33 +313,13 @@
         "groupType": "default"
     },
     {
-        "id": "e74912930db0cfce",
-        "type": "ui-spacer",
-        "group": "12dbcafb65a6e667",
-        "name": "spacer",
-        "order": 8,
-        "width": 1,
-        "height": 9,
-        "className": ""
-    },
-    {
         "id": "0ebe4591e75e381a",
         "type": "ui-spacer",
         "group": "12dbcafb65a6e667",
         "name": "spacer",
-        "order": 12,
-        "width": 2,
-        "height": 2,
-        "className": ""
-    },
-    {
-        "id": "7b53bb9d82c7a808",
-        "type": "ui-spacer",
-        "group": "12dbcafb65a6e667",
-        "name": "spacer",
         "order": 11,
-        "width": 1,
-        "height": 1,
+        "width": 3,
+        "height": 2,
         "className": ""
     },
     {
@@ -712,6 +677,52 @@
         "className": "",
         "visible": "true",
         "disabled": "false"
+    },
+    {
+        "id": "d3a6c0f58c7fa4aa",
+        "type": "ui-spacer",
+        "group": "12dbcafb65a6e667",
+        "name": "spacer",
+        "order": 8,
+        "width": 1,
+        "height": 5,
+        "className": ""
+    },
+    {
+        "id": "c463320fa4b23f97",
+        "type": "ui-page",
+        "name": "Secret settings",
+        "ui": "a1947a9da86cce22",
+        "path": "/secret",
+        "icon": "question",
+        "layout": "grid",
+        "theme": "a99d81eafbb77aba",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": "false",
+        "disabled": "true"
     },
     {
         "id": "c449922502408448",
@@ -3339,7 +3350,7 @@
         "name": "Power limiter",
         "label": "",
         "tooltip": "",
-        "order": 14,
+        "order": 12,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -3458,7 +3469,7 @@
         "name": "Max Motor RPM",
         "label": "",
         "tooltip": "",
-        "order": 15,
+        "order": 13,
         "width": 4,
         "height": "1",
         "passthru": false,
@@ -3636,119 +3647,13 @@
         ]
     },
     {
-        "id": "86de6d8b89f486dc",
-        "type": "ui-switch",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "FAN M1 override",
-        "label": "FAN-M1",
-        "group": "12dbcafb65a6e667",
-        "order": 13,
-        "width": "1",
-        "height": "1",
-        "passthru": true,
-        "decouple": false,
-        "topic": "override",
-        "topicType": "str",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "switch",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "cog",
-        "oncolor": "red",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "check",
-        "offcolor": "green",
-        "x": 550,
-        "y": 900,
-        "wires": [
-            [
-                "5a12022b3e35152e"
-            ]
-        ]
-    },
-    {
-        "id": "312f24aa2913faad",
-        "type": "ui-switch",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "FAN M2 override",
-        "label": "FAN-M2",
-        "group": "12dbcafb65a6e667",
-        "order": 16,
-        "width": "1",
-        "height": "1",
-        "passthru": true,
-        "decouple": false,
-        "topic": "override",
-        "topicType": "str",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "switch",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "cog",
-        "oncolor": "red",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "check",
-        "offcolor": "green",
-        "x": 550,
-        "y": 980,
-        "wires": [
-            [
-                "2f18b9db5ad919b6"
-            ]
-        ]
-    },
-    {
-        "id": "98140860a5d0857f",
-        "type": "ui-slider",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "group": "12dbcafb65a6e667",
-        "name": "FAN M1",
-        "label": "",
-        "tooltip": "",
-        "order": 25,
-        "width": 2,
-        "height": "1",
-        "passthru": false,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "always",
-        "min": "0",
-        "max": "100",
-        "step": "10",
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "red",
-        "colorTrack": "red",
-        "colorThumb": "white",
-        "showTextField": false,
-        "x": 520,
-        "y": 860,
-        "wires": [
-            [
-                "5a12022b3e35152e"
-            ]
-        ]
-    },
-    {
         "id": "03d6871ae86bdc6d",
         "type": "ui-gauge",
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
         "name": "FAN M1",
         "group": "12dbcafb65a6e667",
-        "order": 17,
+        "order": 15,
         "value": "msg.payload.MPCU_values.MPCU_FAN1_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -3797,84 +3702,13 @@
         ]
     },
     {
-        "id": "d329f66b93bb2f72",
-        "type": "ui-switch",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "FAN I override",
-        "label": "FAN-I",
-        "group": "12dbcafb65a6e667",
-        "order": 22,
-        "width": "1",
-        "height": "1",
-        "passthru": true,
-        "decouple": false,
-        "topic": "override",
-        "topicType": "str",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "switch",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "cog",
-        "oncolor": "red",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "check",
-        "offcolor": "green",
-        "x": 540,
-        "y": 1060,
-        "wires": [
-            [
-                "25f7cc9fc13cea69"
-            ]
-        ]
-    },
-    {
-        "id": "94514f472f5afa6b",
-        "type": "ui-slider",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "group": "12dbcafb65a6e667",
-        "name": "FAN M2",
-        "label": "",
-        "tooltip": "",
-        "order": 26,
-        "width": 2,
-        "height": "1",
-        "passthru": false,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "always",
-        "min": "0",
-        "max": "100",
-        "step": "10",
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "red",
-        "colorTrack": "red",
-        "colorThumb": "white",
-        "showTextField": false,
-        "x": 520,
-        "y": 940,
-        "wires": [
-            [
-                "2f18b9db5ad919b6"
-            ]
-        ]
-    },
-    {
         "id": "c3d1700752b1d443",
         "type": "ui-gauge",
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
         "name": "FAN M2",
         "group": "12dbcafb65a6e667",
-        "order": 18,
+        "order": 16,
         "value": "msg.payload.MPCU_values.MPCU_FAN2_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -3917,45 +3751,9 @@
         "styleGlow": false,
         "className": "",
         "x": 1620,
-        "y": 940,
+        "y": 900,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "1396e593e2543d35",
-        "type": "ui-slider",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "group": "12dbcafb65a6e667",
-        "name": "FAN I",
-        "label": "",
-        "tooltip": "",
-        "order": 27,
-        "width": 2,
-        "height": "1",
-        "passthru": false,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "always",
-        "min": "0",
-        "max": "100",
-        "step": "10",
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "red",
-        "colorTrack": "red",
-        "colorThumb": "white",
-        "showTextField": false,
-        "x": 510,
-        "y": 1020,
-        "wires": [
-            [
-                "25f7cc9fc13cea69"
-            ]
         ]
     },
     {
@@ -3965,7 +3763,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN I",
         "group": "12dbcafb65a6e667",
-        "order": 19,
+        "order": 17,
         "value": "msg.payload.MPCU_values.MPCU_FAN3_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4008,115 +3806,9 @@
         "styleGlow": false,
         "className": "",
         "x": 1610,
-        "y": 1000,
+        "y": 940,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "2e3ebb260c611d4c",
-        "type": "ui-switch",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "PUMP M override",
-        "label": "PUMP-M",
-        "group": "12dbcafb65a6e667",
-        "order": 23,
-        "width": "1",
-        "height": "1",
-        "passthru": true,
-        "decouple": false,
-        "topic": "override",
-        "topicType": "str",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "switch",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "cog",
-        "oncolor": "red",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "check",
-        "offcolor": "green",
-        "x": 550,
-        "y": 1160,
-        "wires": [
-            [
-                "9a77df5dd0c540a4"
-            ]
-        ]
-    },
-    {
-        "id": "a121d251e5ca4507",
-        "type": "ui-switch",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "PUMP I override",
-        "label": "PUMP-I",
-        "group": "12dbcafb65a6e667",
-        "order": 24,
-        "width": "1",
-        "height": "1",
-        "passthru": true,
-        "decouple": false,
-        "topic": "override",
-        "topicType": "str",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "switch",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "cog",
-        "oncolor": "red",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "check",
-        "offcolor": "green",
-        "x": 540,
-        "y": 1240,
-        "wires": [
-            [
-                "38e4e9b76215ab7e"
-            ]
-        ]
-    },
-    {
-        "id": "5360c291ab721866",
-        "type": "ui-slider",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "group": "12dbcafb65a6e667",
-        "name": "PUMP M",
-        "label": "",
-        "tooltip": "",
-        "order": 28,
-        "width": 2,
-        "height": "1",
-        "passthru": false,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "always",
-        "min": "0",
-        "max": "100",
-        "step": "10",
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "red",
-        "colorTrack": "red",
-        "colorThumb": "white",
-        "showTextField": false,
-        "x": 520,
-        "y": 1120,
-        "wires": [
-            [
-                "9a77df5dd0c540a4"
-            ]
         ]
     },
     {
@@ -4126,7 +3818,7 @@
         "g": "50019cb37f3dfa92",
         "name": "PUMP M",
         "group": "12dbcafb65a6e667",
-        "order": 20,
+        "order": 18,
         "value": "msg.payload.MPCU_values.MPCU_MOTOR_PUMP_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4169,45 +3861,9 @@
         "styleGlow": false,
         "className": "",
         "x": 1620,
-        "y": 1080,
+        "y": 980,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "ba930b58741f6809",
-        "type": "ui-slider",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "group": "12dbcafb65a6e667",
-        "name": "PUMP I",
-        "label": "",
-        "tooltip": "",
-        "order": 29,
-        "width": 2,
-        "height": "1",
-        "passthru": false,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "always",
-        "min": "0",
-        "max": "100",
-        "step": "10",
-        "className": "",
-        "iconPrepend": "",
-        "iconAppend": "",
-        "color": "red",
-        "colorTrack": "red",
-        "colorThumb": "white",
-        "showTextField": false,
-        "x": 520,
-        "y": 1200,
-        "wires": [
-            [
-                "38e4e9b76215ab7e"
-            ]
         ]
     },
     {
@@ -4217,7 +3873,7 @@
         "g": "50019cb37f3dfa92",
         "name": "PUMP I",
         "group": "12dbcafb65a6e667",
-        "order": 21,
+        "order": 19,
         "value": "msg.payload.MPCU_values.MPCU_INVERTER_PUMP_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4260,7 +3916,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1620,
-        "y": 1200,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -4298,104 +3954,7 @@
         "x": 1090,
         "y": 760,
         "wires": [
-            [
-                "08c4fabbcdcd9b7c"
-            ]
-        ]
-    },
-    {
-        "id": "5a12022b3e35152e",
-        "type": "InterruptFlowUltimate",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "Interrupt Flow",
-        "triggertopic": "override",
-        "initializewith": "0",
-        "autoToggle": "0",
-        "payloadPropName": "payload",
-        "translatorConfig": "",
-        "x": 1090,
-        "y": 860,
-        "wires": [
-            [
-                "08c4fabbcdcd9b7c"
-            ]
-        ]
-    },
-    {
-        "id": "2f18b9db5ad919b6",
-        "type": "InterruptFlowUltimate",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "Interrupt Flow",
-        "triggertopic": "override",
-        "initializewith": "0",
-        "autoToggle": "0",
-        "payloadPropName": "payload",
-        "translatorConfig": "",
-        "x": 1090,
-        "y": 940,
-        "wires": [
-            [
-                "08c4fabbcdcd9b7c"
-            ]
-        ]
-    },
-    {
-        "id": "25f7cc9fc13cea69",
-        "type": "InterruptFlowUltimate",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "Interrupt Flow",
-        "triggertopic": "override",
-        "initializewith": "0",
-        "autoToggle": "0",
-        "payloadPropName": "payload",
-        "translatorConfig": "",
-        "x": 1090,
-        "y": 1000,
-        "wires": [
-            [
-                "08c4fabbcdcd9b7c"
-            ]
-        ]
-    },
-    {
-        "id": "9a77df5dd0c540a4",
-        "type": "InterruptFlowUltimate",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "Interrupt Flow",
-        "triggertopic": "override",
-        "initializewith": "0",
-        "autoToggle": "0",
-        "payloadPropName": "payload",
-        "translatorConfig": "",
-        "x": 1090,
-        "y": 1100,
-        "wires": [
-            [
-                "08c4fabbcdcd9b7c"
-            ]
-        ]
-    },
-    {
-        "id": "38e4e9b76215ab7e",
-        "type": "InterruptFlowUltimate",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "Interrupt Flow",
-        "triggertopic": "override",
-        "initializewith": "0",
-        "autoToggle": "0",
-        "payloadPropName": "payload",
-        "translatorConfig": "",
-        "x": 1090,
-        "y": 1200,
-        "wires": [
-            [
-                "08c4fabbcdcd9b7c"
-            ]
+            []
         ]
     },
     {
@@ -4435,12 +3994,7 @@
         "wires": [
             [
                 "ce47f0ed02af1ac3",
-                "cd3b6e7c07e1b0f8",
-                "86de6d8b89f486dc",
-                "312f24aa2913faad",
-                "d329f66b93bb2f72",
-                "2e3ebb260c611d4c",
-                "a121d251e5ca4507"
+                "cd3b6e7c07e1b0f8"
             ]
         ]
     },
@@ -4481,12 +4035,7 @@
         "wires": [
             [
                 "ce47f0ed02af1ac3",
-                "cd3b6e7c07e1b0f8",
-                "86de6d8b89f486dc",
-                "312f24aa2913faad",
-                "d329f66b93bb2f72",
-                "2e3ebb260c611d4c",
-                "a121d251e5ca4507"
+                "cd3b6e7c07e1b0f8"
             ]
         ]
     },
@@ -4871,7 +4420,7 @@
         "links": [
             "a98dc49a88f46c76"
         ],
-        "x": 705,
+        "x": 765,
         "y": 300,
         "wires": [
             [
@@ -4947,11 +4496,6 @@
         "y": 920,
         "wires": [
             [
-                "caa732739c9a9262",
-                "a4cce1a5a1f9625f",
-                "540a4116bae20c3d",
-                "f2cb36f28041e40f",
-                "f016e0fb0305f51d",
                 "f937a48dafb7e4ce",
                 "34794d4b807c868d"
             ]
@@ -5060,146 +4604,6 @@
         "wires": [
             [
                 "2d776543f5b95b12"
-            ]
-        ]
-    },
-    {
-        "id": "f016e0fb0305f51d",
-        "type": "change",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$number(msg.payload.MPCU_VALUES.MPCU_FAN1_SPEED)\t",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 220,
-        "y": 860,
-        "wires": [
-            [
-                "98140860a5d0857f"
-            ]
-        ]
-    },
-    {
-        "id": "f2cb36f28041e40f",
-        "type": "change",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$number(msg.payload.MPCU_VALUES.MPCU_FAN2_SPEED)\t",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 220,
-        "y": 940,
-        "wires": [
-            [
-                "94514f472f5afa6b"
-            ]
-        ]
-    },
-    {
-        "id": "540a4116bae20c3d",
-        "type": "change",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$number(msg.payload.MPCU_VALUES.MPCU_FAN3_SPEED)\t",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 220,
-        "y": 1020,
-        "wires": [
-            [
-                "1396e593e2543d35"
-            ]
-        ]
-    },
-    {
-        "id": "a4cce1a5a1f9625f",
-        "type": "change",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$number(msg.payload.MPCU_VALUES.MPCU_MOTOR_PUMP_SPEED)\t",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 220,
-        "y": 1120,
-        "wires": [
-            [
-                "5360c291ab721866"
-            ]
-        ]
-    },
-    {
-        "id": "caa732739c9a9262",
-        "type": "change",
-        "z": "58531eb4c616092e",
-        "g": "50019cb37f3dfa92",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$number(msg.payload.MPCU_VALUES.MPCU_INVERTER_PUMP_SPEED)\t",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 220,
-        "y": 1200,
-        "wires": [
-            [
-                "ba930b58741f6809"
             ]
         ]
     },
@@ -5411,8 +4815,160 @@
         "links": [
             "a340626bd648322b"
         ],
-        "x": 1355,
+        "x": 1335,
         "y": 900,
+        "wires": []
+    },
+    {
+        "id": "2ec8f7abe60963fe",
+        "type": "ui-slider",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "group": "12dbcafb65a6e667",
+        "name": "Cooling Override",
+        "label": "",
+        "tooltip": "",
+        "order": 20,
+        "width": 2,
+        "height": "1",
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": "0",
+        "max": "100",
+        "step": "10",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "red",
+        "colorTrack": "red",
+        "colorThumb": "white",
+        "showTextField": false,
+        "x": 490,
+        "y": 960,
+        "wires": [
+            [
+                "ae1a0a7a0c033d7b"
+            ]
+        ]
+    },
+    {
+        "id": "63321d9bce378ae4",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 960,
+        "wires": [
+            [
+                "2ec8f7abe60963fe"
+            ]
+        ]
+    },
+    {
+        "id": "9c4118dcf7f9fda7",
+        "type": "ui-gauge",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "Cooling system setting",
+        "group": "12dbcafb65a6e667",
+        "order": 14,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 2,
+        "height": 2,
+        "gtype": "gauge-tile",
+        "gstyle": "needle",
+        "title": "Cooling setting",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "AUTO",
+                "textType": "str"
+            },
+            {
+                "from": "1",
+                "color": "#ffc800",
+                "text": "MANUAL",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "1",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 580,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae1a0a7a0c033d7b",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "setting",
+                "pt": "msg",
+                "to": "msg.payload ? 1 : 0",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 1060,
+        "wires": [
+            [
+                "9c4118dcf7f9fda7"
+            ]
+        ]
+    },
+    {
+        "id": "988066609920e577",
+        "type": "comment",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "info": "For testing purposes",
+        "x": 660,
+        "y": 1020,
         "wires": []
     },
     {
