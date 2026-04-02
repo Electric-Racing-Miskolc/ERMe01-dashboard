@@ -40,6 +40,14 @@
         "env": []
     },
     {
+        "id": "d958e374c0987340",
+        "type": "tab",
+        "label": "Oscilloscope",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "502c719c9684924f",
         "type": "group",
         "z": "58531eb4c616092e",
@@ -327,6 +335,114 @@
         "h": 122
     },
     {
+        "id": "f219fd4c9bd4b9ee",
+        "type": "group",
+        "z": "d958e374c0987340",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5f33046835808e8a",
+            "bdd076b0e730f286",
+            "8267ad7a0118df52",
+            "a24284f08038128d",
+            "28c2253c8fd96fe5",
+            "4847ac16343ec0ff",
+            "0d8026035e7a4b43"
+        ],
+        "x": 74,
+        "y": 79,
+        "w": 392,
+        "h": 222
+    },
+    {
+        "id": "85ec771fec1fdea2",
+        "type": "group",
+        "z": "d958e374c0987340",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9fa28a4aca040c0f",
+            "a67da481ad10634c",
+            "0c8c1df95aa81240",
+            "c589a2c8e32b88f5",
+            "2e4cc53513fda440",
+            "720853b5d1e3d1f0",
+            "40b69915e2feed30"
+        ],
+        "x": 474,
+        "y": 79,
+        "w": 392,
+        "h": 222
+    },
+    {
+        "id": "28f0210318573d4c",
+        "type": "group",
+        "z": "d958e374c0987340",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3dbc824385461d27",
+            "c26c5cb2061bf647",
+            "bbe5c6c354f9ebf5",
+            "15a663a4fc93bf94",
+            "7ad4b6b3dc442b9a",
+            "b5d53d8d235db01b",
+            "051383c87600863b"
+        ],
+        "x": 874,
+        "y": 79,
+        "w": 392,
+        "h": 222
+    },
+    {
+        "id": "699da8ed984fed1a",
+        "type": "group",
+        "z": "d958e374c0987340",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "73cc72082e893ee8",
+            "453349758a79e982",
+            "6bf0befdc67b577b",
+            "9bd591ad09771fa7",
+            "41056db49bdad58c",
+            "42b1e1a0cd1ea32a",
+            "40c209513827117f"
+        ],
+        "x": 1274,
+        "y": 79,
+        "w": 392,
+        "h": 222
+    },
+    {
         "id": "a1947a9da86cce22",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -379,17 +495,7 @@
             {
                 "name": "Default",
                 "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
+                "cols": "12"
             },
             {
                 "name": "Desktop",
@@ -400,7 +506,7 @@
         "order": 2,
         "className": "",
         "visible": "true",
-        "disabled": false
+        "disabled": "false"
     },
     {
         "id": "7ce9ca5952a94637",
@@ -476,17 +582,7 @@
             {
                 "name": "Default",
                 "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
+                "cols": "12"
             },
             {
                 "name": "Desktop",
@@ -497,7 +593,7 @@
         "order": 1,
         "className": "",
         "visible": "true",
-        "disabled": false
+        "disabled": "false"
     },
     {
         "id": "25cb88409ba9fd0d",
@@ -602,17 +698,7 @@
             {
                 "name": "Default",
                 "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
+                "cols": "12"
             },
             {
                 "name": "Desktop",
@@ -623,7 +709,7 @@
         "order": 3,
         "className": "",
         "visible": "true",
-        "disabled": false
+        "disabled": "false"
     },
     {
         "id": "8fe5ca59c52d6275",
@@ -649,7 +735,7 @@
         "order": 7,
         "showTitle": true,
         "className": "",
-        "visible": "true",
+        "visible": false,
         "disabled": "false",
         "groupType": "default"
     },
@@ -874,26 +960,6 @@
         "className": ""
     },
     {
-        "id": "d4ed30de8e1c3d36",
-        "type": "ui-spacer",
-        "group": "12dbcafb65a6e667",
-        "name": "spacer",
-        "order": 10,
-        "width": 2,
-        "height": 2,
-        "className": ""
-    },
-    {
-        "id": "d4ed15f6e83188b8",
-        "type": "ui-spacer",
-        "group": "12dbcafb65a6e667",
-        "name": "spacer",
-        "order": 28,
-        "width": 10,
-        "height": 2,
-        "className": ""
-    },
-    {
         "id": "e0d74bc8bb620a6e",
         "type": "ui-group",
         "name": "Safety Check Overrides",
@@ -984,6 +1050,50 @@
         "order": 1,
         "width": 1,
         "height": 4,
+        "className": ""
+    },
+    {
+        "id": "2f1ad30c6b71ab39",
+        "type": "ui-group",
+        "name": "Oscilloscope setup",
+        "page": "2516a70ee6240323",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d4f75355ec1320ab",
+        "type": "ui-spacer",
+        "group": "2f1ad30c6b71ab39",
+        "name": "spacer",
+        "order": 14,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "d4f75362b11dfe0d",
+        "type": "ui-spacer",
+        "group": "2f1ad30c6b71ab39",
+        "name": "spacer",
+        "order": 16,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "d4f753875f31ae08",
+        "type": "ui-spacer",
+        "group": "2f1ad30c6b71ab39",
+        "name": "spacer",
+        "order": 18,
+        "width": 1,
+        "height": 1,
         "className": ""
     },
     {
@@ -3584,7 +3694,7 @@
         "name": "Power limiter",
         "label": "",
         "tooltip": "",
-        "order": 11,
+        "order": 12,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -3710,7 +3820,7 @@
         "name": "Max Motor RPM",
         "label": "",
         "tooltip": "",
-        "order": 12,
+        "order": 13,
         "width": 4,
         "height": "1",
         "passthru": false,
@@ -3894,7 +4004,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN M1",
         "group": "12dbcafb65a6e667",
-        "order": 14,
+        "order": 15,
         "value": "msg.payload.MPCU_values.MPCU_FAN1_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -3949,7 +4059,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN M2",
         "group": "12dbcafb65a6e667",
-        "order": 16,
+        "order": 17,
         "value": "msg.payload.MPCU_values.MPCU_FAN2_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4004,7 +4114,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN I",
         "group": "12dbcafb65a6e667",
-        "order": 17,
+        "order": 18,
         "value": "msg.payload.MPCU_values.MPCU_FAN3_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4059,7 +4169,7 @@
         "g": "50019cb37f3dfa92",
         "name": "PUMP M",
         "group": "12dbcafb65a6e667",
-        "order": 15,
+        "order": 16,
         "value": "msg.payload.MPCU_values.MPCU_MOTOR_PUMP_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4114,7 +4224,7 @@
         "g": "50019cb37f3dfa92",
         "name": "PUMP I",
         "group": "12dbcafb65a6e667",
-        "order": 18,
+        "order": 19,
         "value": "msg.payload.MPCU_values.MPCU_INVERTER_PUMP_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -5656,7 +5766,7 @@
         "name": "FAN M1",
         "label": "",
         "tooltip": "",
-        "order": 22,
+        "order": 23,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -5736,7 +5846,7 @@
         "name": "FAN M1 override",
         "label": "FAN M1",
         "group": "12dbcafb65a6e667",
-        "order": 19,
+        "order": 11,
         "width": 2,
         "height": "1",
         "passthru": true,
@@ -5771,7 +5881,7 @@
         "name": "FAN M2",
         "label": "",
         "tooltip": "",
-        "order": 23,
+        "order": 24,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -5848,7 +5958,7 @@
         "name": "FAN M2 override",
         "label": "FAN M2",
         "group": "12dbcafb65a6e667",
-        "order": 20,
+        "order": 14,
         "width": 2,
         "height": "1",
         "passthru": true,
@@ -5884,7 +5994,7 @@
         "name": "FAN I",
         "label": "",
         "tooltip": "",
-        "order": 25,
+        "order": 26,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -5964,7 +6074,7 @@
         "name": "FAN I override",
         "label": "FAN I",
         "group": "12dbcafb65a6e667",
-        "order": 27,
+        "order": 21,
         "width": 2,
         "height": "1",
         "passthru": true,
@@ -6000,7 +6110,7 @@
         "name": "PUMP M",
         "label": "",
         "tooltip": "",
-        "order": 24,
+        "order": 25,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -6080,7 +6190,7 @@
         "name": "PUMP M override",
         "label": "PUMP M",
         "group": "12dbcafb65a6e667",
-        "order": 21,
+        "order": 20,
         "width": 2,
         "height": "1",
         "passthru": true,
@@ -6116,7 +6226,7 @@
         "name": "PUMP I",
         "label": "",
         "tooltip": "",
-        "order": 26,
+        "order": 27,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -6196,7 +6306,7 @@
         "name": "PUMP I override",
         "label": "PUMP I",
         "group": "12dbcafb65a6e667",
-        "order": 29,
+        "order": 22,
         "width": 2,
         "height": "1",
         "passthru": true,
@@ -6229,7 +6339,7 @@
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
         "group": "12dbcafb65a6e667",
-        "order": 13,
+        "order": 10,
         "width": 2,
         "height": 0,
         "name": "",
@@ -7337,7 +7447,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 760,
+        "x": 740,
         "y": 280,
         "wires": []
     },
@@ -7404,7 +7514,8 @@
             "4108ddab8e21e287",
             "5844b0df472597dd",
             "63510a53b3c81696",
-            "ab4acc7f57471db1"
+            "ab4acc7f57471db1",
+            "5fd8cb30640799c1"
         ],
         "x": 725,
         "y": 220,
@@ -7561,7 +7672,7 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 850,
+        "x": 790,
         "y": 500,
         "wires": []
     },
@@ -7624,7 +7735,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
+        "x": 740,
         "y": 440,
         "wires": []
     },
@@ -7675,6 +7786,991 @@
             [
                 "c43b15e44e49f36f",
                 "59c69f1ec8cf8c4a"
+            ]
+        ]
+    },
+    {
+        "id": "31b6e0f5d8a42458",
+        "type": "ui-chart",
+        "z": "d958e374c0987340",
+        "group": "2f1ad30c6b71ab39",
+        "name": "",
+        "label": "Oscilloscope",
+        "order": 20,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "30",
+        "removeOlderUnit": "1",
+        "removeOlderPoints": "4000",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "12",
+        "height": "10",
+        "className": "",
+        "interpolation": "linear",
+        "x": 590,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f33046835808e8a",
+        "type": "ui-text-input",
+        "z": "d958e374c0987340",
+        "g": "f219fd4c9bd4b9ee",
+        "group": "2f1ad30c6b71ab39",
+        "name": "CH1 name",
+        "label": "Channel 1 name",
+        "order": 5,
+        "width": 3,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "a24284f08038128d"
+            ]
+        ]
+    },
+    {
+        "id": "bdd076b0e730f286",
+        "type": "ui-text",
+        "z": "d958e374c0987340",
+        "g": "f219fd4c9bd4b9ee",
+        "group": "2f1ad30c6b71ab39",
+        "order": 1,
+        "width": 3,
+        "height": 0,
+        "name": "",
+        "label": "Channel 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 170,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8267ad7a0118df52",
+        "type": "ui-text-input",
+        "z": "d958e374c0987340",
+        "g": "f219fd4c9bd4b9ee",
+        "group": "2f1ad30c6b71ab39",
+        "name": "CH1 data",
+        "label": "Channel 1 data",
+        "order": 9,
+        "width": 3,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "28c2253c8fd96fe5"
+            ]
+        ]
+    },
+    {
+        "id": "a24284f08038128d",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "f219fd4c9bd4b9ee",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch1_name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28c2253c8fd96fe5",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "f219fd4c9bd4b9ee",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch1_route",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67f6b4bef4c66609",
+        "type": "function",
+        "z": "d958e374c0987340",
+        "name": "Oscilloscope CH1",
+        "func": "// 1. Read user inputs and toggle state from the flow context (set by Dashboard 2.0)\n// We default 'isEnabled' to true so data flows until explicitly turned off\nconst isEnabled = flow.get(\"ch1_enable\");\nconst channelName = flow.get(\"ch1_name\");\nconst dataRoute = flow.get(\"ch1_route\");\n\n// 2. If the channel is disabled via the dashboard, drop the message immediately\nif (!isEnabled) {\n    return null;\n}\n\n// 3. Helper function to extract nested object values using a string path\nfunction getNestedValue(obj, path) {\n    if (!path || typeof obj !== 'object') return undefined;\n\n    // Normalize path to handle arrays (turns \"data[0].x\" into \"data.0.x\")\n    const normalizedPath = path.replace(/\\[(\\w+)\\]/g, '.$1');\n\n    // Drill down into the payload object using the user's string route\n    return normalizedPath.split('.').reduce((acc, part) => {\n        return (acc !== null && acc !== undefined) ? acc[part] : undefined;\n    }, obj);\n}\n\n// 4. Extract the specific data point from the incoming message\nconst extractedValue = getNestedValue(msg.payload, dataRoute);\n\n// 5. Validate and format output\nif (extractedValue !== undefined && extractedValue !== null && extractedValue !== \"\") {\n\n    const numericValue = Number(extractedValue);\n\n    // Ensure it is a valid number (not NaN) before sending\n    if (!isNaN(numericValue)) {\n        msg.topic = channelName;\n        msg.payload = numericValue;\n        return msg;\n    }\n}\n\n// If data is missing, undefined, or NaN, silently drop the message\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 400,
+        "wires": [
+            [
+                "31b6e0f5d8a42458"
+            ]
+        ]
+    },
+    {
+        "id": "5fd8cb30640799c1",
+        "type": "link in",
+        "z": "d958e374c0987340",
+        "name": "link in 8",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 155,
+        "y": 460,
+        "wires": [
+            [
+                "67f6b4bef4c66609",
+                "fc3b1cfb7987f950",
+                "7a24e34f52511a0c",
+                "f68a5061bb529a26"
+            ]
+        ]
+    },
+    {
+        "id": "4847ac16343ec0ff",
+        "type": "ui-switch",
+        "z": "d958e374c0987340",
+        "g": "f219fd4c9bd4b9ee",
+        "name": "CH1 enable",
+        "label": "Channel 1 enable",
+        "group": "2f1ad30c6b71ab39",
+        "order": 13,
+        "width": 2,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "0d8026035e7a4b43"
+            ]
+        ]
+    },
+    {
+        "id": "0d8026035e7a4b43",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "f219fd4c9bd4b9ee",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch1_enable",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9fa28a4aca040c0f",
+        "type": "ui-text-input",
+        "z": "d958e374c0987340",
+        "g": "85ec771fec1fdea2",
+        "group": "2f1ad30c6b71ab39",
+        "name": "CH2 name",
+        "label": "Channel 2 name",
+        "order": 6,
+        "width": 3,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "c589a2c8e32b88f5"
+            ]
+        ]
+    },
+    {
+        "id": "a67da481ad10634c",
+        "type": "ui-text",
+        "z": "d958e374c0987340",
+        "g": "85ec771fec1fdea2",
+        "group": "2f1ad30c6b71ab39",
+        "order": 2,
+        "width": 3,
+        "height": 0,
+        "name": "",
+        "label": "Channel 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 570,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0c8c1df95aa81240",
+        "type": "ui-text-input",
+        "z": "d958e374c0987340",
+        "g": "85ec771fec1fdea2",
+        "group": "2f1ad30c6b71ab39",
+        "name": "CH2 data",
+        "label": "Channel 2 data",
+        "order": 10,
+        "width": 3,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 560,
+        "y": 220,
+        "wires": [
+            [
+                "2e4cc53513fda440"
+            ]
+        ]
+    },
+    {
+        "id": "c589a2c8e32b88f5",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "85ec771fec1fdea2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch2_name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e4cc53513fda440",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "85ec771fec1fdea2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch2_route",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "720853b5d1e3d1f0",
+        "type": "ui-switch",
+        "z": "d958e374c0987340",
+        "g": "85ec771fec1fdea2",
+        "name": "CH2 enable",
+        "label": "Channel 2 enable",
+        "group": "2f1ad30c6b71ab39",
+        "order": 15,
+        "width": 2,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 570,
+        "y": 260,
+        "wires": [
+            [
+                "40b69915e2feed30"
+            ]
+        ]
+    },
+    {
+        "id": "40b69915e2feed30",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "85ec771fec1fdea2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch2_enable",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3dbc824385461d27",
+        "type": "ui-text-input",
+        "z": "d958e374c0987340",
+        "g": "28f0210318573d4c",
+        "group": "2f1ad30c6b71ab39",
+        "name": "CH3 name",
+        "label": "Channel 3 name",
+        "order": 7,
+        "width": 3,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 970,
+        "y": 180,
+        "wires": [
+            [
+                "15a663a4fc93bf94"
+            ]
+        ]
+    },
+    {
+        "id": "c26c5cb2061bf647",
+        "type": "ui-text",
+        "z": "d958e374c0987340",
+        "g": "28f0210318573d4c",
+        "group": "2f1ad30c6b71ab39",
+        "order": 3,
+        "width": 3,
+        "height": 0,
+        "name": "",
+        "label": "Channel 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 970,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bbe5c6c354f9ebf5",
+        "type": "ui-text-input",
+        "z": "d958e374c0987340",
+        "g": "28f0210318573d4c",
+        "group": "2f1ad30c6b71ab39",
+        "name": "CH3 data",
+        "label": "Channel 3 data",
+        "order": 11,
+        "width": 3,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 960,
+        "y": 220,
+        "wires": [
+            [
+                "7ad4b6b3dc442b9a"
+            ]
+        ]
+    },
+    {
+        "id": "15a663a4fc93bf94",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "28f0210318573d4c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch3_name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ad4b6b3dc442b9a",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "28f0210318573d4c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch3_route",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5d53d8d235db01b",
+        "type": "ui-switch",
+        "z": "d958e374c0987340",
+        "g": "28f0210318573d4c",
+        "name": "CH3 enable",
+        "label": "Channel 3 enable",
+        "group": "2f1ad30c6b71ab39",
+        "order": 17,
+        "width": 2,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 970,
+        "y": 260,
+        "wires": [
+            [
+                "051383c87600863b"
+            ]
+        ]
+    },
+    {
+        "id": "051383c87600863b",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "28f0210318573d4c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch3_enable",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73cc72082e893ee8",
+        "type": "ui-text-input",
+        "z": "d958e374c0987340",
+        "g": "699da8ed984fed1a",
+        "group": "2f1ad30c6b71ab39",
+        "name": "CH4 name",
+        "label": "Channel 4 name",
+        "order": 8,
+        "width": 3,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 1370,
+        "y": 180,
+        "wires": [
+            [
+                "9bd591ad09771fa7"
+            ]
+        ]
+    },
+    {
+        "id": "453349758a79e982",
+        "type": "ui-text",
+        "z": "d958e374c0987340",
+        "g": "699da8ed984fed1a",
+        "group": "2f1ad30c6b71ab39",
+        "order": 4,
+        "width": 3,
+        "height": 0,
+        "name": "",
+        "label": "Channel 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1370,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "6bf0befdc67b577b",
+        "type": "ui-text-input",
+        "z": "d958e374c0987340",
+        "g": "699da8ed984fed1a",
+        "group": "2f1ad30c6b71ab39",
+        "name": "CH4 data",
+        "label": "Channel 4 data",
+        "order": 12,
+        "width": 3,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 1360,
+        "y": 220,
+        "wires": [
+            [
+                "41056db49bdad58c"
+            ]
+        ]
+    },
+    {
+        "id": "9bd591ad09771fa7",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "699da8ed984fed1a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch4_name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1550,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41056db49bdad58c",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "699da8ed984fed1a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch4_route",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1550,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42b1e1a0cd1ea32a",
+        "type": "ui-switch",
+        "z": "d958e374c0987340",
+        "g": "699da8ed984fed1a",
+        "name": "CH4 enable",
+        "label": "Channel 4 enable",
+        "group": "2f1ad30c6b71ab39",
+        "order": 19,
+        "width": 2,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1370,
+        "y": 260,
+        "wires": [
+            [
+                "40c209513827117f"
+            ]
+        ]
+    },
+    {
+        "id": "40c209513827117f",
+        "type": "change",
+        "z": "d958e374c0987340",
+        "g": "699da8ed984fed1a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ch4_enable",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1550,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f68a5061bb529a26",
+        "type": "function",
+        "z": "d958e374c0987340",
+        "name": "Oscilloscope CH2",
+        "func": "// 1. Read user inputs and toggle state from the flow context (set by Dashboard 2.0)\n// We default 'isEnabled' to true so data flows until explicitly turned off\nconst isEnabled = flow.get(\"ch2_enable\");\nconst channelName = flow.get(\"ch2_name\");\nconst dataRoute = flow.get(\"ch2_route\");\n\n// 2. If the channel is disabled via the dashboard, drop the message immediately\nif (!isEnabled) {\n    return null;\n}\n\n// 3. Helper function to extract nested object values using a string path\nfunction getNestedValue(obj, path) {\n    if (!path || typeof obj !== 'object') return undefined;\n\n    // Normalize path to handle arrays (turns \"data[0].x\" into \"data.0.x\")\n    const normalizedPath = path.replace(/\\[(\\w+)\\]/g, '.$1');\n\n    // Drill down into the payload object using the user's string route\n    return normalizedPath.split('.').reduce((acc, part) => {\n        return (acc !== null && acc !== undefined) ? acc[part] : undefined;\n    }, obj);\n}\n\n// 4. Extract the specific data point from the incoming message\nconst extractedValue = getNestedValue(msg.payload, dataRoute);\n\n// 5. Validate and format output\nif (extractedValue !== undefined && extractedValue !== null && extractedValue !== \"\") {\n\n    const numericValue = Number(extractedValue);\n\n    // Ensure it is a valid number (not NaN) before sending\n    if (!isNaN(numericValue)) {\n        msg.topic = channelName;\n        msg.payload = numericValue;\n        return msg;\n    }\n}\n\n// If data is missing, undefined, or NaN, silently drop the message\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "31b6e0f5d8a42458"
+            ]
+        ]
+    },
+    {
+        "id": "7a24e34f52511a0c",
+        "type": "function",
+        "z": "d958e374c0987340",
+        "name": "Oscilloscope CH3",
+        "func": "// 1. Read user inputs and toggle state from the flow context (set by Dashboard 2.0)\n// We default 'isEnabled' to true so data flows until explicitly turned off\nconst isEnabled = flow.get(\"ch3_enable\");\nconst channelName = flow.get(\"ch3_name\");\nconst dataRoute = flow.get(\"ch3_route\");\n\n// 2. If the channel is disabled via the dashboard, drop the message immediately\nif (!isEnabled) {\n    return null;\n}\n\n// 3. Helper function to extract nested object values using a string path\nfunction getNestedValue(obj, path) {\n    if (!path || typeof obj !== 'object') return undefined;\n\n    // Normalize path to handle arrays (turns \"data[0].x\" into \"data.0.x\")\n    const normalizedPath = path.replace(/\\[(\\w+)\\]/g, '.$1');\n\n    // Drill down into the payload object using the user's string route\n    return normalizedPath.split('.').reduce((acc, part) => {\n        return (acc !== null && acc !== undefined) ? acc[part] : undefined;\n    }, obj);\n}\n\n// 4. Extract the specific data point from the incoming message\nconst extractedValue = getNestedValue(msg.payload, dataRoute);\n\n// 5. Validate and format output\nif (extractedValue !== undefined && extractedValue !== null && extractedValue !== \"\") {\n\n    const numericValue = Number(extractedValue);\n\n    // Ensure it is a valid number (not NaN) before sending\n    if (!isNaN(numericValue)) {\n        msg.topic = channelName;\n        msg.payload = numericValue;\n        return msg;\n    }\n}\n\n// If data is missing, undefined, or NaN, silently drop the message\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 480,
+        "wires": [
+            [
+                "31b6e0f5d8a42458"
+            ]
+        ]
+    },
+    {
+        "id": "fc3b1cfb7987f950",
+        "type": "function",
+        "z": "d958e374c0987340",
+        "name": "Oscilloscope CH4",
+        "func": "// 1. Read user inputs and toggle state from the flow context (set by Dashboard 2.0)\n// We default 'isEnabled' to true so data flows until explicitly turned off\nconst isEnabled = flow.get(\"ch4_enable\");\nconst channelName = flow.get(\"ch4_name\");\nconst dataRoute = flow.get(\"ch4_route\");\n\n// 2. If the channel is disabled via the dashboard, drop the message immediately\nif (!isEnabled) {\n    return null;\n}\n\n// 3. Helper function to extract nested object values using a string path\nfunction getNestedValue(obj, path) {\n    if (!path || typeof obj !== 'object') return undefined;\n\n    // Normalize path to handle arrays (turns \"data[0].x\" into \"data.0.x\")\n    const normalizedPath = path.replace(/\\[(\\w+)\\]/g, '.$1');\n\n    // Drill down into the payload object using the user's string route\n    return normalizedPath.split('.').reduce((acc, part) => {\n        return (acc !== null && acc !== undefined) ? acc[part] : undefined;\n    }, obj);\n}\n\n// 4. Extract the specific data point from the incoming message\nconst extractedValue = getNestedValue(msg.payload, dataRoute);\n\n// 5. Validate and format output\nif (extractedValue !== undefined && extractedValue !== null && extractedValue !== \"\") {\n\n    const numericValue = Number(extractedValue);\n\n    // Ensure it is a valid number (not NaN) before sending\n    if (!isNaN(numericValue)) {\n        msg.topic = channelName;\n        msg.payload = numericValue;\n        return msg;\n    }\n}\n\n// If data is missing, undefined, or NaN, silently drop the message\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "31b6e0f5d8a42458"
             ]
         ]
     }
