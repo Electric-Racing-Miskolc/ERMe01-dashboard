@@ -67,12 +67,13 @@
             "22ba0cad4f15a88a",
             "1cc5e12316185997",
             "92a6a44fd4471d8c",
-            "e0e92b61642707d5"
+            "e0e92b61642707d5",
+            "654c17edae95981e"
         ],
-        "x": 854,
-        "y": 119,
+        "x": 714,
+        "y": 39,
         "w": 392,
-        "h": 382
+        "h": 442
     },
     {
         "id": "12d2f6354e0fbdfd",
@@ -133,16 +134,28 @@
             "34794d4b807c868d",
             "f937a48dafb7e4ce",
             "08c4fabbcdcd9b7c",
-            "2ec8f7abe60963fe",
-            "63321d9bce378ae4",
-            "9c4118dcf7f9fda7",
-            "ae1a0a7a0c033d7b",
-            "988066609920e577"
+            "dcca86a48afd157c",
+            "5b1da8ff058f2534",
+            "126c7d6a66a38d9c",
+            "0b37765b3f0a7b0b",
+            "8f0a855e04afcf40",
+            "be5906961d97ce44",
+            "892b5692650d1a28",
+            "9f6e6b1b03e9d296",
+            "87d66419ecadeef4",
+            "51ad83b93ee91b6b",
+            "389792449312bdba",
+            "98123190e14244a3",
+            "807defeb000ee814",
+            "32b2ec3126088a35",
+            "29de8b82d919413a",
+            "57f396f265da5dfe",
+            "e3a9abc4ed23e4f6"
         ],
-        "x": -6,
-        "y": 539,
-        "w": 1752,
-        "h": 562
+        "x": 14,
+        "y": 519,
+        "w": 1732,
+        "h": 762
     },
     {
         "id": "2ed428752a2a8e1c",
@@ -166,12 +179,152 @@
             "fd22acc5301c6f88",
             "3133ca825ea805b7",
             "cdb3c33dbb3ffdd5",
-            "caa2c4af47e6fcea"
+            "caa2c4af47e6fcea",
+            "12bc8e4c1be8669f"
         ],
-        "x": 1114,
-        "y": 1359,
-        "w": 252,
-        "h": 482
+        "x": 894,
+        "y": 1659,
+        "w": 392,
+        "h": 502
+    },
+    {
+        "id": "2aeb3d9d9334a3f0",
+        "type": "group",
+        "z": "58531eb4c616092e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5b0ce50e1f988b89",
+            "1394ad1face26ba5",
+            "699ab697c4b02bdf",
+            "1033493b009c8d5c",
+            "e9e1bbb547bb84c4",
+            "f81e9c7116ce00ef",
+            "203f6c19b744b08d",
+            "f909855a527a5847",
+            "d2faf90e5e5a5d22",
+            "ed6269b196b9f762",
+            "108bf0dfbba14d6d",
+            "fb5bbca77632697e",
+            "01a2bbf03c62d219",
+            "7ad2a2fa5a443419",
+            "bcba0776c2a2e170",
+            "9e17aa5750172dbe",
+            "0a70b26b66a04142",
+            "28f1a4d2ab466f9a"
+        ],
+        "x": 54,
+        "y": 1439,
+        "w": 732,
+        "h": 862
+    },
+    {
+        "id": "7a122b5489ee38a9",
+        "type": "group",
+        "z": "58531eb4c616092e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f25714a912b22fb5",
+            "d3f39920a7ade53f",
+            "19df24033677651b",
+            "3a507942fba0ed58",
+            "3b5aebbceec5c8a6",
+            "1cece6039995bc6c"
+        ],
+        "x": 894,
+        "y": 1439,
+        "w": 702,
+        "h": 202
+    },
+    {
+        "id": "3cd1463ba40ab879",
+        "type": "group",
+        "z": "58531eb4c616092e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d56cc1e405281126",
+            "fa4925a5253341ce",
+            "294ac777d99f5789"
+        ],
+        "x": 894,
+        "y": 2179,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "bda34e527ec0aae8",
+        "type": "group",
+        "z": "58531eb4c616092e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f75092fe82423aa9",
+            "bdcfc7f4f604ba0d",
+            "8d11ab614367d912",
+            "cd373fc6dc986c59",
+            "1428a529aa7a78bf",
+            "4362f9538ffec482",
+            "484fad2062342373",
+            "8a1ef58e31f317e1",
+            "ba3e45f4de61def7"
+        ],
+        "x": 54,
+        "y": 2359,
+        "w": 1232,
+        "h": 302
+    },
+    {
+        "id": "1a35d04f0bad1216",
+        "type": "group",
+        "z": "f595383a0843f950",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9b52c7523e1b7fa8",
+            "97111472678967f4",
+            "0164e9deadb9e09a"
+        ],
+        "x": 1034,
+        "y": 1339,
+        "w": 372,
+        "h": 122
     },
     {
         "id": "a1947a9da86cce22",
@@ -260,7 +413,7 @@
         "showTitle": true,
         "className": "",
         "visible": "true",
-        "disabled": "false",
+        "disabled": false,
         "groupType": "default"
     },
     {
@@ -293,7 +446,7 @@
         "showTitle": true,
         "className": "",
         "visible": "true",
-        "disabled": "false",
+        "disabled": false,
         "groupType": "default"
     },
     {
@@ -303,22 +456,12 @@
         "page": "1ea86211ab64724d",
         "width": 12,
         "height": 1,
-        "order": 3,
+        "order": 4,
         "showTitle": true,
         "className": "",
-        "visible": "true",
+        "visible": false,
         "disabled": "false",
         "groupType": "default"
-    },
-    {
-        "id": "0ebe4591e75e381a",
-        "type": "ui-spacer",
-        "group": "12dbcafb65a6e667",
-        "name": "spacer",
-        "order": 10,
-        "width": 3,
-        "height": 2,
-        "className": ""
     },
     {
         "id": "d9df23d6a6ef270f",
@@ -499,7 +642,7 @@
     {
         "id": "ee22140f2902b281",
         "type": "ui-group",
-        "name": "Settings",
+        "name": "AMS Settings",
         "page": "d9df23d6a6ef270f",
         "width": 12,
         "height": 1,
@@ -541,9 +684,9 @@
         "type": "ui-spacer",
         "group": "ee22140f2902b281",
         "name": "spacer",
-        "order": 2,
-        "width": 4,
-        "height": 1,
+        "order": 3,
+        "width": 2,
+        "height": 4,
         "className": ""
     },
     {
@@ -684,6 +827,163 @@
         "order": 7,
         "width": 1,
         "height": 5,
+        "className": ""
+    },
+    {
+        "id": "d3a823a7bac68e5d",
+        "type": "ui-spacer",
+        "group": "12dbcafb65a6e667",
+        "name": "spacer",
+        "order": 4,
+        "width": 1,
+        "height": 5,
+        "className": ""
+    },
+    {
+        "id": "68696373afd855b2",
+        "type": "ui-group",
+        "name": "System power switches",
+        "page": "1ea86211ab64724d",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": false,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "d48d17907501a42a",
+        "type": "ui-spacer",
+        "group": "68696373afd855b2",
+        "name": "spacer",
+        "order": 1,
+        "width": 2,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "d48d61b24b12dd6e",
+        "type": "ui-spacer",
+        "group": "68696373afd855b2",
+        "name": "spacer",
+        "order": 10,
+        "width": 2,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "d4ed30de8e1c3d36",
+        "type": "ui-spacer",
+        "group": "12dbcafb65a6e667",
+        "name": "spacer",
+        "order": 10,
+        "width": 2,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "d4ed15f6e83188b8",
+        "type": "ui-spacer",
+        "group": "12dbcafb65a6e667",
+        "name": "spacer",
+        "order": 28,
+        "width": 10,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "e0d74bc8bb620a6e",
+        "type": "ui-group",
+        "name": "Safety Check Overrides",
+        "page": "1ea86211ab64724d",
+        "width": 12,
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": false,
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "129e99574def90a3",
+        "type": "ui-theme",
+        "name": "Custom Theme",
+        "colors": {
+            "surface": "#000000",
+            "primary": "#ff4000",
+            "bgPage": "#f0f0f0",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9d9"
+        },
+        "sizes": {
+            "pagePadding": "24px",
+            "groupGap": "12px",
+            "groupBorderRadius": "9px",
+            "widgetGap": "6px",
+            "density": "default"
+        }
+    },
+    {
+        "id": "d4f0119f70a4d1bb",
+        "type": "ui-spacer",
+        "group": "e3b8cff4e6ddd0e6",
+        "name": "spacer",
+        "order": 17,
+        "width": 10,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "d4f1161dbdffa11b",
+        "type": "ui-spacer",
+        "group": "e0d74bc8bb620a6e",
+        "name": "spacer",
+        "order": 2,
+        "width": 1,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "d4f10af7c0dadd5a",
+        "type": "ui-spacer",
+        "group": "e0d74bc8bb620a6e",
+        "name": "spacer",
+        "order": 4,
+        "width": 2,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "d4f107e556603b79",
+        "type": "ui-spacer",
+        "group": "e0d74bc8bb620a6e",
+        "name": "spacer",
+        "order": 6,
+        "width": 2,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "d4f10c64ed84cefe",
+        "type": "ui-spacer",
+        "group": "e0d74bc8bb620a6e",
+        "name": "spacer",
+        "order": 8,
+        "width": 1,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "d4f20423acb9c794",
+        "type": "ui-spacer",
+        "group": "ee22140f2902b281",
+        "name": "spacer",
+        "order": 1,
+        "width": 1,
+        "height": 4,
         "className": ""
     },
     {
@@ -1520,7 +1820,7 @@
         "z": "f595383a0843f950",
         "name": "being discharged",
         "group": "6d5d33ea848dfe82",
-        "order": 2,
+        "order": 1,
         "value": "msg.payload.TSAC_STAT.TSAC_BEING_DISCHARGED",
         "valueType": "jsonata",
         "width": "2",
@@ -1569,98 +1869,6 @@
         ]
     },
     {
-        "id": "b286d686c2d15985",
-        "type": "ui-switch",
-        "z": "f595383a0843f950",
-        "name": "Balancing Override",
-        "label": "Balancing Override",
-        "group": "6d5d33ea848dfe82",
-        "order": 5,
-        "width": 1,
-        "height": "1",
-        "passthru": true,
-        "decouple": false,
-        "topic": "override",
-        "topicType": "str",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "switch",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "cog",
-        "oncolor": "red",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "check",
-        "offcolor": "green",
-        "x": 750,
-        "y": 100,
-        "wires": [
-            [
-                "6f883bfd37ed20e8"
-            ]
-        ]
-    },
-    {
-        "id": "8bfa8e0d13a4211b",
-        "type": "ui-button-group",
-        "z": "f595383a0843f950",
-        "name": "Balancing Override",
-        "group": "6d5d33ea848dfe82",
-        "order": 6,
-        "width": "1",
-        "height": 1,
-        "label": "",
-        "className": "my-class",
-        "rounded": false,
-        "useThemeColors": false,
-        "passthru": false,
-        "options": [
-            {
-                "label": "OFF",
-                "icon": "",
-                "value": "0",
-                "valueType": "num",
-                "color": "#009933"
-            },
-            {
-                "label": "AUTO",
-                "icon": "",
-                "value": "1",
-                "valueType": "num",
-                "color": "#00b3ff"
-            }
-        ],
-        "topic": "Set_balancing_mode",
-        "topicType": "str",
-        "x": 750,
-        "y": 180,
-        "wires": [
-            [
-                "141ade74adf429bb"
-            ]
-        ]
-    },
-    {
-        "id": "6f883bfd37ed20e8",
-        "type": "InterruptFlowUltimate",
-        "z": "f595383a0843f950",
-        "name": "Interrupt Flow",
-        "triggertopic": "override",
-        "initializewith": "0",
-        "autoToggle": "0",
-        "payloadPropName": "payload",
-        "translatorConfig": "",
-        "x": 1450,
-        "y": 100,
-        "wires": [
-            [
-                "e017eb4860ec0fc6"
-            ]
-        ]
-    },
-    {
         "id": "5844b0df472597dd",
         "type": "link in",
         "z": "f595383a0843f950",
@@ -1688,7 +1896,6 @@
                 "f9ea881339d1f80c",
                 "6a622b708fe6ec88",
                 "de6c18673b2eb79b",
-                "379c09dc7a2437bc",
                 "91675be5fc91db85",
                 "d9fa83f922e148df",
                 "8772366b98e14280",
@@ -1697,33 +1904,6 @@
                 "58ccc31dded11a02",
                 "b37a7ec90a408c11",
                 "2fe7df48a6a941da"
-            ]
-        ]
-    },
-    {
-        "id": "379c09dc7a2437bc",
-        "type": "change",
-        "z": "f595383a0843f950",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$number(msg.payload.TSAC_STAT.TSAC_BALANCING_STATE)\t",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 480,
-        "y": 180,
-        "wires": [
-            [
-                "8bfa8e0d13a4211b"
             ]
         ]
     },
@@ -1888,53 +2068,12 @@
         ]
     },
     {
-        "id": "e017eb4860ec0fc6",
-        "type": "link out",
-        "z": "f595383a0843f950",
-        "name": "link out 1",
-        "mode": "link",
-        "links": [
-            "a340626bd648322b"
-        ],
-        "x": 1615,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "141ade74adf429bb",
-        "type": "change",
-        "z": "f595383a0843f950",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "send.Set_balancing_mode.Set_balancing_mode",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1090,
-        "y": 180,
-        "wires": [
-            [
-                "6f883bfd37ed20e8"
-            ]
-        ]
-    },
-    {
         "id": "d9fa83f922e148df",
         "type": "ui-gauge",
         "z": "f595383a0843f950",
         "name": "balancing_state",
         "group": "6d5d33ea848dfe82",
-        "order": 4,
+        "order": 3,
         "value": "msg.payload.TSAC_STAT.TSAC_BALANCING_STATE",
         "valueType": "jsonata",
         "width": 2,
@@ -1989,7 +2128,7 @@
         "group": "ee22140f2902b281",
         "name": "TSON",
         "label": "TS ON",
-        "order": 3,
+        "order": 5,
         "width": 4,
         "height": "2",
         "emulateClick": false,
@@ -2000,7 +2139,7 @@
         "icon": "power-plug-battery-outline",
         "iconPosition": "left",
         "payload": "1",
-        "payloadType": "str",
+        "payloadType": "num",
         "topic": "topic",
         "topicType": "msg",
         "buttonColor": "red",
@@ -2013,11 +2152,11 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 410,
+        "x": 430,
         "y": 1500,
         "wires": [
             [
-                "57245c8bdbaad583"
+                "b12ea23a44291178"
             ]
         ]
     },
@@ -2028,7 +2167,7 @@
         "group": "ee22140f2902b281",
         "name": "TSOFF",
         "label": "TS OFF",
-        "order": 1,
+        "order": 2,
         "width": 4,
         "height": "2",
         "emulateClick": false,
@@ -2039,7 +2178,7 @@
         "icon": "power-plug-off",
         "iconPosition": "left",
         "payload": "0",
-        "payloadType": "str",
+        "payloadType": "num",
         "topic": "topic",
         "topicType": "msg",
         "buttonColor": "green",
@@ -2061,47 +2200,6 @@
         ]
     },
     {
-        "id": "57245c8bdbaad583",
-        "type": "change",
-        "z": "f595383a0843f950",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "send.TS_ON_OFF.TS_ON_OFF",
-                "pt": "msg",
-                "to": "1",
-                "tot": "num",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 720,
-        "y": 1500,
-        "wires": [
-            [
-                "61bcb02cec7bbe36"
-            ]
-        ]
-    },
-    {
-        "id": "61bcb02cec7bbe36",
-        "type": "link out",
-        "z": "f595383a0843f950",
-        "name": "link out 2",
-        "mode": "link",
-        "links": [
-            "a340626bd648322b"
-        ],
-        "x": 935,
-        "y": 1500,
-        "wires": []
-    },
-    {
         "id": "b12ea23a44291178",
         "type": "change",
         "z": "f595383a0843f950",
@@ -2111,8 +2209,8 @@
                 "t": "set",
                 "p": "send.TS_ON_OFF.TS_ON_OFF",
                 "pt": "msg",
-                "to": "0",
-                "tot": "num",
+                "to": "payload",
+                "tot": "msg",
                 "dc": true
             }
         ],
@@ -2121,7 +2219,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 720,
+        "x": 800,
         "y": 1560,
         "wires": [
             [
@@ -2138,8 +2236,8 @@
         "links": [
             "a340626bd648322b"
         ],
-        "x": 935,
-        "y": 1560,
+        "x": 1085,
+        "y": 1620,
         "wires": []
     },
     {
@@ -2292,11 +2390,11 @@
         "z": "f595383a0843f950",
         "name": "unbalanced rate",
         "group": "6d5d33ea848dfe82",
-        "order": 3,
+        "order": 2,
         "value": "msg.payload.TSAC_STAT.TSAC_STAT_UNBALANCE_RATE",
         "valueType": "jsonata",
         "width": 2,
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "rounded",
         "title": "Unbalanced rate",
@@ -2458,10 +2556,10 @@
         "id": "2fe7df48a6a941da",
         "type": "ui-text",
         "z": "f595383a0843f950",
-        "group": "ee22140f2902b281",
+        "group": "6d5d33ea848dfe82",
         "order": 4,
-        "width": 4,
-        "height": 0,
+        "width": 2,
+        "height": 2,
         "name": "Timestamp",
         "label": "Last AMS message received",
         "format": "{{msg.payload}}",
@@ -2479,29 +2577,203 @@
         "wires": []
     },
     {
-        "id": "ab52c344a1894ace",
-        "type": "ui-template",
+        "id": "3d41d23e64c85a93",
+        "type": "ui-button",
         "z": "f595383a0843f950",
-        "group": "6d5d33ea848dfe82",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<style>\n    /* define any styles here - supports raw CSS */\n    .my-class {\n        background-color: grey;\n        margin: auto\n    }\n</style>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 440,
-        "y": 80,
+        "group": "ee22140f2902b281",
+        "name": "Balancing AUTO",
+        "label": "BALANCING AUTO",
+        "order": 6,
+        "width": 4,
+        "height": "2",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "s",
+        "icon": "battery-unknown",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "blue",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 400,
+        "y": 1640,
         "wires": [
             [
-                "8bfa8e0d13a4211b"
+                "376248ed5ccae3b5"
             ]
+        ]
+    },
+    {
+        "id": "c5f057eff6cc2437",
+        "type": "ui-button",
+        "z": "f595383a0843f950",
+        "group": "ee22140f2902b281",
+        "name": "Balancing OFF",
+        "label": "BALANCING OFF",
+        "order": 4,
+        "width": 4,
+        "height": "2",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "battery-unknown",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "yellow",
+        "textColor": "black",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 400,
+        "y": 1680,
+        "wires": [
+            [
+                "376248ed5ccae3b5"
+            ]
+        ]
+    },
+    {
+        "id": "376248ed5ccae3b5",
+        "type": "change",
+        "z": "f595383a0843f950",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.Set_balancing_mode.Set_balancing_mode",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 1660,
+        "wires": [
+            [
+                "64f6f01c27054c11"
+            ]
+        ]
+    },
+    {
+        "id": "9b52c7523e1b7fa8",
+        "type": "ui-button",
+        "z": "f595383a0843f950",
+        "g": "1a35d04f0bad1216",
+        "group": "6d5d33ea848dfe82",
+        "name": "",
+        "label": "Close Specials",
+        "order": 6,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"groups\":{\"hide\":[\"AMS Settings\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "yellow",
+        "textColor": "black",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 1140,
+        "y": 1420,
+        "wires": [
+            [
+                "0164e9deadb9e09a"
+            ]
+        ]
+    },
+    {
+        "id": "97111472678967f4",
+        "type": "ui-button",
+        "z": "f595383a0843f950",
+        "g": "1a35d04f0bad1216",
+        "group": "6d5d33ea848dfe82",
+        "name": "",
+        "label": "Open Specials",
+        "order": 5,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"groups\":{\"show\":[\"AMS Settings\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 1140,
+        "y": 1380,
+        "wires": [
+            [
+                "0164e9deadb9e09a"
+            ]
+        ]
+    },
+    {
+        "id": "0164e9deadb9e09a",
+        "type": "ui-control",
+        "z": "f595383a0843f950",
+        "g": "1a35d04f0bad1216",
+        "name": "",
+        "ui": "a1947a9da86cce22",
+        "events": "change",
+        "x": 1320,
+        "y": 1380,
+        "wires": [
+            []
         ]
     },
     {
@@ -2565,8 +2837,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 950,
-        "y": 160,
+        "x": 810,
+        "y": 140,
         "wires": [
             []
         ]
@@ -2626,8 +2898,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 950,
-        "y": 220,
+        "x": 810,
+        "y": 200,
         "wires": [
             []
         ]
@@ -2757,8 +3029,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 1150,
-        "y": 460,
+        "x": 1010,
+        "y": 440,
         "wires": []
     },
     {
@@ -2816,8 +3088,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 950,
-        "y": 260,
+        "x": 810,
+        "y": 240,
         "wires": [
             []
         ]
@@ -2877,8 +3149,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 950,
-        "y": 300,
+        "x": 810,
+        "y": 280,
         "wires": [
             []
         ]
@@ -2938,8 +3210,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 940,
-        "y": 340,
+        "x": 800,
+        "y": 320,
         "wires": [
             []
         ]
@@ -2999,8 +3271,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 960,
-        "y": 380,
+        "x": 820,
+        "y": 360,
         "wires": [
             []
         ]
@@ -3060,8 +3332,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 950,
-        "y": 420,
+        "x": 810,
+        "y": 400,
         "wires": [
             []
         ]
@@ -3121,8 +3393,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 950,
-        "y": 460,
+        "x": 810,
+        "y": 440,
         "wires": [
             []
         ]
@@ -3174,8 +3446,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 1150,
-        "y": 420,
+        "x": 1010,
+        "y": 400,
         "wires": []
     },
     {
@@ -3199,8 +3471,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 1160,
-        "y": 380,
+        "x": 1020,
+        "y": 360,
         "wires": []
     },
     {
@@ -3224,8 +3496,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 1150,
-        "y": 340,
+        "x": 1010,
+        "y": 320,
         "wires": []
     },
     {
@@ -3249,8 +3521,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 1150,
-        "y": 300,
+        "x": 1010,
+        "y": 280,
         "wires": []
     },
     {
@@ -3274,8 +3546,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 1150,
-        "y": 260,
+        "x": 1010,
+        "y": 240,
         "wires": []
     },
     {
@@ -3299,8 +3571,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 1150,
-        "y": 220,
+        "x": 1010,
+        "y": 200,
         "wires": []
     },
     {
@@ -3331,8 +3603,8 @@
         "colorTrack": "red",
         "colorThumb": "white",
         "showTextField": false,
-        "x": 530,
-        "y": 640,
+        "x": 550,
+        "y": 620,
         "wires": [
             [
                 "794a7e65aa3b9130"
@@ -3356,7 +3628,7 @@
         "title": "Power Limiter",
         "alwaysShowTitle": false,
         "floatingTitlePosition": "top-left",
-        "units": "kW",
+        "units": "W",
         "icon": "",
         "prefix": "",
         "suffix": "",
@@ -3389,7 +3661,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1630,
-        "y": 640,
+        "y": 620,
         "wires": [
             []
         ]
@@ -3403,9 +3675,16 @@
         "rules": [
             {
                 "t": "set",
-                "p": "Power_limitter.Power_limitter",
+                "p": "send.MPCU_modify_system_settings.index",
                 "pt": "msg",
-                "to": "msg.payload*1000",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.value",
+                "pt": "msg",
+                "to": "$number(msg.payload*1000)",
                 "tot": "jsonata"
             }
         ],
@@ -3414,8 +3693,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 790,
-        "y": 640,
+        "x": 740,
+        "y": 620,
         "wires": [
             [
                 "7ded3a3d92ad98ab"
@@ -3450,8 +3729,8 @@
         "colorTrack": "red",
         "colorThumb": "white",
         "showTextField": false,
-        "x": 540,
-        "y": 760,
+        "x": 560,
+        "y": 740,
         "wires": [
             [
                 "da80081c3ceb03bf"
@@ -3508,7 +3787,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1640,
-        "y": 760,
+        "y": 740,
         "wires": [
             []
         ]
@@ -3540,8 +3819,8 @@
         "offvalueType": "bool",
         "officon": "check",
         "offcolor": "green",
-        "x": 530,
-        "y": 700,
+        "x": 550,
+        "y": 680,
         "wires": [
             [
                 "7ded3a3d92ad98ab"
@@ -3554,11 +3833,11 @@
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
         "group": "12dbcafb65a6e667",
-        "order": 4,
+        "order": 3,
         "width": 2,
         "height": 0,
         "name": "",
-        "label": "OVERRIDEs",
+        "label": "PERFORMANCE OVERRIDEs",
         "format": "{{msg.payload}}",
         "layout": "row-center",
         "style": false,
@@ -3569,8 +3848,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 530,
-        "y": 580,
+        "x": 610,
+        "y": 560,
         "wires": []
     },
     {
@@ -3600,8 +3879,8 @@
         "offvalueType": "bool",
         "officon": "check",
         "offcolor": "green",
-        "x": 540,
-        "y": 800,
+        "x": 560,
+        "y": 780,
         "wires": [
             [
                 "da80081c3ceb03bf"
@@ -3658,7 +3937,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1620,
-        "y": 860,
+        "y": 880,
         "wires": [
             []
         ]
@@ -3670,7 +3949,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN M2",
         "group": "12dbcafb65a6e667",
-        "order": 15,
+        "order": 16,
         "value": "msg.payload.MPCU_values.MPCU_FAN2_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -3713,7 +3992,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1620,
-        "y": 900,
+        "y": 960,
         "wires": [
             []
         ]
@@ -3725,7 +4004,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN I",
         "group": "12dbcafb65a6e667",
-        "order": 16,
+        "order": 17,
         "value": "msg.payload.MPCU_values.MPCU_FAN3_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -3768,7 +4047,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1610,
-        "y": 940,
+        "y": 1040,
         "wires": [
             []
         ]
@@ -3780,7 +4059,7 @@
         "g": "50019cb37f3dfa92",
         "name": "PUMP M",
         "group": "12dbcafb65a6e667",
-        "order": 17,
+        "order": 15,
         "value": "msg.payload.MPCU_values.MPCU_MOTOR_PUMP_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -3823,7 +4102,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1620,
-        "y": 980,
+        "y": 1120,
         "wires": [
             []
         ]
@@ -3878,7 +4157,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1620,
-        "y": 1020,
+        "y": 1200,
         "wires": [
             []
         ]
@@ -3894,8 +4173,8 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 1090,
-        "y": 640,
+        "x": 1110,
+        "y": 620,
         "wires": [
             [
                 "08c4fabbcdcd9b7c"
@@ -3913,10 +4192,12 @@
         "autoToggle": "0",
         "payloadPropName": "payload",
         "translatorConfig": "",
-        "x": 1090,
-        "y": 760,
+        "x": 1110,
+        "y": 740,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -3968,8 +4249,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1240,
-        "y": 1400,
+        "x": 1160,
+        "y": 1700,
         "wires": [
             []
         ]
@@ -4023,8 +4304,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1230,
-        "y": 1440,
+        "x": 1150,
+        "y": 1740,
         "wires": [
             []
         ]
@@ -4078,8 +4359,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1210,
-        "y": 1480,
+        "x": 1130,
+        "y": 1780,
         "wires": [
             []
         ]
@@ -4133,8 +4414,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1210,
-        "y": 1540,
+        "x": 1130,
+        "y": 1860,
         "wires": [
             []
         ]
@@ -4188,8 +4469,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1220,
-        "y": 1600,
+        "x": 1140,
+        "y": 1940,
         "wires": [
             []
         ]
@@ -4237,8 +4518,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1230,
-        "y": 1680,
+        "x": 1150,
+        "y": 2000,
         "wires": [
             []
         ]
@@ -4286,8 +4567,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1220,
-        "y": 1760,
+        "x": 1140,
+        "y": 2080,
         "wires": [
             []
         ]
@@ -4300,8 +4581,8 @@
         "links": [
             "a98dc49a88f46c76"
         ],
-        "x": 765,
-        "y": 300,
+        "x": 605,
+        "y": 260,
         "wires": [
             [
                 "e0e92b61642707d5",
@@ -4326,7 +4607,7 @@
             "a98dc49a88f46c76"
         ],
         "x": 1415,
-        "y": 900,
+        "y": 880,
         "wires": [
             [
                 "2e5716ee927c9076",
@@ -4343,12 +4624,13 @@
         "id": "12bc8e4c1be8669f",
         "type": "link in",
         "z": "58531eb4c616092e",
+        "g": "2ed428752a2a8e1c",
         "name": "link in 3",
         "links": [
             "a98dc49a88f46c76"
         ],
-        "x": 1005,
-        "y": 1580,
+        "x": 935,
+        "y": 1900,
         "wires": [
             [
                 "bf81fef9d6979b4b",
@@ -4372,8 +4654,8 @@
         "links": [
             "a98dc49a88f46c76"
         ],
-        "x": 35,
-        "y": 920,
+        "x": 55,
+        "y": 900,
         "wires": [
             [
                 "f937a48dafb7e4ce",
@@ -4402,8 +4684,8 @@
         "className": "",
         "value": "msg.payload.MPCU_values.MPCU_INVERTER_ERROR_STATES",
         "valueType": "jsonata",
-        "x": 1210,
-        "y": 1720,
+        "x": 1130,
+        "y": 2040,
         "wires": []
     },
     {
@@ -4427,8 +4709,8 @@
         "className": "",
         "value": "msg.payload.MPCU_values.MPCU_INVERTER_WARNING_STATES",
         "valueType": "jsonata",
-        "x": 1220,
-        "y": 1800,
+        "x": 1140,
+        "y": 2120,
         "wires": []
     },
     {
@@ -4451,8 +4733,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 220,
-        "y": 640,
+        "x": 240,
+        "y": 620,
         "wires": [
             [
                 "d213ec5cf047ba71"
@@ -4479,8 +4761,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 220,
-        "y": 760,
+        "x": 240,
+        "y": 740,
         "wires": [
             [
                 "2d776543f5b95b12"
@@ -4491,6 +4773,7 @@
         "id": "654c17edae95981e",
         "type": "ui-text",
         "z": "58531eb4c616092e",
+        "g": "502c719c9684924f",
         "group": "e3b8cff4e6ddd0e6",
         "order": 9,
         "width": 2,
@@ -4507,14 +4790,15 @@
         "className": "",
         "value": "$exists(payload.MPCU_values.MPCU_INVERTER_TEMPERATURE) ? timestamp",
         "valueType": "jsonata",
-        "x": 950,
-        "y": 100,
+        "x": 810,
+        "y": 80,
         "wires": []
     },
     {
         "id": "f25714a912b22fb5",
         "type": "ui-button",
         "z": "58531eb4c616092e",
+        "g": "7a122b5489ee38a9",
         "group": "12dbcafb65a6e667",
         "name": "State OFF Request",
         "label": "MPCU State Request",
@@ -4542,8 +4826,8 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 210,
-        "y": 1380,
+        "x": 1010,
+        "y": 1480,
         "wires": [
             [
                 "d3f39920a7ade53f",
@@ -4555,6 +4839,7 @@
         "id": "d3f39920a7ade53f",
         "type": "change",
         "z": "58531eb4c616092e",
+        "g": "7a122b5489ee38a9",
         "name": "",
         "rules": [
             {
@@ -4571,8 +4856,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 1380,
+        "x": 1320,
+        "y": 1480,
         "wires": [
             [
                 "1cece6039995bc6c"
@@ -4583,19 +4868,21 @@
         "id": "1cece6039995bc6c",
         "type": "link out",
         "z": "58531eb4c616092e",
+        "g": "7a122b5489ee38a9",
         "name": "link out 4",
         "mode": "link",
         "links": [
             "a340626bd648322b"
         ],
-        "x": 775,
-        "y": 1380,
+        "x": 1555,
+        "y": 1480,
         "wires": []
     },
     {
         "id": "19df24033677651b",
         "type": "ui-dropdown",
         "z": "58531eb4c616092e",
+        "g": "7a122b5489ee38a9",
         "group": "12dbcafb65a6e667",
         "name": "MPCU REQUEST ",
         "label": "Select Option:",
@@ -4635,8 +4922,8 @@
         "className": "",
         "typeIsComboBox": true,
         "msgTrigger": "onChange",
-        "x": 210,
-        "y": 1500,
+        "x": 1010,
+        "y": 1600,
         "wires": [
             [
                 "3b5aebbceec5c8a6"
@@ -4647,6 +4934,7 @@
         "id": "3a507942fba0ed58",
         "type": "debug",
         "z": "58531eb4c616092e",
+        "g": "7a122b5489ee38a9",
         "name": "debug 5",
         "active": true,
         "tosidebar": true,
@@ -4655,14 +4943,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 420,
-        "y": 1440,
+        "x": 1220,
+        "y": 1540,
         "wires": []
     },
     {
         "id": "3b5aebbceec5c8a6",
         "type": "change",
         "z": "58531eb4c616092e",
+        "g": "7a122b5489ee38a9",
         "name": "",
         "rules": [
             {
@@ -4679,8 +4968,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 1500,
+        "x": 1280,
+        "y": 1600,
         "wires": [
             []
         ]
@@ -4695,20 +4984,679 @@
         "links": [
             "a340626bd648322b"
         ],
-        "x": 1335,
-        "y": 900,
+        "x": 1345,
+        "y": 880,
         "wires": []
     },
     {
-        "id": "2ec8f7abe60963fe",
+        "id": "5b0ce50e1f988b89",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "APPS ON",
+        "label": "",
+        "order": 3,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "0",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 1620,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "1394ad1face26ba5",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "APPS OFF",
+        "label": "",
+        "order": 12,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "0",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 1660,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "699ab697c4b02bdf",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "TSAC ON",
+        "label": "",
+        "order": 4,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "1",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 1720,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "1033493b009c8d5c",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "TSAC OFF",
+        "label": "",
+        "order": 13,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "1",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 1760,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "e9e1bbb547bb84c4",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "RSU ON",
+        "label": "",
+        "order": 5,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "2",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 1820,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "f81e9c7116ce00ef",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "RSU OFF",
+        "label": "",
+        "order": 14,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "2",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 1860,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "203f6c19b744b08d",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "FSU ON",
+        "label": "",
+        "order": 6,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "3",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 1920,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "f909855a527a5847",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "FSU OFF",
+        "label": "",
+        "order": 15,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "3",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 1960,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "d2faf90e5e5a5d22",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "TELEM ON",
+        "label": "",
+        "order": 7,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "4",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 2020,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "ed6269b196b9f762",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "TELEM OFF",
+        "label": "HEHE",
+        "order": 16,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "4",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 2060,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "108bf0dfbba14d6d",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "INV ON",
+        "label": "",
+        "order": 8,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "5",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 2120,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "fb5bbca77632697e",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "INV OFF",
+        "label": "",
+        "order": 17,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "5",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 2160,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "01a2bbf03c62d219",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "DASH ON",
+        "label": "",
+        "order": 9,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "6",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 2220,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "7ad2a2fa5a443419",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "name": "DASH OFF",
+        "label": "",
+        "order": 18,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "6",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 2260,
+        "wires": [
+            [
+                "0a70b26b66a04142"
+            ]
+        ]
+    },
+    {
+        "id": "bcba0776c2a2e170",
+        "type": "ui-text",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "order": 11,
+        "width": 1,
+        "height": 0,
+        "name": "",
+        "label": "Turning OFF system power",
+        "format": "{{msg.payload}}",
+        "layout": "row-right",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 200,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "9e17aa5750172dbe",
+        "type": "ui-text",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "group": "68696373afd855b2",
+        "order": 2,
+        "width": 1,
+        "height": 0,
+        "name": "",
+        "label": "Turning ON system power",
+        "format": "{{msg.payload}}",
+        "layout": "row-right",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 190,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "0a70b26b66a04142",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.MPCU_switch_system_power.system",
+                "pt": "msg",
+                "to": "$number(msg.topic)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "send.MPCU_switch_system_power.power",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 1920,
+        "wires": [
+            [
+                "28f1a4d2ab466f9a"
+            ]
+        ]
+    },
+    {
+        "id": "28f1a4d2ab466f9a",
+        "type": "link out",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "a340626bd648322b"
+        ],
+        "x": 745,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "dcca86a48afd157c",
         "type": "ui-slider",
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
         "group": "12dbcafb65a6e667",
-        "name": "Cooling Override",
+        "name": "FAN M1",
         "label": "",
         "tooltip": "",
-        "order": 19,
+        "order": 22,
         "width": 2,
         "height": "1",
         "passthru": false,
@@ -4727,16 +5675,16 @@
         "colorTrack": "red",
         "colorThumb": "white",
         "showTextField": false,
-        "x": 490,
-        "y": 960,
+        "x": 600,
+        "y": 880,
         "wires": [
             [
-                "ae1a0a7a0c033d7b"
+                "126c7d6a66a38d9c"
             ]
         ]
     },
     {
-        "id": "63321d9bce378ae4",
+        "id": "5b1da8ff058f2534",
         "type": "change",
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
@@ -4756,74 +5704,111 @@
         "to": "",
         "reg": false,
         "x": 240,
-        "y": 960,
+        "y": 880,
         "wires": [
             [
-                "2ec8f7abe60963fe"
+                "dcca86a48afd157c"
             ]
         ]
     },
     {
-        "id": "9c4118dcf7f9fda7",
-        "type": "ui-gauge",
+        "id": "126c7d6a66a38d9c",
+        "type": "InterruptFlowUltimate",
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
-        "name": "Cooling system setting",
-        "group": "12dbcafb65a6e667",
-        "order": 13,
-        "value": "payload",
-        "valueType": "msg",
-        "width": 2,
-        "height": 2,
-        "gtype": "gauge-tile",
-        "gstyle": "needle",
-        "title": "Cooling setting",
-        "alwaysShowTitle": true,
-        "floatingTitlePosition": "top-left",
-        "units": "units",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#5cd65c",
-                "text": "AUTO",
-                "textType": "str"
-            },
-            {
-                "from": "1",
-                "color": "#ffc800",
-                "text": "MANUAL",
-                "textType": "str"
-            }
-        ],
-        "min": 0,
-        "max": "1",
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 580,
-        "y": 1060,
+        "name": "Interrupt Flow",
+        "triggertopic": "override",
+        "initializewith": "0",
+        "autoToggle": "0",
+        "payloadPropName": "payload",
+        "translatorConfig": "",
+        "x": 1110,
+        "y": 880,
         "wires": [
             []
         ]
     },
     {
-        "id": "ae1a0a7a0c033d7b",
-        "type": "change",
+        "id": "0b37765b3f0a7b0b",
+        "type": "ui-switch",
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
+        "name": "FAN M1 override",
+        "label": "FAN M1",
+        "group": "12dbcafb65a6e667",
+        "order": 19,
+        "width": 2,
+        "height": "1",
+        "passthru": true,
+        "decouple": false,
+        "topic": "override",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "cog",
+        "oncolor": "red",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "check",
+        "offcolor": "green",
+        "x": 570,
+        "y": 920,
+        "wires": [
+            [
+                "126c7d6a66a38d9c"
+            ]
+        ]
+    },
+    {
+        "id": "f2f8b70db926614a",
+        "type": "ui-slider",
+        "z": "58531eb4c616092e",
+        "group": "12dbcafb65a6e667",
+        "name": "FAN M2",
+        "label": "",
+        "tooltip": "",
+        "order": 23,
+        "width": 2,
+        "height": "1",
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": "0",
+        "max": "100",
+        "step": "10",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "red",
+        "colorTrack": "red",
+        "colorThumb": "white",
+        "showTextField": false,
+        "x": 600,
+        "y": 960,
+        "wires": [
+            [
+                "5315ae1914c670aa"
+            ]
+        ]
+    },
+    {
+        "id": "3ad5c8dc44ae759e",
+        "type": "change",
+        "z": "58531eb4c616092e",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "setting",
+                "p": "payload",
                 "pt": "msg",
-                "to": "msg.payload ? 1 : 0",
+                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
                 "tot": "jsonata"
             }
         ],
@@ -4832,23 +5817,843 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 340,
-        "y": 1060,
+        "x": 240,
+        "y": 960,
         "wires": [
             [
-                "9c4118dcf7f9fda7"
+                "f2f8b70db926614a"
             ]
         ]
     },
     {
-        "id": "988066609920e577",
-        "type": "comment",
+        "id": "5315ae1914c670aa",
+        "type": "InterruptFlowUltimate",
+        "z": "58531eb4c616092e",
+        "name": "Interrupt Flow",
+        "triggertopic": "override",
+        "initializewith": "0",
+        "autoToggle": "0",
+        "payloadPropName": "payload",
+        "translatorConfig": "",
+        "x": 1110,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ecb35eed8173fe9",
+        "type": "ui-switch",
+        "z": "58531eb4c616092e",
+        "name": "FAN M2 override",
+        "label": "FAN M2",
+        "group": "12dbcafb65a6e667",
+        "order": 20,
+        "width": 2,
+        "height": "1",
+        "passthru": true,
+        "decouple": false,
+        "topic": "override",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "cog",
+        "oncolor": "red",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "check",
+        "offcolor": "green",
+        "x": 570,
+        "y": 1000,
+        "wires": [
+            [
+                "5315ae1914c670aa"
+            ]
+        ]
+    },
+    {
+        "id": "8f0a855e04afcf40",
+        "type": "ui-slider",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "group": "12dbcafb65a6e667",
+        "name": "FAN I",
+        "label": "",
+        "tooltip": "",
+        "order": 25,
+        "width": 2,
+        "height": "1",
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": "0",
+        "max": "100",
+        "step": "10",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "red",
+        "colorTrack": "red",
+        "colorThumb": "white",
+        "showTextField": false,
+        "x": 590,
+        "y": 1040,
+        "wires": [
+            [
+                "892b5692650d1a28"
+            ]
+        ]
+    },
+    {
+        "id": "be5906961d97ce44",
+        "type": "change",
         "z": "58531eb4c616092e",
         "g": "50019cb37f3dfa92",
         "name": "",
-        "info": "For testing purposes",
-        "x": 660,
-        "y": 1020,
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 1040,
+        "wires": [
+            [
+                "8f0a855e04afcf40"
+            ]
+        ]
+    },
+    {
+        "id": "892b5692650d1a28",
+        "type": "InterruptFlowUltimate",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "Interrupt Flow",
+        "triggertopic": "override",
+        "initializewith": "0",
+        "autoToggle": "0",
+        "payloadPropName": "payload",
+        "translatorConfig": "",
+        "x": 1110,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f6e6b1b03e9d296",
+        "type": "ui-switch",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "FAN I override",
+        "label": "FAN I",
+        "group": "12dbcafb65a6e667",
+        "order": 27,
+        "width": 2,
+        "height": "1",
+        "passthru": true,
+        "decouple": false,
+        "topic": "override",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "cog",
+        "oncolor": "red",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "check",
+        "offcolor": "green",
+        "x": 560,
+        "y": 1080,
+        "wires": [
+            [
+                "892b5692650d1a28"
+            ]
+        ]
+    },
+    {
+        "id": "87d66419ecadeef4",
+        "type": "ui-slider",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "group": "12dbcafb65a6e667",
+        "name": "PUMP M",
+        "label": "",
+        "tooltip": "",
+        "order": 24,
+        "width": 2,
+        "height": "1",
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": "0",
+        "max": "100",
+        "step": "10",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "red",
+        "colorTrack": "red",
+        "colorThumb": "white",
+        "showTextField": false,
+        "x": 600,
+        "y": 1120,
+        "wires": [
+            [
+                "389792449312bdba"
+            ]
+        ]
+    },
+    {
+        "id": "51ad83b93ee91b6b",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 1120,
+        "wires": [
+            [
+                "87d66419ecadeef4"
+            ]
+        ]
+    },
+    {
+        "id": "389792449312bdba",
+        "type": "InterruptFlowUltimate",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "Interrupt Flow",
+        "triggertopic": "override",
+        "initializewith": "0",
+        "autoToggle": "0",
+        "payloadPropName": "payload",
+        "translatorConfig": "",
+        "x": 1110,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98123190e14244a3",
+        "type": "ui-switch",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "PUMP M override",
+        "label": "PUMP M",
+        "group": "12dbcafb65a6e667",
+        "order": 21,
+        "width": 2,
+        "height": "1",
+        "passthru": true,
+        "decouple": false,
+        "topic": "override",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "cog",
+        "oncolor": "red",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "check",
+        "offcolor": "green",
+        "x": 570,
+        "y": 1160,
+        "wires": [
+            [
+                "389792449312bdba"
+            ]
+        ]
+    },
+    {
+        "id": "807defeb000ee814",
+        "type": "ui-slider",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "group": "12dbcafb65a6e667",
+        "name": "PUMP I",
+        "label": "",
+        "tooltip": "",
+        "order": 26,
+        "width": 2,
+        "height": "1",
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": "0",
+        "max": "100",
+        "step": "10",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "red",
+        "colorTrack": "red",
+        "colorThumb": "white",
+        "showTextField": false,
+        "x": 600,
+        "y": 1200,
+        "wires": [
+            [
+                "29de8b82d919413a"
+            ]
+        ]
+    },
+    {
+        "id": "32b2ec3126088a35",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 1200,
+        "wires": [
+            [
+                "807defeb000ee814"
+            ]
+        ]
+    },
+    {
+        "id": "29de8b82d919413a",
+        "type": "InterruptFlowUltimate",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "Interrupt Flow",
+        "triggertopic": "override",
+        "initializewith": "0",
+        "autoToggle": "0",
+        "payloadPropName": "payload",
+        "translatorConfig": "",
+        "x": 1110,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57f396f265da5dfe",
+        "type": "ui-switch",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "PUMP I override",
+        "label": "PUMP I",
+        "group": "12dbcafb65a6e667",
+        "order": 29,
+        "width": 2,
+        "height": "1",
+        "passthru": true,
+        "decouple": false,
+        "topic": "override",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "cog",
+        "oncolor": "red",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "check",
+        "offcolor": "green",
+        "x": 580,
+        "y": 1240,
+        "wires": [
+            [
+                "29de8b82d919413a"
+            ]
+        ]
+    },
+    {
+        "id": "e3a9abc4ed23e4f6",
+        "type": "ui-text",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "group": "12dbcafb65a6e667",
+        "order": 13,
+        "width": 2,
+        "height": 0,
+        "name": "",
+        "label": "COOLING OVERRIDEs",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 910,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "f75092fe82423aa9",
+        "type": "ui-text",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "group": "e0d74bc8bb620a6e",
+        "order": 1,
+        "width": 12,
+        "height": 0,
+        "name": "",
+        "label": "Safety check override is highly dangerous and should not be used in competition environment. THIS IS FOR EXPERIMENTAL USAGE ONLY!",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 550,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "fa4925a5253341ce",
+        "type": "ui-control",
+        "z": "58531eb4c616092e",
+        "g": "3cd1463ba40ab879",
+        "name": "",
+        "ui": "a1947a9da86cce22",
+        "events": "change",
+        "x": 1200,
+        "y": 2220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "294ac777d99f5789",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "3cd1463ba40ab879",
+        "group": "e3b8cff4e6ddd0e6",
+        "name": "",
+        "label": "Open Specials",
+        "order": 18,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"groups\":{\"show\":[\"Safety Check Overrides\", \"Settings\", \"System power switches\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 1000,
+        "y": 2220,
+        "wires": [
+            [
+                "fa4925a5253341ce"
+            ]
+        ]
+    },
+    {
+        "id": "d56cc1e405281126",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "3cd1463ba40ab879",
+        "group": "e3b8cff4e6ddd0e6",
+        "name": "",
+        "label": "Close Specials",
+        "order": 19,
+        "width": 1,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"groups\":{\"hide\":[\"Safety Check Overrides\", \"Settings\", \"System power switches\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "yellow",
+        "textColor": "black",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 1000,
+        "y": 2260,
+        "wires": [
+            [
+                "fa4925a5253341ce"
+            ]
+        ]
+    },
+    {
+        "id": "bdcfc7f4f604ba0d",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "group": "e0d74bc8bb620a6e",
+        "name": "AMS SAFETY OVERRIDE ON",
+        "label": "AMS SAFETY OVERRIDE ON",
+        "order": 3,
+        "width": 2,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "8",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 210,
+        "y": 2480,
+        "wires": [
+            [
+                "8a1ef58e31f317e1"
+            ]
+        ]
+    },
+    {
+        "id": "8d11ab614367d912",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "group": "e0d74bc8bb620a6e",
+        "name": "AMS SAFETY OVERRIDE OFF",
+        "label": "AMS SAFETY OVERRIDE OFF",
+        "order": 9,
+        "width": 2,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "8",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 210,
+        "y": 2520,
+        "wires": [
+            [
+                "8a1ef58e31f317e1"
+            ]
+        ]
+    },
+    {
+        "id": "cd373fc6dc986c59",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "group": "e0d74bc8bb620a6e",
+        "name": "APPS SAFETY OVERRIDE ON",
+        "label": "APPS SAFETY OVERRIDE ON",
+        "order": 5,
+        "width": 2,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "9",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 530,
+        "y": 2480,
+        "wires": [
+            [
+                "8a1ef58e31f317e1"
+            ]
+        ]
+    },
+    {
+        "id": "1428a529aa7a78bf",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "group": "e0d74bc8bb620a6e",
+        "name": "APPS SAFETY OVERRIDE OFF",
+        "label": "APPS SAFETY OVERRIDE OFF",
+        "order": 10,
+        "width": 2,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "9",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 540,
+        "y": 2520,
+        "wires": [
+            [
+                "8a1ef58e31f317e1"
+            ]
+        ]
+    },
+    {
+        "id": "4362f9538ffec482",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "group": "e0d74bc8bb620a6e",
+        "name": "INV SAFETY OVERRIDE ON",
+        "label": "INV SAFETY OVERRIDE ON",
+        "order": 7,
+        "width": 2,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "10",
+        "topicType": "str",
+        "buttonColor": "red",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 840,
+        "y": 2480,
+        "wires": [
+            [
+                "8a1ef58e31f317e1"
+            ]
+        ]
+    },
+    {
+        "id": "484fad2062342373",
+        "type": "ui-button",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "group": "e0d74bc8bb620a6e",
+        "name": "INV SAFETY OVERRIDE OFF",
+        "label": "INV SAFETY OVERRIDE OFF",
+        "order": 11,
+        "width": 2,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "10",
+        "topicType": "str",
+        "buttonColor": "green",
+        "textColor": "white",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 850,
+        "y": 2520,
+        "wires": [
+            [
+                "8a1ef58e31f317e1"
+            ]
+        ]
+    },
+    {
+        "id": "8a1ef58e31f317e1",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.index",
+                "pt": "msg",
+                "to": "$number(msg.topic)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.value",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 2620,
+        "wires": [
+            [
+                "ba3e45f4de61def7"
+            ]
+        ]
+    },
+    {
+        "id": "ba3e45f4de61def7",
+        "type": "link out",
+        "z": "58531eb4c616092e",
+        "g": "bda34e527ec0aae8",
+        "name": "link out 7",
+        "mode": "link",
+        "links": [
+            "a340626bd648322b"
+        ],
+        "x": 1245,
+        "y": 2620,
         "wires": []
     },
     {
@@ -4908,7 +6713,7 @@
         "type": "function",
         "z": "7de09f7e9474d780",
         "name": "Convert data to table",
-        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacVoltageTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC 1\": null,\n            \"TSAC 2\": null,\n            \"TSAC 3\": null,\n            \"TSAC 4\": null,\n            \"TSAC 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Voltages\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Voltages\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10000, force 4 decimal places, and append \" V\"\n                let formattedVoltage = rawValue.toFixed(4) + \" V\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacVoltageTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
+        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacVoltageTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC segment 1\": null,\n            \"TSAC segment 2\": null,\n            \"TSAC segment 3\": null,\n            \"TSAC segment 4\": null,\n            \"TSAC segment 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Voltages\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Voltages\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10000, force 4 decimal places, and append \" V\"\n                let formattedVoltage = rawValue.toFixed(4) + \" V\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacVoltageTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5524,7 +7329,7 @@
         "type": "debug",
         "z": "4197684541243468",
         "name": "debug 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5611,11 +7416,11 @@
         "z": "4197684541243468",
         "name": "Outgoing messages",
         "links": [
-            "e017eb4860ec0fc6",
-            "61bcb02cec7bbe36",
             "64f6f01c27054c11",
             "1cece6039995bc6c",
-            "08c4fabbcdcd9b7c"
+            "08c4fabbcdcd9b7c",
+            "28f1a4d2ab466f9a",
+            "ba3e45f4de61def7"
         ],
         "x": 175,
         "y": 340,
@@ -5756,7 +7561,7 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 790,
+        "x": 850,
         "y": 500,
         "wires": []
     },
@@ -5781,31 +7586,29 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 280,
+        "x": 240,
         "y": 480,
         "wires": [
-            [
-                "8b418ae606b7ab4c"
-            ]
+            []
         ]
     },
     {
         "id": "8b418ae606b7ab4c",
         "type": "template",
         "z": "4197684541243468",
-        "name": "",
+        "name": "Set Power Limit",
         "field": "payload",
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"state_request\": {\n        \"state_request\": 2\n    }\n}",
+        "template": "{\n    \"MPCU_modify_system_settings\": {\n        \"index\": 0,\n        \"value\": 11111\n    }\n}",
         "output": "str",
-        "x": 520,
+        "x": 500,
         "y": 480,
         "wires": [
             [
-                "59c69f1ec8cf8c4a",
-                "c43b15e44e49f36f"
+                "c43b15e44e49f36f",
+                "59c69f1ec8cf8c4a"
             ]
         ]
     },
@@ -5814,7 +7617,7 @@
         "type": "debug",
         "z": "4197684541243468",
         "name": "debug 6",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5826,13 +7629,53 @@
         "wires": []
     },
     {
-        "id": "d3a823a7bac68e5d",
-        "type": "ui-spacer",
-        "group": "12dbcafb65a6e667",
-        "name": "spacer",
-        "order": 3,
-        "width": 1,
-        "height": 3,
-        "className": ""
+        "id": "a7a2031ef01a6a05",
+        "type": "template",
+        "z": "4197684541243468",
+        "name": "Skip system check",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"MPCU_modify_system_settings\": {\n        \"index\": 8,\n        \"value\": 0\n    }\n}\n\n",
+        "output": "str",
+        "x": 490,
+        "y": 660,
+        "wires": [
+            [
+                "59c69f1ec8cf8c4a",
+                "c43b15e44e49f36f"
+            ]
+        ]
+    },
+    {
+        "id": "e513e682e08d9e11",
+        "type": "comment",
+        "z": "4197684541243468",
+        "name": "",
+        "info": "8-9-10 AMS, APPS, INVERTER\n\n1 ha skip, 0 ha nem skippeli a check-et",
+        "x": 560,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "13ba8d6d238b404f",
+        "type": "template",
+        "z": "4197684541243468",
+        "name": "Switch system power",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"MPCU_switch_system_power\": {\n        \"system\": 1,\n        \"power\": 0\n    }\n}",
+        "output": "str",
+        "x": 480,
+        "y": 560,
+        "wires": [
+            [
+                "c43b15e44e49f36f",
+                "59c69f1ec8cf8c4a"
+            ]
+        ]
     }
 ]
