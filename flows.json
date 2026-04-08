@@ -158,7 +158,13 @@
             "32b2ec3126088a35",
             "29de8b82d919413a",
             "57f396f265da5dfe",
-            "e3a9abc4ed23e4f6"
+            "e3a9abc4ed23e4f6",
+            "b4532f12362d9bd4",
+            "14d316ae07bf3e4c",
+            "3368e266bcaf26c5",
+            "39e29b4c9eda202e",
+            "1d877c5fd1460018",
+            "3485b5236773877f"
         ],
         "x": 14,
         "y": 519,
@@ -1709,7 +1715,7 @@
         "name": "discharge_limit",
         "group": "359d13a03a079e3c",
         "order": 1,
-        "value": "msg.payload.AVAILABLE_CURRENT.TSAC_MAX_DISCHARGE_CURRENT",
+        "value": "msg.payload.AVAILABE_CURRENT.TSAC_MAX_DISCHARGE_CURRENT",
         "valueType": "jsonata",
         "width": 1,
         "height": 3,
@@ -1751,7 +1757,7 @@
         "name": "charge_limit",
         "group": "359d13a03a079e3c",
         "order": 2,
-        "value": "msg.payload.AVAILABLE_CURRENT.TSAC_MAX_CHARGE_CURRENT",
+        "value": "msg.payload.AVAILABE_CURRENT.TSAC_MAX_CHARGE_CURRENT",
         "valueType": "jsonata",
         "width": 1,
         "height": 3,
@@ -3843,7 +3849,7 @@
         "y": 740,
         "wires": [
             [
-                "da80081c3ceb03bf"
+                "14d316ae07bf3e4c"
             ]
         ]
     },
@@ -4059,7 +4065,7 @@
         "g": "50019cb37f3dfa92",
         "name": "FAN M2",
         "group": "12dbcafb65a6e667",
-        "order": 17,
+        "order": 16,
         "value": "msg.payload.MPCU_values.MPCU_FAN2_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4169,7 +4175,7 @@
         "g": "50019cb37f3dfa92",
         "name": "PUMP M",
         "group": "12dbcafb65a6e667",
-        "order": 16,
+        "order": 17,
         "value": "msg.payload.MPCU_values.MPCU_MOTOR_PUMP_SPEED",
         "valueType": "jsonata",
         "width": 2,
@@ -4769,7 +4775,12 @@
         "wires": [
             [
                 "f937a48dafb7e4ce",
-                "34794d4b807c868d"
+                "34794d4b807c868d",
+                "5b1da8ff058f2534",
+                "3ad5c8dc44ae759e",
+                "be5906961d97ce44",
+                "51ad83b93ee91b6b",
+                "32b2ec3126088a35"
             ]
         ]
     },
@@ -5046,7 +5057,7 @@
         "z": "58531eb4c616092e",
         "g": "7a122b5489ee38a9",
         "name": "debug 5",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5775,9 +5786,9 @@
         "topicType": "msg",
         "thumbLabel": "true",
         "showTicks": "always",
-        "min": "0",
+        "min": "-1",
         "max": "100",
-        "step": "10",
+        "step": "1",
         "className": "",
         "iconPrepend": "",
         "iconAppend": "",
@@ -5789,7 +5800,7 @@
         "y": 880,
         "wires": [
             [
-                "126c7d6a66a38d9c"
+                "b4532f12362d9bd4"
             ]
         ]
     },
@@ -5804,7 +5815,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "to": "$number(msg.payload.MPCU_values.MPCU_FAN1_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -5835,7 +5846,9 @@
         "x": 1110,
         "y": 880,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -5890,9 +5903,9 @@
         "topicType": "msg",
         "thumbLabel": "true",
         "showTicks": "always",
-        "min": "0",
+        "min": "-1",
         "max": "100",
-        "step": "10",
+        "step": "1",
         "className": "",
         "iconPrepend": "",
         "iconAppend": "",
@@ -5904,7 +5917,7 @@
         "y": 960,
         "wires": [
             [
-                "5315ae1914c670aa"
+                "3368e266bcaf26c5"
             ]
         ]
     },
@@ -5918,7 +5931,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "to": "$number(msg.payload.MPCU_values.MPCU_FAN2_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -5948,7 +5961,9 @@
         "x": 1110,
         "y": 960,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -6003,9 +6018,9 @@
         "topicType": "msg",
         "thumbLabel": "true",
         "showTicks": "always",
-        "min": "0",
+        "min": "-1",
         "max": "100",
-        "step": "10",
+        "step": "1",
         "className": "",
         "iconPrepend": "",
         "iconAppend": "",
@@ -6017,7 +6032,7 @@
         "y": 1040,
         "wires": [
             [
-                "892b5692650d1a28"
+                "39e29b4c9eda202e"
             ]
         ]
     },
@@ -6032,7 +6047,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "to": "$number(msg.payload.MPCU_values.MPCU_FAN3_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -6063,7 +6078,9 @@
         "x": 1110,
         "y": 1040,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -6119,9 +6136,9 @@
         "topicType": "msg",
         "thumbLabel": "true",
         "showTicks": "always",
-        "min": "0",
+        "min": "-1",
         "max": "100",
-        "step": "10",
+        "step": "1",
         "className": "",
         "iconPrepend": "",
         "iconAppend": "",
@@ -6133,7 +6150,7 @@
         "y": 1120,
         "wires": [
             [
-                "389792449312bdba"
+                "1d877c5fd1460018"
             ]
         ]
     },
@@ -6148,7 +6165,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "to": "$number(msg.payload.MPCU_values.MPCU_MOTOR_PUMP_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -6179,7 +6196,9 @@
         "x": 1110,
         "y": 1120,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -6235,9 +6254,9 @@
         "topicType": "msg",
         "thumbLabel": "true",
         "showTicks": "always",
-        "min": "0",
+        "min": "-1",
         "max": "100",
-        "step": "10",
+        "step": "1",
         "className": "",
         "iconPrepend": "",
         "iconAppend": "",
@@ -6249,7 +6268,7 @@
         "y": 1200,
         "wires": [
             [
-                "29de8b82d919413a"
+                "3485b5236773877f"
             ]
         ]
     },
@@ -6264,7 +6283,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "to": "$number(msg.payload.MPCU_values.MPCU_INVERTER_PUMP_SPEED)\t",
                 "tot": "jsonata"
             }
         ],
@@ -6295,7 +6314,9 @@
         "x": 1110,
         "y": 1200,
         "wires": [
-            []
+            [
+                "08c4fabbcdcd9b7c"
+            ]
         ]
     },
     {
@@ -6765,6 +6786,201 @@
         "x": 1245,
         "y": 2620,
         "wires": []
+    },
+    {
+        "id": "b4532f12362d9bd4",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.index",
+                "pt": "msg",
+                "to": "3",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.value",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 880,
+        "wires": [
+            [
+                "126c7d6a66a38d9c"
+            ]
+        ]
+    },
+    {
+        "id": "14d316ae07bf3e4c",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 740,
+        "wires": [
+            [
+                "da80081c3ceb03bf"
+            ]
+        ]
+    },
+    {
+        "id": "3368e266bcaf26c5",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.index",
+                "pt": "msg",
+                "to": "4",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.value",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 960,
+        "wires": [
+            [
+                "5315ae1914c670aa"
+            ]
+        ]
+    },
+    {
+        "id": "39e29b4c9eda202e",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.index",
+                "pt": "msg",
+                "to": "5",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.value",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1040,
+        "wires": [
+            [
+                "892b5692650d1a28"
+            ]
+        ]
+    },
+    {
+        "id": "1d877c5fd1460018",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.index",
+                "pt": "msg",
+                "to": "6",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.value",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1120,
+        "wires": [
+            [
+                "389792449312bdba"
+            ]
+        ]
+    },
+    {
+        "id": "3485b5236773877f",
+        "type": "change",
+        "z": "58531eb4c616092e",
+        "g": "50019cb37f3dfa92",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.index",
+                "pt": "msg",
+                "to": "7",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "send.MPCU_modify_system_settings.value",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1200,
+        "wires": [
+            [
+                "29de8b82d919413a"
+            ]
+        ]
     },
     {
         "id": "45ee29288ff68b21",
@@ -7517,7 +7733,7 @@
             "ab4acc7f57471db1",
             "5fd8cb30640799c1"
         ],
-        "x": 725,
+        "x": 845,
         "y": 220,
         "wires": []
     },
@@ -7642,7 +7858,7 @@
                 "t": "set",
                 "p": "timestamp",
                 "pt": "msg",
-                "to": "$fromMillis($millis(), '[Y]/[M01]/[D01] [H01]:[m01]:[s01]', '+0100')",
+                "to": "$fromMillis($millis(), '[Y] / [M01] / [D01] - [H01]:[m01]:[s01]', '+0200')",
                 "tot": "jsonata"
             }
         ],
