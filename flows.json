@@ -2030,7 +2030,7 @@
         "name": "ts_error",
         "group": "4f140fe5ae232b4d",
         "order": 3,
-        "value": "msg.payload.TSAC_ERROR.TSAC_ERROR",
+        "value": "msg.payload.TSAC_ERROR.TSAC_ERROR + 1",
         "valueType": "jsonata",
         "width": 2,
         "height": 2,
@@ -2127,10 +2127,22 @@
                 "color": "#ea5353",
                 "text": "PRECHARGE TIMEOUT",
                 "textType": "str"
+            },
+            {
+                "from": "14",
+                "color": "#ea5353",
+                "text": "ISA TIMEOUT",
+                "textType": "str"
+            },
+            {
+                "from": "15",
+                "color": "#ea5353",
+                "text": "MPCU TIMEOUT",
+                "textType": "str"
             }
         ],
         "min": 0,
-        "max": "13",
+        "max": "15",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
@@ -2160,7 +2172,7 @@
         "className": "",
         "icon": "",
         "iconPosition": "left",
-        "payload": "{\"TSAC_ERROR\":{\"TSAC_ERROR\":0},\"TSAC_WARNING\":{\"TSAC_WARNING\":0}}",
+        "payload": "{\"TSAC_ERROR\":{\"TSAC_ERROR\":-1},\"TSAC_WARNING\":{\"TSAC_WARNING\":0}}",
         "payloadType": "json",
         "topic": "tserrorwarningreset",
         "topicType": "msg",
@@ -2561,7 +2573,7 @@
         "name": "ts_warning",
         "group": "4f140fe5ae232b4d",
         "order": 5,
-        "value": "msg.payload.TSAC_ERROR.TSAC_ERROR",
+        "value": "msg.payload.TSAC_ERROR.TSAC_ERROR + 1",
         "valueType": "jsonata",
         "width": 2,
         "height": 2,
@@ -2652,10 +2664,28 @@
                 "color": "#ffc800",
                 "text": "RELAY STUCK DURING ERROR",
                 "textType": "str"
+            },
+            {
+                "from": "13",
+                "color": "#ffc800",
+                "text": "OVERCHARGE",
+                "textType": "str"
+            },
+            {
+                "from": "14",
+                "color": "#ffc800",
+                "text": "OVERDISCHARGE",
+                "textType": "str"
+            },
+            {
+                "from": "15",
+                "color": "#ffc800",
+                "text": "RELAY STUCK OR SDC OFF",
+                "textType": "str"
             }
         ],
         "min": 0,
-        "max": "12",
+        "max": "15",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
