@@ -254,7 +254,8 @@
             "bcba0776c2a2e170",
             "9e17aa5750172dbe",
             "0a70b26b66a04142",
-            "28f1a4d2ab466f9a"
+            "28f1a4d2ab466f9a",
+            "b474a3d2f00b5523"
         ],
         "x": 34,
         "y": 1599,
@@ -594,6 +595,29 @@
         "h": 502
     },
     {
+        "id": "ef3dabfba30dec39",
+        "type": "group",
+        "z": "d958e374c0987340",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "2ceae3cf2224f85d",
+            "54e642d67d1850b2",
+            "e7dba28622e6303c"
+        ],
+        "x": 124,
+        "y": 659,
+        "w": 702,
+        "h": 82
+    },
+    {
         "id": "a1947a9da86cce22",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -626,7 +650,7 @@
             "groupOutline": "#ffffff"
         },
         "sizes": {
-            "density": "default",
+            "density": "comfortable",
             "pagePadding": "12px",
             "groupGap": "12px",
             "groupBorderRadius": "4px",
@@ -646,18 +670,28 @@
             {
                 "name": "Default",
                 "px": "0",
-                "cols": "12"
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
             },
             {
                 "name": "Desktop",
-                "px": "1024",
+                "px": "1800",
                 "cols": "12"
             }
         ],
         "order": 1,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "7ce9ca5952a94637",
@@ -733,11 +767,21 @@
             {
                 "name": "Default",
                 "px": "0",
-                "cols": "12"
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
             },
             {
                 "name": "Desktop",
-                "px": "1024",
+                "px": "1800",
                 "cols": "12"
             }
         ],
@@ -779,7 +823,7 @@
         "type": "ui-group",
         "name": "Isabellenhütte",
         "page": "d9df23d6a6ef270f",
-        "width": 6,
+        "width": 5,
         "height": 1,
         "order": 4,
         "showTitle": true,
@@ -795,7 +839,7 @@
         "page": "d9df23d6a6ef270f",
         "width": 6,
         "height": "2",
-        "order": 6,
+        "order": 7,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -809,7 +853,7 @@
         "page": "d9df23d6a6ef270f",
         "width": 6,
         "height": 1,
-        "order": 5,
+        "order": 6,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -859,8 +903,8 @@
         ],
         "order": 3,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "8fe5ca59c52d6275",
@@ -883,7 +927,7 @@
         "page": "d9df23d6a6ef270f",
         "width": 12,
         "height": 1,
-        "order": 8,
+        "order": 9,
         "showTitle": true,
         "className": "",
         "visible": false,
@@ -909,7 +953,7 @@
         "page": "d9df23d6a6ef270f",
         "width": 6,
         "height": 1,
-        "order": 7,
+        "order": 8,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -933,7 +977,7 @@
         "name": "spacer",
         "order": 3,
         "width": 1,
-        "height": 3,
+        "height": 4,
         "className": ""
     },
     {
@@ -1003,8 +1047,8 @@
         ],
         "order": 4,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "a9df5341a2cc8e73",
@@ -1053,8 +1097,8 @@
         ],
         "order": 5,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "68696373afd855b2",
@@ -1360,6 +1404,95 @@
         "width": 1,
         "height": 3,
         "className": ""
+    },
+    {
+        "id": "ec6ede0ed5af39d6",
+        "type": "ui-page",
+        "name": "Raw data",
+        "ui": "a1947a9da86cce22",
+        "path": "/raw",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "a99d81eafbb77aba",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "c005eb9b1514a92d",
+        "type": "ui-group",
+        "name": "Data",
+        "page": "ec6ede0ed5af39d6",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c6c5aa2762ca60d6",
+        "type": "ui-spacer",
+        "group": "0c37d42b6a3660c1",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 3,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "cf70ec1942c3591f",
+        "type": "ui-group",
+        "name": "Hehe",
+        "page": "1ea86211ab64724d",
+        "width": "2",
+        "height": "2",
+        "order": 8,
+        "showTitle": true,
+        "className": ".v-main {     background-image: url(\"\thttps://www.transparenttextures.com/patterns/batthern.png\");     background-repeat: repeat; }",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "dialog"
+    },
+    {
+        "id": "e797beabc0507155",
+        "type": "ui-group",
+        "name": "SDC",
+        "page": "d9df23d6a6ef270f",
+        "width": 1,
+        "height": "2",
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
     },
     {
         "id": "c449922502408448",
@@ -1809,7 +1942,7 @@
         "value": "msg.payload.TSAC_STAT.TSAC_STAT_ISA_VOLTAGE",
         "valueType": "jsonata",
         "width": 2,
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "rounded",
         "title": "TSAC voltage",
@@ -1868,8 +2001,8 @@
         "order": 2,
         "value": "msg.payload.TSAC_STAT.TSAC_STAT_ISA_CURRENT",
         "valueType": "jsonata",
-        "width": 2,
-        "height": 3,
+        "width": 1,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "rounded",
         "title": "TSAC Current",
@@ -1923,7 +2056,7 @@
         "value": "msg.payload.TSAC_STAT.TSAC_ISA_POWER",
         "valueType": "jsonata",
         "width": 2,
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "rounded",
         "title": "TSAC power",
@@ -1977,7 +2110,7 @@
         "value": "msg.payload.AVAILABE_CURRENT.TSAC_MAX_DISCHARGE_CURRENT",
         "valueType": "jsonata",
         "width": 1,
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "Discharge limit",
@@ -2019,7 +2152,7 @@
         "value": "msg.payload.AVAILABE_CURRENT.TSAC_MAX_CHARGE_CURRENT",
         "valueType": "jsonata",
         "width": 1,
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "Charge limit",
@@ -2278,7 +2411,8 @@
                 "800376c8f66fb21f",
                 "58ccc31dded11a02",
                 "b37a7ec90a408c11",
-                "2fe7df48a6a941da"
+                "2fe7df48a6a941da",
+                "b8d4a326acf3b634"
             ]
         ]
     },
@@ -2398,10 +2532,28 @@
                 "color": "#ea5353",
                 "text": "MPCU TIMEOUT",
                 "textType": "str"
+            },
+            {
+                "from": "16",
+                "color": "#ea5353",
+                "text": "HV ON",
+                "textType": "str"
+            },
+            {
+                "from": "17",
+                "color": "#ea5353",
+                "text": "LEAK",
+                "textType": "str"
+            },
+            {
+                "from": "18",
+                "color": "#ea5353",
+                "text": "AIR OPENED",
+                "textType": "str"
             }
         ],
         "min": 0,
-        "max": "15",
+        "max": "18",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
@@ -2637,7 +2789,7 @@
         "value": "msg.payload.TSAC_STAT.TSAC_STAT_THERMAL_REDUCTION",
         "valueType": "jsonata",
         "width": 1,
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "Thermal Reduction",
@@ -2685,7 +2837,7 @@
         "value": "msg.payload.TSAC_STAT.TSAC_STAT_UNBALANCE_REDUCTION",
         "valueType": "jsonata",
         "width": 1,
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "Unbalance Reduction",
@@ -2733,7 +2885,7 @@
         "value": "msg.payload.TSAC_STAT.TSAC_STAT_VOILTAGE_REDUCTION",
         "valueType": "jsonata",
         "width": 1,
-        "height": 3,
+        "height": 4,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "Voltage Reduction",
@@ -2849,7 +3001,7 @@
             {
                 "from": "0",
                 "color": "#5cd65c",
-                "text": "NO ERROR",
+                "text": "NO WARNING",
                 "textType": "str"
             },
             {
@@ -2909,42 +3061,36 @@
             {
                 "from": "10",
                 "color": "#ffc800",
-                "text": "AIR + OPENED",
+                "text": "RELAY STUCK DURING ERROR",
                 "textType": "str"
             },
             {
                 "from": "11",
                 "color": "#ffc800",
-                "text": "AIR - OPENED",
+                "text": "OVERCHARGE",
                 "textType": "str"
             },
             {
                 "from": "12",
                 "color": "#ffc800",
-                "text": "RELAY STUCK DURING ERROR",
+                "text": "OVERDISCHARGE",
                 "textType": "str"
             },
             {
                 "from": "13",
                 "color": "#ffc800",
-                "text": "OVERCHARGE",
+                "text": "HV ON",
                 "textType": "str"
             },
             {
                 "from": "14",
                 "color": "#ffc800",
-                "text": "OVERDISCHARGE",
-                "textType": "str"
-            },
-            {
-                "from": "15",
-                "color": "#ffc800",
-                "text": "RELAY STUCK OR SDC OFF",
+                "text": "BENDER",
                 "textType": "str"
             }
         ],
         "min": 0,
-        "max": "15",
+        "max": "14",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
@@ -3182,6 +3328,60 @@
         ]
     },
     {
+        "id": "b8d4a326acf3b634",
+        "type": "ui-gauge",
+        "z": "f595383a0843f950",
+        "name": "SDC_voltage",
+        "group": "e797beabc0507155",
+        "order": 1,
+        "value": "msg.payload.TSAC_STAT.TSAC_KS_VOLTAGE",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 4,
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "SDC_voltage",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "V",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "10",
+                "color": "#00ff00",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "15",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "0",
+        "max": "18",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 430,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "e0e92b61642707d5",
         "type": "ui-gauge",
         "z": "58531eb4c616092e",
@@ -3292,6 +3492,12 @@
                 "from": "3",
                 "color": "#ff0000",
                 "text": "COMM",
+                "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "STARTUP",
                 "textType": "str"
             }
         ],
@@ -3483,6 +3689,12 @@
                 "color": "#ff0000",
                 "text": "COMM",
                 "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "STARTUP",
+                "textType": "str"
             }
         ],
         "min": 0,
@@ -3543,6 +3755,12 @@
                 "from": "3",
                 "color": "#ff0000",
                 "text": "COMM",
+                "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "STARTUP",
                 "textType": "str"
             }
         ],
@@ -3605,6 +3823,12 @@
                 "color": "#ff0000",
                 "text": "COMM",
                 "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "STARTUP",
+                "textType": "str"
             }
         ],
         "min": 0,
@@ -3665,6 +3889,12 @@
                 "from": "3",
                 "color": "#ff0000",
                 "text": "COMM",
+                "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "STARTUP",
                 "textType": "str"
             }
         ],
@@ -3727,6 +3957,12 @@
                 "color": "#ff0000",
                 "text": "COMM",
                 "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "STARTUP",
+                "textType": "str"
             }
         ],
         "min": 0,
@@ -3787,6 +4023,12 @@
                 "from": "3",
                 "color": "#ff0000",
                 "text": "COMM",
+                "textType": "str"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "STARTUP",
                 "textType": "str"
             }
         ],
@@ -5054,7 +5296,7 @@
         "color": "#717171",
         "wrapText": true,
         "className": "",
-        "value": "$exists(payload.MPCU_values.MPCU_INVERTER_TEMPERATURE) ? timestamp",
+        "value": "$exists(payload.Send_Vehicle_State) ? timestamp",
         "valueType": "jsonata",
         "x": 810,
         "y": 80,
@@ -5632,8 +5874,8 @@
         "className": "",
         "icon": "",
         "iconPosition": "left",
-        "payload": "0",
-        "payloadType": "num",
+        "payload": "{\"groups\":{\"show\":[\"Hehe\"]}}",
+        "payloadType": "json",
         "topic": "4",
         "topicType": "str",
         "buttonColor": "red",
@@ -5650,7 +5892,7 @@
         "y": 2220,
         "wires": [
             [
-                "0a70b26b66a04142"
+                "b474a3d2f00b5523"
             ]
         ]
     },
@@ -7975,6 +8217,44 @@
         "wires": []
     },
     {
+        "id": "b474a3d2f00b5523",
+        "type": "ui-control",
+        "z": "58531eb4c616092e",
+        "g": "2aeb3d9d9334a3f0",
+        "name": "",
+        "ui": "a1947a9da86cce22",
+        "events": "change",
+        "x": 400,
+        "y": 2220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd94e5d7bb73e4f0",
+        "type": "ui-text",
+        "z": "58531eb4c616092e",
+        "group": "cf70ec1942c3591f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "❤️ 😭 ✅ 🔥 ✨ 🥹 🫪 👀 🫩",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 210,
+        "y": 3080,
+        "wires": []
+    },
+    {
         "id": "45ee29288ff68b21",
         "type": "ui-table",
         "z": "7de09f7e9474d780",
@@ -8659,7 +8939,7 @@
         "z": "4197684541243468",
         "g": "96a6da76ea6ed828",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8739,7 +9019,8 @@
             "5844b0df472597dd",
             "63510a53b3c81696",
             "ab4acc7f57471db1",
-            "5fd8cb30640799c1"
+            "5fd8cb30640799c1",
+            "e7dba28622e6303c"
         ],
         "x": 985,
         "y": 280,
@@ -10625,6 +10906,71 @@
         "wires": [
             [
                 "31b6e0f5d8a42458"
+            ]
+        ]
+    },
+    {
+        "id": "2ceae3cf2224f85d",
+        "type": "ui-template",
+        "z": "d958e374c0987340",
+        "g": "ef3dabfba30dec39",
+        "group": "c005eb9b1514a92d",
+        "page": "",
+        "ui": "",
+        "name": "Raw data template",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div style=\"height: 100%; min-height: 85vh; display: flex; flex-direction: column; box-sizing: border-box; padding: 5px;\">\n    \n    <div style=\"display: flex; gap: 15px; align-items: center; margin-bottom: 10px; flex-shrink: 0;\">\n      \n      <div style=\"display: flex; flex-grow: 1; position: relative; align-items: center;\">\n        <input \n          type=\"text\" \n          v-model=\"search\" \n          placeholder=\"Search messages or signals (use commas for multiple)...\" \n          style=\"width: 100%; padding: 8px; padding-right: 35px; border: 1px solid rgba(127,127,127,0.5); border-radius: 4px; background: transparent; color: inherit;\"\n        >\n        <button \n          v-show=\"search.length > 0\" \n          @click=\"search = ''\" \n          style=\"position: absolute; right: 5px; background: none; border: none; color: inherit; font-size: 1.2em; cursor: pointer; opacity: 0.7; padding: 0 5px;\"\n          title=\"Clear search\"\n        >\n          &times;\n        </button>\n      </div>\n\n      <div style=\"font-size: 0.85em; color: rgba(127,127,127,0.8); white-space: nowrap; text-align: right;\">\n        Last Update:<br>\n        <span style=\"color: inherit; font-weight: bold;\">{{ msg.lastUpdated || 'Waiting...' }}</span>\n      </div>\n    </div>\n\n    <div style=\"display: flex; gap: 10px; margin-bottom: 15px; flex-shrink: 0;\">\n      <button @click=\"toggleAll(true)\" style=\"padding: 4px 12px; background: rgba(127,127,127,0.1); border: 1px solid rgba(127,127,127,0.3); border-radius: 4px; color: inherit; cursor: pointer; font-size: 0.85em; transition: background 0.2s;\">\n        Expand All\n      </button>\n      <button @click=\"toggleAll(false)\" style=\"padding: 4px 12px; background: rgba(127,127,127,0.1); border: 1px solid rgba(127,127,127,0.3); border-radius: 4px; color: inherit; cursor: pointer; font-size: 0.85em; transition: background 0.2s;\">\n        Collapse All\n      </button>\n      \n      <button @click=\"clearMessages\" style=\"margin-left: auto; padding: 4px 12px; background: rgba(255,50,50,0.15); border: 1px solid rgba(255,50,50,0.4); border-radius: 4px; color: inherit; cursor: pointer; font-size: 0.85em; transition: background 0.2s;\">\n        Clear Messages\n      </button>\n    </div>\n\n    <div style=\"flex-grow: 1; overflow-y: auto; padding-right: 5px;\">\n      <div v-for=\"(data, message) in msg.payload\" :key=\"message\">\n        <details \n          v-show=\"showMessage(message, data.signals)\" \n          open \n          style=\"margin-bottom: 10px; background: rgba(127,127,127,0.05); padding: 8px; border-radius: 4px; border: 1px solid rgba(127,127,127,0.2);\"\n        >\n          <summary style=\"cursor: pointer; padding-bottom: 4px;\">\n            <span style=\"font-weight: bold; color: var(--v-theme-primary);\">{{ message }}</span>\n            <span style=\"float: right; font-size: 0.85em; color: rgba(127,127,127,0.8);\">{{ data.timestamp }}</span>\n          </summary>\n          \n          <table style=\"width: 100%; border-collapse: collapse; margin-top: 5px;\">\n            <tr \n              v-for=\"(value, signal) in data.signals\" \n              :key=\"signal\" \n              v-show=\"showSignal(message, signal)\"\n              style=\"border-bottom: 1px solid rgba(127,127,127,0.2);\"\n            >\n              <td style=\"padding: 4px; font-weight: 500;\">{{ signal }}</td>\n              <td style=\"padding: 4px; text-align: right; font-family: monospace;\">{{ value }}</td>\n            </tr>\n          </table>\n        </details>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      search: ''\n    }\n  },\n  methods: {\n    getSearchTerms() {\n      if (!this.search) return [];\n      return this.search.split(',')\n                 .map(term => term.trim().toLowerCase())\n                 .filter(term => term.length > 0);\n    },\n    showMessage(message, signals) {\n      const terms = this.getSearchTerms();\n      if (terms.length === 0) return true;\n      \n      return terms.some(q => {\n        return message.toLowerCase().includes(q) || Object.keys(signals).some(s => s.toLowerCase().includes(q));\n      });\n    },\n    showSignal(message, signal) {\n      const terms = this.getSearchTerms();\n      if (terms.length === 0) return true;\n      \n      return terms.some(q => {\n        return message.toLowerCase().includes(q) || signal.toLowerCase().includes(q);\n      });\n    },\n    toggleAll(state) {\n      const detailsElements = this.$el.querySelectorAll('details');\n      detailsElements.forEach(el => {\n        el.open = state;\n      });\n    },\n    // Sends a message back to Node-RED to clear the backend context\n    clearMessages() {\n      this.$send({ payload: \"CLEAR_DATA\" });\n    }\n  }\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 710,
+        "y": 700,
+        "wires": [
+            [
+                "54e642d67d1850b2"
+            ]
+        ]
+    },
+    {
+        "id": "54e642d67d1850b2",
+        "type": "function",
+        "z": "d958e374c0987340",
+        "g": "ef3dabfba30dec39",
+        "name": "Raw data processing function",
+        "func": "// 1. Intercept the Clear command from the UI\nif (msg.payload === \"CLEAR_DATA\") {\n    context.set('retainedData', {});\n    context.set('lastUpdated', 'Cleared');\n    msg.payload = {};\n    msg.lastUpdated = 'Cleared';\n    return msg;\n}\n\n// 2. INFINITE LOOP BREAKER\n// If the message has our custom 'lastUpdated' flag, it means it just \n// passed through the UI node. We drop it here so it doesn't loop.\nif (msg.lastUpdated) {\n    return null; \n}\n\n// 3. Normal data processing\nlet storedData = context.get('retainedData') || {};\nlet incomingTime = msg.timestamp || new Date().toLocaleTimeString();\n\nfor (let message in msg.payload) {\n    if (typeof msg.payload[message] === 'object' && msg.payload[message] !== null) {\n        if (!storedData[message]) {\n            storedData[message] = { signals: {}, timestamp: \"\" };\n        }\n        storedData[message].signals = { ...storedData[message].signals, ...msg.payload[message] };\n        storedData[message].timestamp = incomingTime;\n    }\n}\n\ncontext.set('retainedData', storedData);\nmsg.payload = storedData;\nmsg.lastUpdated = incomingTime; \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 700,
+        "wires": [
+            [
+                "2ceae3cf2224f85d"
+            ]
+        ]
+    },
+    {
+        "id": "e7dba28622e6303c",
+        "type": "link in",
+        "z": "d958e374c0987340",
+        "g": "ef3dabfba30dec39",
+        "name": "link in 9",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 165,
+        "y": 700,
+        "wires": [
+            [
+                "54e642d67d1850b2"
             ]
         ]
     }
