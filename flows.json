@@ -216,7 +216,8 @@
             "3133ca825ea805b7",
             "cdb3c33dbb3ffdd5",
             "caa2c4af47e6fcea",
-            "12bc8e4c1be8669f"
+            "12bc8e4c1be8669f",
+            "4da1b53a5799da39"
         ],
         "x": 874,
         "y": 1819,
@@ -493,12 +494,15 @@
             "2c27180cd63e4744",
             "f6d4234db30b3d96",
             "2c12ce22b35c7735",
-            "3bef5d58325f7fbd"
+            "3bef5d58325f7fbd",
+            "07389e0306fc192e",
+            "71de29e92592c35d",
+            "a1322aa217ff4303"
         ],
-        "x": 94,
+        "x": 54,
         "y": 119,
         "w": 652,
-        "h": 302
+        "h": 382
     },
     {
         "id": "62d4320ce209e40e",
@@ -618,6 +622,77 @@
         "h": 82
     },
     {
+        "id": "da053a2594207ebf",
+        "type": "group",
+        "z": "7dade78592428d89",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "43181be9ce422584",
+            "7a6f0ce9340ac5ba"
+        ],
+        "x": 794,
+        "y": 119,
+        "w": 292,
+        "h": 82
+    },
+    {
+        "id": "e1d8e80501ed0ba7",
+        "type": "group",
+        "z": "7dade78592428d89",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6e6215c6460a9811",
+            "53b01e8a3798c8a7",
+            "78ca6835633a1513",
+            "cfc7b10295d34f30",
+            "e1d22b75230bf2d8",
+            "78279a38104a35ef",
+            "41c3b4375639627d"
+        ],
+        "x": 1174,
+        "y": 119,
+        "w": 432,
+        "h": 282
+    },
+    {
+        "id": "438f6b61f29a1657",
+        "type": "group",
+        "z": "7dade78592428d89",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6f19ffd217f7873a",
+            "a00808b9a5fcfd44"
+        ],
+        "x": 794,
+        "y": 259,
+        "w": 292,
+        "h": 82
+    },
+    {
         "id": "a1947a9da86cce22",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -688,7 +763,7 @@
                 "cols": "12"
             }
         ],
-        "order": 1,
+        "order": 2,
         "className": "",
         "visible": true,
         "disabled": false
@@ -785,7 +860,7 @@
                 "cols": "12"
             }
         ],
-        "order": 2,
+        "order": 3,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -901,7 +976,7 @@
                 "cols": "12"
             }
         ],
-        "order": 3,
+        "order": 4,
         "className": "",
         "visible": true,
         "disabled": false
@@ -985,19 +1060,9 @@
         "type": "ui-spacer",
         "group": "7ce9ca5952a94637",
         "name": "spacer",
-        "order": 7,
+        "order": 8,
         "width": 1,
         "height": 6,
-        "className": ""
-    },
-    {
-        "id": "cf34df5695ba3fda",
-        "type": "ui-spacer",
-        "group": "7ce9ca5952a94637",
-        "name": "spacer",
-        "order": 9,
-        "width": 1,
-        "height": 3,
         "className": ""
     },
     {
@@ -1045,7 +1110,7 @@
                 "cols": "12"
             }
         ],
-        "order": 4,
+        "order": 1,
         "className": "",
         "visible": true,
         "disabled": false
@@ -1055,7 +1120,7 @@
         "type": "ui-group",
         "name": "APPS",
         "page": "547696f99c243db1",
-        "width": 6,
+        "width": 5,
         "height": 1,
         "order": 2,
         "showTitle": true,
@@ -1488,6 +1553,58 @@
         "width": 1,
         "height": "2",
         "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "81afc6f934b6762d",
+        "type": "ui-group",
+        "name": "Brake",
+        "page": "547696f99c243db1",
+        "width": 1,
+        "height": "4",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "474ddb1c53d8a25c",
+        "type": "ui-group",
+        "name": "Suspension",
+        "page": "547696f99c243db1",
+        "width": 3,
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f6a29a50a1b4907d",
+        "type": "ui-spacer",
+        "group": "474ddb1c53d8a25c",
+        "name": "spacer",
+        "order": 2,
+        "width": 1,
+        "height": 2,
+        "className": ""
+    },
+    {
+        "id": "8dd08348eb2bb2fb",
+        "type": "ui-group",
+        "name": "Dash",
+        "page": "547696f99c243db1",
+        "width": "2",
+        "height": 1,
+        "order": 4,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -2786,7 +2903,7 @@
         "name": "thermal_reduction",
         "group": "359d13a03a079e3c",
         "order": 4,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_THERMAL_REDUCTION",
+        "value": "msg.payload.TSAC_STAT.TSAC_THERMAL_REDUCTION_RATE",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -2834,7 +2951,7 @@
         "name": "unbalance_reduction",
         "group": "359d13a03a079e3c",
         "order": 6,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_UNBALANCE_REDUCTION",
+        "value": "msg.payload.TSAC_STAT.TSAC_UNBALANCED_REDUCTION_RATE",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -2882,7 +2999,7 @@
         "name": "voltage_reduction",
         "group": "359d13a03a079e3c",
         "order": 5,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_VOILTAGE_REDUCTION",
+        "value": "msg.payload.TSAC_STAT.TSAC_VOLTAGE_REDUCTION_RATE",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -4710,7 +4827,7 @@
         "g": "2ed428752a2a8e1c",
         "name": "Inverter Temperature",
         "group": "7ce9ca5952a94637",
-        "order": 3,
+        "order": 4,
         "value": "msg.payload.MPCU_values.MPCU_INVERTER_TEMPERATURE",
         "valueType": "jsonata",
         "width": 2,
@@ -4765,7 +4882,7 @@
         "g": "2ed428752a2a8e1c",
         "name": "Motor Temperature",
         "group": "7ce9ca5952a94637",
-        "order": 2,
+        "order": 3,
         "value": "msg.payload.MPCU_values.MPCU_MOTOR_TEMPERATURE",
         "valueType": "jsonata",
         "width": 2,
@@ -4820,10 +4937,10 @@
         "g": "2ed428752a2a8e1c",
         "name": "Motor RPM",
         "group": "7ce9ca5952a94637",
-        "order": 1,
+        "order": 2,
         "value": "msg.payload.MPCU_values.MPCU_MOTOR_RPM",
         "valueType": "jsonata",
-        "width": 3,
+        "width": 2,
         "height": 6,
         "gtype": "gauge-34",
         "gstyle": "needle",
@@ -4875,14 +4992,14 @@
         "g": "2ed428752a2a8e1c",
         "name": "LV Current",
         "group": "7ce9ca5952a94637",
-        "order": 5,
-        "value": "msg.payload.MPCU_values.MPCU_LEM_CURRENT",
+        "order": 6,
+        "value": "(\t  $adc := payload.MPCU_values.MPCU_LEM_CURRENT;\t  $vRef := 3.3;\t  $adcMax := 4095;\t  $uRef := 0.5;\t  $sens := 0.0575;\t  \t  $round(((($adc / $adcMax) * $vRef) - $uRef) / $sens, 2)\t)\t\t",
         "valueType": "jsonata",
         "width": 1,
-        "height": 3,
+        "height": 6,
         "gtype": "gauge-34",
         "gstyle": "needle",
-        "title": "LV Current",
+        "title": "LV Current - to be calibrated!",
         "alwaysShowTitle": false,
         "floatingTitlePosition": "top-left",
         "units": "A",
@@ -4897,20 +5014,20 @@
                 "textType": "label"
             },
             {
-                "from": "30",
+                "from": "15",
                 "color": "#ffc800",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "40",
+                "from": "20",
                 "color": "#ea5353",
                 "text": "",
                 "textType": "label"
             }
         ],
         "min": 0,
-        "max": "50",
+        "max": "25",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
@@ -4918,7 +5035,7 @@
         "styleGlow": false,
         "className": "",
         "x": 1110,
-        "y": 2020,
+        "y": 2040,
         "wires": [
             []
         ]
@@ -4930,10 +5047,10 @@
         "g": "2ed428752a2a8e1c",
         "name": "HV Voltage-Inv",
         "group": "7ce9ca5952a94637",
-        "order": 4,
+        "order": 5,
         "value": "msg.payload.MPCU_values.MPCU_BUS_VOLTAGE",
         "valueType": "jsonata",
-        "width": 2,
+        "width": 1,
         "height": 6,
         "gtype": "gauge-34",
         "gstyle": "needle",
@@ -5034,7 +5151,7 @@
         "g": "2ed428752a2a8e1c",
         "name": "Inverter Warning",
         "group": "7ce9ca5952a94637",
-        "order": 6,
+        "order": 7,
         "value": "msg.payload.MPCU_values.MPCU_INVERTER_WARNING_STATES",
         "valueType": "jsonata",
         "width": 1,
@@ -5139,12 +5256,13 @@
                 "bf81fef9d6979b4b",
                 "6a2b5939fd1cb5d1",
                 "59b83c4f121bf715",
-                "29fec4d21c141606",
                 "05f07425262bfe02",
                 "fd22acc5301c6f88",
                 "3133ca825ea805b7",
                 "caa2c4af47e6fcea",
-                "cdb3c33dbb3ffdd5"
+                "cdb3c33dbb3ffdd5",
+                "29fec4d21c141606",
+                "4da1b53a5799da39"
             ]
         ]
     },
@@ -5202,7 +5320,7 @@
         "z": "58531eb4c616092e",
         "g": "2ed428752a2a8e1c",
         "group": "7ce9ca5952a94637",
-        "order": 8,
+        "order": 9,
         "width": 1,
         "height": 0,
         "name": "Inverter Warning",
@@ -8187,7 +8305,7 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 720,
+        "x": 700,
         "y": 580,
         "wires": []
     },
@@ -8212,7 +8330,7 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 670,
+        "x": 690,
         "y": 700,
         "wires": []
     },
@@ -8253,6 +8371,61 @@
         "x": 210,
         "y": 3080,
         "wires": []
+    },
+    {
+        "id": "4da1b53a5799da39",
+        "type": "ui-gauge",
+        "z": "58531eb4c616092e",
+        "g": "2ed428752a2a8e1c",
+        "name": "Speed",
+        "group": "7ce9ca5952a94637",
+        "order": 1,
+        "value": "msg.payload.MPCU_values.MPCU_KMPH",
+        "valueType": "jsonata",
+        "width": 2,
+        "height": 6,
+        "gtype": "gauge-34",
+        "gstyle": "needle",
+        "title": "Speed",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "Km/h",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "130",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1090,
+        "y": 1980,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "45ee29288ff68b21",
@@ -8666,7 +8839,9 @@
                 "f3d98c90779ee73f",
                 "f6d4234db30b3d96",
                 "3bef5d58325f7fbd",
-                "2c12ce22b35c7735"
+                "2c12ce22b35c7735",
+                "71de29e92592c35d",
+                "a1322aa217ff4303"
             ]
         ]
     },
@@ -8679,11 +8854,11 @@
         "name": "",
         "label": "APPS 1",
         "order": 1,
-        "width": 4,
+        "width": 3,
         "height": 0,
         "color": "green",
         "className": "",
-        "x": 660,
+        "x": 620,
         "y": 160,
         "wires": []
     },
@@ -8695,12 +8870,12 @@
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "APPS 2",
-        "order": 4,
-        "width": 4,
+        "order": 7,
+        "width": 3,
         "height": 0,
         "color": "green",
         "className": "",
-        "x": 660,
+        "x": 620,
         "y": 240,
         "wires": []
     },
@@ -8712,12 +8887,12 @@
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "APPS",
-        "order": 3,
-        "width": 4,
+        "order": 4,
+        "width": 3,
         "height": 2,
         "color": "red",
         "className": "",
-        "x": 650,
+        "x": 610,
         "y": 200,
         "wires": []
     },
@@ -8728,10 +8903,10 @@
         "g": "4abfee49327f8e33",
         "name": "",
         "group": "a9df5341a2cc8e73",
-        "order": 2,
+        "order": 6,
         "value": "msg.payload.APPS_Error_Data.APPS_Error ? msg.payload.APPS_Error_Data.APPS_Error",
         "valueType": "jsonata",
-        "width": 2,
+        "width": 1,
         "height": 3,
         "gtype": "gauge-tile",
         "gstyle": "needle",
@@ -8782,8 +8957,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 400,
-        "y": 320,
+        "x": 360,
+        "y": 460,
         "wires": [
             []
         ]
@@ -8796,8 +8971,8 @@
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "Reset Error",
-        "order": 5,
-        "width": "2",
+        "order": 3,
+        "width": 1,
         "height": "1",
         "emulateClick": true,
         "tooltip": "",
@@ -8820,8 +8995,8 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 190,
-        "y": 380,
+        "x": 150,
+        "y": 320,
         "wires": [
             [
                 "f3d98c90779ee73f"
@@ -8910,6 +9085,536 @@
             [
                 "7e98e97e30f48bd7"
             ]
+        ]
+    },
+    {
+        "id": "07389e0306fc192e",
+        "type": "ui-text",
+        "z": "7dade78592428d89",
+        "g": "4abfee49327f8e33",
+        "group": "a9df5341a2cc8e73",
+        "order": 5,
+        "width": 1,
+        "height": 2,
+        "name": "Raw Data",
+        "label": "APPS RAW Data",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "",
+        "valueType": "msg",
+        "x": 380,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "71de29e92592c35d",
+        "type": "ui-text",
+        "z": "7dade78592428d89",
+        "g": "4abfee49327f8e33",
+        "group": "a9df5341a2cc8e73",
+        "order": 2,
+        "width": 1,
+        "height": 0,
+        "name": "APPS1 RAW",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "$number(msg.payload.APPS_Normal_Data.APPS1_interpolated)\t",
+        "valueType": "jsonata",
+        "x": 390,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a1322aa217ff4303",
+        "type": "ui-text",
+        "z": "7dade78592428d89",
+        "g": "4abfee49327f8e33",
+        "group": "a9df5341a2cc8e73",
+        "order": 8,
+        "width": 1,
+        "height": 0,
+        "name": "APPS2 RAW",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "$number(msg.payload.APPS_Normal_Data.APPS2_interpolated)\t",
+        "valueType": "jsonata",
+        "x": 390,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "43181be9ce422584",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "g": "da053a2594207ebf",
+        "name": "link in 10",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 835,
+        "y": 160,
+        "wires": [
+            [
+                "7a6f0ce9340ac5ba"
+            ]
+        ]
+    },
+    {
+        "id": "6e6215c6460a9811",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "g": "e1d8e80501ed0ba7",
+        "name": "link in 11",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 1215,
+        "y": 160,
+        "wires": [
+            [
+                "53b01e8a3798c8a7",
+                "78ca6835633a1513",
+                "e1d22b75230bf2d8",
+                "cfc7b10295d34f30",
+                "41c3b4375639627d"
+            ]
+        ]
+    },
+    {
+        "id": "7a6f0ce9340ac5ba",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "da053a2594207ebf",
+        "name": "Brake Pressure",
+        "group": "81afc6f934b6762d",
+        "order": 1,
+        "value": "msg.payload.BPS.pressure",
+        "valueType": "jsonata",
+        "width": 2,
+        "height": 4,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "BPS",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "bar",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 980,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53b01e8a3798c8a7",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "e1d8e80501ed0ba7",
+        "name": "SuspensionRL",
+        "group": "474ddb1c53d8a25c",
+        "order": 5,
+        "value": "msg.payload.RSU_data.LSuspension",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": "4",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "RL suspension",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "mm",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "2000",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "3000",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "4100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1380,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78ca6835633a1513",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "e1d8e80501ed0ba7",
+        "name": "SuspensionRR",
+        "group": "474ddb1c53d8a25c",
+        "order": 6,
+        "value": "msg.payload.RSU_data.RSuspension",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": "4",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "RR suspension",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "mm",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "2000",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "3000",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "4100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1380,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cfc7b10295d34f30",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "e1d8e80501ed0ba7",
+        "name": "SuspensionFR",
+        "group": "474ddb1c53d8a25c",
+        "order": 3,
+        "value": "msg.payload.FSU_data.RSuspension",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": "4",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "FR suspension",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "mm",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "2000",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "3000",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "4100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1380,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1d22b75230bf2d8",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "e1d8e80501ed0ba7",
+        "name": "SuspensionFL",
+        "group": "474ddb1c53d8a25c",
+        "order": 1,
+        "value": "msg.payload.FSU_data.LSuspension",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": "4",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "FL suspension",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "mm",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "2000",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "3000",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "4100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1380,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78279a38104a35ef",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "e1d8e80501ed0ba7",
+        "name": "Avg susp",
+        "group": "474ddb1c53d8a25c",
+        "order": 4,
+        "value": "payload.average",
+        "valueType": "msg",
+        "width": 1,
+        "height": "4",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Average suspension length",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "mm",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "2000",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "3000",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "4100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1520,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41c3b4375639627d",
+        "type": "function",
+        "z": "7dade78592428d89",
+        "g": "e1d8e80501ed0ba7",
+        "name": "function 1",
+        "func": "// 1. Initialize the stored values in context if they don't exist yet\nconst storedValues = context.get('storedValues') || {\n    FL: null,\n    FR: null,\n    RL: null,\n    RR: null\n};\n\n// 2. Update stored values with whatever comes in the current message\n// Using optional chaining (?.) to prevent crashes if FSU_data or RSU_data is missing\nif (msg.payload && typeof msg.payload === 'object') {\n    if (msg.payload.FSU_data?.LSuspension !== undefined) storedValues.FL = msg.payload.FSU_data.LSuspension;\n    if (msg.payload.FSU_data?.RSuspension !== undefined) storedValues.FR = msg.payload.FSU_data.RSuspension;\n    if (msg.payload.RSU_data?.LSuspension !== undefined) storedValues.RL = msg.payload.RSU_data.LSuspension;\n    if (msg.payload.RSU_data?.RSuspension !== undefined) storedValues.RR = msg.payload.RSU_data.RSuspension;\n}\n\n// 3. Save the updated values back to the node's context\ncontext.set('storedValues', storedValues);\n\n// 4. Extract the valid numeric values to calculate the average\nconst validValues = Object.values(storedValues).filter(v => v !== null && typeof v === 'number');\n\n// 5. Calculate average only if we have at least one value\nif (validValues.length > 0) {\n    const sum = validValues.reduce((acc, curr) => acc + curr, 0);\n    const average = sum / validValues.length;\n\n    // Output the average and how many active sensors contributed to it\n    msg.payload = {\n        average: Number(average.toFixed(2)), // Rounds to 2 decimal places\n        activeCount: validValues.length,\n        currentValues: storedValues\n    };\n    return msg;\n}\n\n// If no data has been received yet, do nothing\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 260,
+        "wires": [
+            [
+                "78279a38104a35ef"
+            ]
+        ]
+    },
+    {
+        "id": "6f19ffd217f7873a",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "g": "438f6b61f29a1657",
+        "name": "link in 12",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 835,
+        "y": 300,
+        "wires": [
+            [
+                "a00808b9a5fcfd44"
+            ]
+        ]
+    },
+    {
+        "id": "a00808b9a5fcfd44",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "438f6b61f29a1657",
+        "name": "SW_connected",
+        "group": "8dd08348eb2bb2fb",
+        "order": 1,
+        "value": "msg.payload.Dash_status.swheel_connected",
+        "valueType": "jsonata",
+        "width": 2,
+        "height": 4,
+        "gtype": "gauge-tile",
+        "gstyle": "needle",
+        "title": "Steering wheel",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "bar",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "NOT CONNECTED",
+                "textType": "str"
+            },
+            {
+                "from": "1",
+                "color": "#5cd65c",
+                "text": "CONNECTED",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "1",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 980,
+        "y": 300,
+        "wires": [
+            []
         ]
     },
     {
@@ -9020,7 +9725,10 @@
             "63510a53b3c81696",
             "ab4acc7f57471db1",
             "5fd8cb30640799c1",
-            "e7dba28622e6303c"
+            "e7dba28622e6303c",
+            "43181be9ce422584",
+            "6e6215c6460a9811",
+            "6f19ffd217f7873a"
         ],
         "x": 985,
         "y": 280,
