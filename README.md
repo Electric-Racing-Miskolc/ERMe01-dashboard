@@ -1,7 +1,7 @@
-ERMe01_dashboard
+ERMe01_NodeRed
 ================
 
-ERMe01 project racecar's dashboard 
+ERMe01 project racecar's NodeRed dashboard 
 
 ### About
 
