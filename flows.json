@@ -693,6 +693,144 @@
         "h": 82
     },
     {
+        "id": "e206fe5f765ce317",
+        "type": "group",
+        "z": "7dade78592428d89",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "543de9dda9e91dbf",
+            "7b5ccb7c562c3792"
+        ],
+        "x": 794,
+        "y": 419,
+        "w": 292,
+        "h": 82
+    },
+    {
+        "id": "f5ea3fe150dc87c2",
+        "type": "group",
+        "z": "7dade78592428d89",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e3ff08f6639eb266",
+            "5a60542ef318bfaf",
+            "c388397115ca355a",
+            "45b49807ca72b4e4",
+            "2a247ba90d7a7fb1",
+            "880829bab1760855",
+            "ccc8b12682bfa886",
+            "b5a2e2986c1c5801",
+            "f9063fd0a11c3c06"
+        ],
+        "x": 174,
+        "y": 639,
+        "w": 252,
+        "h": 362
+    },
+    {
+        "id": "0551647371a24b93",
+        "type": "group",
+        "z": "7dade78592428d89",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7ef5e3ee3371ecfe",
+            "4b5d0b5de3836a40",
+            "27b0641eaedc5a62",
+            "e12d197774e73d0d",
+            "c4b4394f49f0a320",
+            "9449999342050d08",
+            "d7aaa3f52924a054",
+            "46f3a6d8ac4f55ad",
+            "10a4d169e599c3f1"
+        ],
+        "x": 434,
+        "y": 639,
+        "w": 252,
+        "h": 362
+    },
+    {
+        "id": "cf7cb61c695ba75d",
+        "type": "group",
+        "z": "7dade78592428d89",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "101cbf07874e0727",
+            "2f9af4f2c6eafd83",
+            "7b87ea23c1c25bf2",
+            "76c7fc58c1f6af13",
+            "7b35933b89fb57d6",
+            "9f3fe34c866faccc",
+            "fab0f7cdedcf049a",
+            "97b8b370768e40c7",
+            "aab1228ef29d2408"
+        ],
+        "x": 694,
+        "y": 639,
+        "w": 252,
+        "h": 362
+    },
+    {
+        "id": "38f224b6461ead5d",
+        "type": "group",
+        "z": "7dade78592428d89",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "65199ad48c22345c",
+            "1c62bd7dc423ae96",
+            "ef21263dd75ab53f",
+            "6ce345fca10ac159",
+            "ddfe9e07b833455b",
+            "4d1f15b57621adbd",
+            "2d2f3a6adc255cad",
+            "01693fb726e34357",
+            "32299af8f446178f"
+        ],
+        "x": 954,
+        "y": 639,
+        "w": 252,
+        "h": 362
+    },
+    {
         "id": "a1947a9da86cce22",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -1122,7 +1260,7 @@
         "page": "547696f99c243db1",
         "width": 5,
         "height": 1,
-        "order": 2,
+        "order": 3,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -1566,7 +1704,7 @@
         "page": "547696f99c243db1",
         "width": "2",
         "height": "4",
-        "order": 3,
+        "order": 5,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -1580,7 +1718,7 @@
         "page": "547696f99c243db1",
         "width": 3,
         "height": 1,
-        "order": 5,
+        "order": 2,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -1594,7 +1732,7 @@
         "name": "spacer",
         "order": 2,
         "width": 1,
-        "height": 2,
+        "height": 3,
         "className": ""
     },
     {
@@ -1602,9 +1740,79 @@
         "type": "ui-group",
         "name": "Dash",
         "page": "547696f99c243db1",
-        "width": "2",
+        "width": 3,
         "height": 1,
+        "order": 7,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "3555f15ebe888669",
+        "type": "ui-group",
+        "name": "Steering",
+        "page": "547696f99c243db1",
+        "width": 2,
+        "height": "4",
         "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6263dccee89158e8",
+        "type": "ui-group",
+        "name": "Front Left Tire temps",
+        "page": "547696f99c243db1",
+        "width": "8",
+        "height": "2",
+        "order": 6,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "17feaca16ebeb90f",
+        "type": "ui-group",
+        "name": "Front Right Tire temps",
+        "page": "547696f99c243db1",
+        "width": 8,
+        "height": 1,
+        "order": 8,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "55676d3f8cce1f22",
+        "type": "ui-group",
+        "name": "Rear Right Tyre temps",
+        "page": "547696f99c243db1",
+        "width": 8,
+        "height": 1,
+        "order": 10,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "3b8c20a16c8cb582",
+        "type": "ui-group",
+        "name": "Rear Left Tyre temps",
+        "page": "547696f99c243db1",
+        "width": 8,
+        "height": 1,
+        "order": 9,
         "showTitle": true,
         "className": "",
         "visible": "true",
@@ -1618,7 +1826,7 @@
         "name": "min_cell_temp",
         "group": "25cb88409ba9fd0d",
         "order": 4,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_MIN_TEMP",
+        "value": "msg.payload.AMS_Stat.MinTemp",
         "valueType": "jsonata",
         "width": 1,
         "height": 2,
@@ -1672,7 +1880,7 @@
         "name": "avg_cell_temp",
         "group": "25cb88409ba9fd0d",
         "order": 2,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_AVG_TEMP",
+        "value": "msg.payload.AMS_Stat.AvgTemp",
         "valueType": "jsonata",
         "width": 4,
         "height": 5,
@@ -1723,7 +1931,7 @@
         "id": "e44be330d8fd3dc9",
         "type": "ui-gauge",
         "z": "f595383a0843f950",
-        "name": "max_cell_temp",
+        "name": "msg.payload.AMS_Stat.MaxTemp",
         "group": "25cb88409ba9fd0d",
         "order": 5,
         "value": "msg.payload.TSAC_STAT.TSAC_STAT_MAX_TEMP",
@@ -1767,7 +1975,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 740,
+        "x": 800,
         "y": 340,
         "wires": [
             []
@@ -1780,7 +1988,7 @@
         "name": "min_cell_voltage",
         "group": "8579c314567beff0",
         "order": 1,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_MIN_VOLTAGE",
+        "value": "msg.payload.AMS_Stat.MinVoltage",
         "valueType": "jsonata",
         "width": 1,
         "height": "2",
@@ -1834,7 +2042,7 @@
         "name": "avg_cell_voltage",
         "group": "8579c314567beff0",
         "order": 2,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_AVG_VOLTAGE",
+        "value": "msg.payload.AMS_Stat.AvgVoltage",
         "valueType": "jsonata",
         "width": 1,
         "height": "2",
@@ -1888,7 +2096,7 @@
         "name": "max_cell_voltage",
         "group": "8579c314567beff0",
         "order": 3,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_MAX_VOLTAGE",
+        "value": "msg.payload.AMS_Stat.MaxVoltage",
         "valueType": "jsonata",
         "width": 1,
         "height": "2",
@@ -1942,7 +2150,7 @@
         "name": "sum_cell_voltage",
         "group": "8579c314567beff0",
         "order": 4,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_SUM_VOLTAGE",
+        "value": "msg.payload.AMS_Stat.SumVoltage",
         "valueType": "jsonata",
         "width": "3",
         "height": 5,
@@ -2002,7 +2210,7 @@
         "name": "battery SOC",
         "group": "8579c314567beff0",
         "order": 5,
-        "value": "msg.payload.TSAC_STAT.TSAC_SOC",
+        "value": "msg.payload.AMS_Stat.Soc",
         "valueType": "jsonata",
         "width": "3",
         "height": "3",
@@ -2056,7 +2264,7 @@
         "name": "isa_voltage",
         "group": "ab3e0ca24f4ad4dc",
         "order": 1,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_ISA_VOLTAGE",
+        "value": "msg.payload.AMS_Stat.IsaVoltage",
         "valueType": "jsonata",
         "width": 2,
         "height": 4,
@@ -2116,7 +2324,7 @@
         "name": "isa_current",
         "group": "ab3e0ca24f4ad4dc",
         "order": 2,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_ISA_CURRENT",
+        "value": "msg.payload.AMS_Stat.IsaCurrent",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -2170,7 +2378,7 @@
         "name": "isa_power",
         "group": "ab3e0ca24f4ad4dc",
         "order": 3,
-        "value": "msg.payload.TSAC_STAT.TSAC_ISA_POWER",
+        "value": "msg.payload.AMS_Stat.IsaPower",
         "valueType": "jsonata",
         "width": 2,
         "height": 4,
@@ -2224,7 +2432,7 @@
         "name": "discharge_limit",
         "group": "359d13a03a079e3c",
         "order": 1,
-        "value": "msg.payload.AVAILABE_CURRENT.TSAC_MAX_DISCHARGE_CURRENT",
+        "value": "msg.payload.AMS_AvailableCurrent.MaxDischargeCurrent",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -2266,7 +2474,7 @@
         "name": "charge_limit",
         "group": "359d13a03a079e3c",
         "order": 2,
-        "value": "msg.payload.AVAILABE_CURRENT.TSAC_MAX_CHARGE_CURRENT",
+        "value": "msg.payload.AMS_AvailableCurrent.MaxChargeCurrent",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -2308,7 +2516,7 @@
         "name": "ts_state",
         "group": "4f140fe5ae232b4d",
         "order": 1,
-        "value": "msg.payload.TSAC_STAT.TSAC_TS_STATE",
+        "value": "msg.payload.AMS_Stat.TsState",
         "valueType": "jsonata",
         "width": 3,
         "height": 2,
@@ -2368,7 +2576,7 @@
         "name": "bender_state",
         "group": "4f140fe5ae232b4d",
         "order": 2,
-        "value": "msg.payload.TSAC_STAT.TSAC_BENDER_STATE",
+        "value": "msg.payload.AMS_Stat.BenderState",
         "valueType": "jsonata",
         "width": 3,
         "height": 2,
@@ -2446,7 +2654,7 @@
         "name": "being discharged",
         "group": "6d5d33ea848dfe82",
         "order": 1,
-        "value": "msg.payload.TSAC_STAT.TSAC_BEING_DISCHARGED",
+        "value": "msg.payload.AMS_Stat.BeingDischarged",
         "valueType": "jsonata",
         "width": "2",
         "height": 3,
@@ -2540,7 +2748,7 @@
         "name": "ts_error",
         "group": "4f140fe5ae232b4d",
         "order": 3,
-        "value": "msg.payload.TSAC_ERROR.TSAC_ERROR + 1",
+        "value": "msg.payload.AMS_Error.ErrorCode + 1",
         "valueType": "jsonata",
         "width": 2,
         "height": 2,
@@ -2730,7 +2938,7 @@
         "name": "balancing_state",
         "group": "6d5d33ea848dfe82",
         "order": 3,
-        "value": "msg.payload.TSAC_STAT.TSAC_BALANCING_STATE",
+        "value": "msg.payload.AMS_Stat.BalancingState",
         "valueType": "jsonata",
         "width": 2,
         "height": 2,
@@ -2863,7 +3071,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.TS_ON_OFF.TS_ON_OFF",
+                "p": "send.AMS_TsOnOffReq.TsOnOff",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg",
@@ -2903,7 +3111,7 @@
         "name": "thermal_reduction",
         "group": "359d13a03a079e3c",
         "order": 4,
-        "value": "msg.payload.TSAC_STAT.TSAC_THERMAL_REDUCTION_RATE",
+        "value": "msg.payload.AMS_Stat.ThermalReductionRate",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -2951,7 +3159,7 @@
         "name": "unbalance_reduction",
         "group": "359d13a03a079e3c",
         "order": 6,
-        "value": "msg.payload.TSAC_STAT.TSAC_UNBALANCED_REDUCTION_RATE",
+        "value": "msg.payload.AMS_Stat.UnbalancedReductionRate",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -2999,7 +3207,7 @@
         "name": "voltage_reduction",
         "group": "359d13a03a079e3c",
         "order": 5,
-        "value": "msg.payload.TSAC_STAT.TSAC_VOLTAGE_REDUCTION_RATE",
+        "value": "msg.payload.AMS_Stat.VoltageReductionRate",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -3047,7 +3255,7 @@
         "name": "unbalanced rate",
         "group": "6d5d33ea848dfe82",
         "order": 2,
-        "value": "msg.payload.TSAC_STAT.TSAC_STAT_UNBALANCE_RATE",
+        "value": "msg.payload.AMS_Stat.UnbalancedRate",
         "valueType": "jsonata",
         "width": 2,
         "height": 4,
@@ -3101,7 +3309,7 @@
         "name": "ts_warning",
         "group": "4f140fe5ae232b4d",
         "order": 5,
-        "value": "msg.payload.TSAC_WARNING.TSAC_WARNING + 1",
+        "value": "msg.payload.AMS_Warning.WarningCode + 1",
         "valueType": "jsonata",
         "width": 2,
         "height": 2,
@@ -3330,7 +3538,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.Set_balancing_mode.Set_balancing_mode",
+                "p": "send.AMS_SetBalancingModeReq.Mode",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg",
@@ -3342,7 +3550,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
+        "x": 750,
         "y": 1660,
         "wires": [
             [
@@ -3451,7 +3659,7 @@
         "name": "SDC_voltage",
         "group": "e797beabc0507155",
         "order": 1,
-        "value": "msg.payload.TSAC_STAT.TSAC_KS_VOLTAGE",
+        "value": "msg.payload.AMS_Stat.KsVoltage",
         "valueType": "jsonata",
         "width": 1,
         "height": 4,
@@ -3506,7 +3714,7 @@
         "name": "Vehicle state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 1,
-        "value": "msg.payload.Send_Vehicle_State.Vehicle_State",
+        "value": "msg.payload.MPCU_VehicleState.VehicleState",
         "valueType": "jsonata",
         "width": 3,
         "height": 3,
@@ -3573,7 +3781,7 @@
         "name": "APPS state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 10,
-        "value": "msg.payload.MPCU_system_status_report.APPS",
+        "value": "msg.payload.MPCU_SystemStatues.AppsState",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
@@ -3766,10 +3974,10 @@
         "type": "ui-gauge",
         "z": "58531eb4c616092e",
         "g": "502c719c9684924f",
-        "name": "TSAC state",
+        "name": "AMS state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 11,
-        "value": "msg.payload.MPCU_system_status_report.TSAC",
+        "value": "msg.payload.MPCU_SystemStatues.AmsState",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
@@ -3836,7 +4044,7 @@
         "name": "RSU state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 12,
-        "value": "msg.payload.MPCU_system_status_report.RSU",
+        "value": "msg.payload.MPCU_SystemStatues.RsuState",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
@@ -3903,7 +4111,7 @@
         "name": "FSU state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 13,
-        "value": "msg.payload.MPCU_system_status_report.FSU",
+        "value": "msg.payload.MPCU_SystemStatues.FsuState",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
@@ -3970,7 +4178,7 @@
         "name": "Telemetry state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 14,
-        "value": "msg.payload.MPCU_system_status_report.Telemetry",
+        "value": "msg.payload.MPCU_SystemStatues.TelemetryState",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
@@ -4037,7 +4245,7 @@
         "name": "Inverter state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 15,
-        "value": "msg.payload.MPCU_system_status_report.Inverter",
+        "value": "msg.payload.MPCU_SystemStatues.InverterState",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
@@ -4104,7 +4312,7 @@
         "name": "Dash state",
         "group": "e3b8cff4e6ddd0e6",
         "order": 16,
-        "value": "msg.payload.MPCU_system_status_report.Dash",
+        "value": "msg.payload.MPCU_SystemStatues.DashState",
         "valueType": "jsonata",
         "width": "1",
         "height": "2",
@@ -4383,7 +4591,7 @@
         "name": "Power limiter",
         "group": "aced62dfc47afcae",
         "order": 1,
-        "value": "msg.payload.MPCU_systems_settings_to_dash.Power_limitter",
+        "value": "msg.payload.MPCU_Settings.PowerLimiter",
         "valueType": "jsonata",
         "width": 3,
         "height": 6,
@@ -4439,14 +4647,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "0",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "$number(msg.payload*1000)",
                 "tot": "jsonata"
@@ -4509,7 +4717,7 @@
         "name": "Max Motor RPM",
         "group": "aced62dfc47afcae",
         "order": 2,
-        "value": "msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM",
+        "value": "msg.payload.MPCU_Settings.MaxMotorRpm",
         "valueType": "jsonata",
         "width": 3,
         "height": 6,
@@ -4828,7 +5036,7 @@
         "name": "Inverter Temperature",
         "group": "7ce9ca5952a94637",
         "order": 4,
-        "value": "msg.payload.MPCU_values.MPCU_INVERTER_TEMPERATURE",
+        "value": "msg.payload.MPCU_Values.InverterTemperature",
         "valueType": "jsonata",
         "width": 2,
         "height": 6,
@@ -4883,7 +5091,7 @@
         "name": "Motor Temperature",
         "group": "7ce9ca5952a94637",
         "order": 3,
-        "value": "msg.payload.MPCU_values.MPCU_MOTOR_TEMPERATURE",
+        "value": "msg.payload.MPCU_Values.MotorTemperature",
         "valueType": "jsonata",
         "width": 2,
         "height": 6,
@@ -4938,7 +5146,7 @@
         "name": "Motor RPM",
         "group": "7ce9ca5952a94637",
         "order": 2,
-        "value": "msg.payload.MPCU_values.MPCU_MOTOR_RPM",
+        "value": "msg.payload.MPCU_Values.MotorRpm",
         "valueType": "jsonata",
         "width": 2,
         "height": 6,
@@ -4993,7 +5201,7 @@
         "name": "LV Current",
         "group": "7ce9ca5952a94637",
         "order": 6,
-        "value": "(\t  $adc := payload.MPCU_values.MPCU_LEM_CURRENT;\t  $vRef := 3.3;\t  $adcMax := 4095;\t  $uRef := 0.5;\t  $sens := 0.0575;\t  \t  $round(((($adc / $adcMax) * $vRef) - $uRef) / $sens, 2)\t)\t\t",
+        "value": "(\t  $adc := payload.MPCU_Values.LemCurrent;\t  $vRef := 3.3;\t  $adcMax := 4095;\t  $uRef := 0.5;\t  $sens := 0.0575;\t  \t  $round(((($adc / $adcMax) * $vRef) - $uRef) / $sens, 2)\t)\t\t",
         "valueType": "jsonata",
         "width": 1,
         "height": 6,
@@ -5048,7 +5256,7 @@
         "name": "HV Voltage-Inv",
         "group": "7ce9ca5952a94637",
         "order": 5,
-        "value": "msg.payload.MPCU_values.MPCU_BUS_VOLTAGE",
+        "value": "msg.payload.MPCU_Values.BusVoltage",
         "valueType": "jsonata",
         "width": 1,
         "height": 6,
@@ -5103,7 +5311,7 @@
         "name": "Inverter Error state",
         "group": "7ce9ca5952a94637",
         "order": 10,
-        "value": "msg.payload.MPCU_values.MPCU_INVERTER_ERROR_STATES",
+        "value": "msg.payload.MPCU_Values.InverterErrorStates",
         "valueType": "jsonata",
         "width": 1,
         "height": 2,
@@ -5152,7 +5360,7 @@
         "name": "Inverter Warning",
         "group": "7ce9ca5952a94637",
         "order": 7,
-        "value": "msg.payload.MPCU_values.MPCU_INVERTER_WARNING_STATES",
+        "value": "msg.payload.MPCU_Values.InverterWarningStates",
         "valueType": "jsonata",
         "width": 1,
         "height": 2,
@@ -5350,7 +5558,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Power_limitter)/1000",
+                "to": "$number(msg.payload.MPCU_Settings.PowerLimiterr)/1000",
                 "tot": "jsonata"
             }
         ],
@@ -5378,7 +5586,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_systems_settings_to_dash.Max_motor_RPM)\t",
+                "to": "$number(msg.payload.MPCU_Settings.MaxMotorRpm)\t",
                 "tot": "jsonata"
             }
         ],
@@ -5470,7 +5678,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.state_request.state_request",
+                "p": "send.MPCU_StateRequestReq.State",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg",
@@ -5482,7 +5690,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1300,
+        "x": 1310,
         "y": 1640,
         "wires": [
             [
@@ -6233,14 +6441,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_switch_system_power.system",
+                "p": "send.MPCU_SwitchSystemPowerReq.System",
                 "pt": "msg",
                 "to": "$number(msg.topic)",
                 "tot": "jsonata"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_switch_system_power.power",
+                "p": "send.MPCU_SwitchSystemPowerReq.Power",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -6641,14 +6849,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "$number(msg.topic)",
                 "tot": "jsonata"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -6726,7 +6934,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_values.MPCU_FAN1_SPEED)\t",
+                "to": "$number(msg.payload.MPCU_Values.Fan1Speed)\t",
                 "tot": "jsonata"
             }
         ],
@@ -6807,14 +7015,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "3",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "$number(msg.payload)",
                 "tot": "jsonata"
@@ -6925,14 +7133,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "3",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -7063,7 +7271,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_values.MPCU_FAN2_SPEED)\t",
+                "to": "$number(msg.payload.MPCU_Values.Fan2Speed)\t",
                 "tot": "jsonata"
             }
         ],
@@ -7147,14 +7355,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "4",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "$number(msg.payload)",
                 "tot": "jsonata"
@@ -7268,14 +7476,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "4",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -7377,7 +7585,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_values.MPCU_FAN3_SPEED)\t",
+                "to": "$number(msg.payload.MPCU_Values.Fan3Speed)\t",
                 "tot": "jsonata"
             }
         ],
@@ -7458,7 +7666,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "5",
                 "tot": "num"
@@ -7576,14 +7784,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "5",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -7683,7 +7891,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_values.MPCU_MOTOR_PUMP_SPEED)\t",
+                "to": "$number(msg.payload.MPCU_Values.MotorPumpSpeed)\t",
                 "tot": "jsonata"
             }
         ],
@@ -7764,14 +7972,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "6",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "$number(msg.payload)",
                 "tot": "jsonata"
@@ -7882,14 +8090,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "6",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -7989,7 +8197,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.MPCU_values.MPCU_INVERTER_PUMP_SPEED)\t",
+                "to": "$number(msg.payload.MPCU_Values.InverterPumpSpeed)\t",
                 "tot": "jsonata"
             }
         ],
@@ -8070,14 +8278,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "7",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "$number(msg.payload)",
                 "tot": "jsonata"
@@ -8188,14 +8396,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.index",
+                "p": "send.MPCU_ModifySettingsReq.Index",
                 "pt": "msg",
                 "to": "7",
                 "tot": "num"
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -8380,7 +8588,7 @@
         "name": "Speed",
         "group": "7ce9ca5952a94637",
         "order": 1,
-        "value": "msg.payload.MPCU_values.MPCU_KMPH",
+        "value": "msg.payload.MPCU_Values.SpeedKmph",
         "valueType": "jsonata",
         "width": 2,
         "height": 6,
@@ -8484,7 +8692,7 @@
         "type": "function",
         "z": "7de09f7e9474d780",
         "name": "Convert data to table",
-        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacVoltageTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC segment 1\": null,\n            \"TSAC segment 2\": null,\n            \"TSAC segment 3\": null,\n            \"TSAC segment 4\": null,\n            \"TSAC segment 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Voltages\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Voltages\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10000, force 4 decimal places, and append \" V\"\n                let formattedVoltage = rawValue.toFixed(4) + \" V\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacVoltageTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
+        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacVoltageTable\");\n\nif (!tableData) {\n    tableData = [];\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC segment 1\": null,\n            \"TSAC segment 2\": null,\n            \"TSAC segment 3\": null,\n            \"TSAC segment 4\": null,\n            \"TSAC segment 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (!incomingData.hasOwnProperty(segmentKey)) continue;\n\n    // Match \"AMS_Voltages<N>\" and capture the segment number\n    let m = /^AMS_Voltages(\\d+)$/.exec(segmentKey);\n    if (!m) continue;\n\n    let segmentNum = m[1];\n    let columnName = \"TSAC segment \" + segmentNum;\n    let segmentData = incomingData[segmentKey];\n\n    if (!segmentData || typeof segmentData !== \"object\") continue;\n\n    for (let i = 1; i <= 22; i++) {\n        let cellKey = \"Cell\" + i;\n\n        if (segmentData.hasOwnProperty(cellKey)) {\n            let rawValue = Number(segmentData[cellKey]);\n            if (isNaN(rawValue)) continue;\n\n            tableData[i - 1][columnName] = rawValue.toFixed(4) + \" V\";\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacVoltageTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8682,7 +8890,7 @@
         "type": "function",
         "z": "7de09f7e9474d780",
         "name": "Convert data to table",
-        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacTempTable\");\n\nif (!tableData) {\n    tableData = [];\n    // Initialize 22 rows with blank/null values\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC segment 1\": null,\n            \"TSAC segment 2\": null,\n            \"TSAC segment 3\": null,\n            \"TSAC segment 4\": null,\n            \"TSAC segment 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (incomingData.hasOwnProperty(segmentKey) && segmentKey.startsWith(\"TSAC_Temperatures\")) {\n\n        // Extract the segment number (1-5) to match the column names\n        let segmentNum = segmentKey.replace(\"TSAC_Temperatures\", \"\");\n        let columnName = \"TSAC segment \" + segmentNum;\n\n        let segmentData = incomingData[segmentKey];\n\n        // Update the 22 rows for this specific column\n        for (let i = 1; i <= 22; i++) {\n            let voltageKey = `${segmentKey}_${i}`;\n\n            if (segmentData.hasOwnProperty(voltageKey)) {\n                let rawValue = segmentData[voltageKey];\n\n                // Divide by 10, force 1 decimal places, and append \" C\"\n                let formattedVoltage = rawValue.toFixed(1) + \" C\";\n\n                tableData[i - 1][columnName] = formattedVoltage;\n            }\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacTempTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
+        "func": "// 1. Retrieve the existing table from global context, or initialize it\nlet tableData = global.get(\"tsacTempTable\");\n\nif (!tableData) {\n    tableData = [];\n    for (let i = 1; i <= 22; i++) {\n        tableData.push({\n            \"Cell\": i,\n            \"TSAC segment 1\": null,\n            \"TSAC segment 2\": null,\n            \"TSAC segment 3\": null,\n            \"TSAC segment 4\": null,\n            \"TSAC segment 5\": null\n        });\n    }\n}\n\n// 2. Process the incoming parsed data\nlet incomingData = msg.payload;\n\nfor (let segmentKey in incomingData) {\n    if (!incomingData.hasOwnProperty(segmentKey)) continue;\n\n    // Match \"AMS_Temperatures<N>\" and capture the segment number\n    let m = /^AMS_Temperatures(\\d+)$/.exec(segmentKey);\n    if (!m) continue;\n\n    let segmentNum = m[1];\n    let columnName = \"TSAC segment \" + segmentNum;\n    let segmentData = incomingData[segmentKey];\n\n    if (!segmentData || typeof segmentData !== \"object\") continue;\n\n    for (let i = 1; i <= 22; i++) {\n        let cellKey = \"Cell\" + i;\n\n        if (segmentData.hasOwnProperty(cellKey)) {\n            let rawValue = Number(segmentData[cellKey]);\n            if (isNaN(rawValue)) continue;\n\n            tableData[i - 1][columnName] = rawValue.toFixed(1) + \" C\";\n        }\n    }\n}\n\n// 3. Save the updated table back to the global context\nglobal.set(\"tsacTempTable\", tableData);\n\n// 4. Send the complete, updated table to the dashboard\nmsg.payload = tableData;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8855,7 +9063,7 @@
         "label": "APPS 1",
         "order": 1,
         "width": 3,
-        "height": 0,
+        "height": 3,
         "color": "green",
         "className": "",
         "x": 620,
@@ -8872,7 +9080,7 @@
         "label": "APPS 2",
         "order": 7,
         "width": 3,
-        "height": 0,
+        "height": 3,
         "color": "green",
         "className": "",
         "x": 620,
@@ -8887,9 +9095,9 @@
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "APPS",
-        "order": 4,
+        "order": 3,
         "width": 3,
-        "height": 2,
+        "height": 4,
         "color": "red",
         "className": "",
         "x": 610,
@@ -8904,7 +9112,7 @@
         "name": "",
         "group": "a9df5341a2cc8e73",
         "order": 6,
-        "value": "msg.payload.APPS_Error_Data.APPS_Error ? msg.payload.APPS_Error_Data.APPS_Error",
+        "value": "msg.payload.APPS_ErrorData.ErrorCode",
         "valueType": "jsonata",
         "width": 1,
         "height": 3,
@@ -8971,7 +9179,7 @@
         "group": "a9df5341a2cc8e73",
         "name": "",
         "label": "Reset Error",
-        "order": 3,
+        "order": 5,
         "width": 1,
         "height": "1",
         "emulateClick": true,
@@ -9014,7 +9222,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.APPS_Normal_Data.APPS_Data)\t",
+                "to": "$number(msg.payload.APPS_NormalData.AppsData)\t",
                 "tot": "jsonata"
             }
         ],
@@ -9042,7 +9250,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.APPS_Normal_Data.APPS1_interpolated)\t",
+                "to": "$number(msg.payload.APPS_NormalData.Apps1Interpolated)\t",
                 "tot": "jsonata"
             }
         ],
@@ -9070,7 +9278,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$number(msg.payload.APPS_Normal_Data.APPS2_interpolated)\t",
+                "to": "$number(msg.payload.APPS_NormalData.Apps2Interpolated)\t",
                 "tot": "jsonata"
             }
         ],
@@ -9093,9 +9301,9 @@
         "z": "7dade78592428d89",
         "g": "4abfee49327f8e33",
         "group": "a9df5341a2cc8e73",
-        "order": 5,
+        "order": 4,
         "width": 1,
-        "height": 2,
+        "height": 4,
         "name": "Raw Data",
         "label": "APPS RAW Data",
         "format": "{{msg.payload}}",
@@ -9120,7 +9328,7 @@
         "group": "a9df5341a2cc8e73",
         "order": 2,
         "width": 1,
-        "height": 0,
+        "height": 3,
         "name": "APPS1 RAW",
         "label": "",
         "format": "{{msg.payload}}",
@@ -9131,7 +9339,7 @@
         "color": "#717171",
         "wrapText": false,
         "className": "",
-        "value": "$number(msg.payload.APPS_Normal_Data.APPS1_interpolated)\t",
+        "value": "$number(msg.payload.APPS_NormalData.Apps1Interpolated)\t",
         "valueType": "jsonata",
         "x": 390,
         "y": 340,
@@ -9145,7 +9353,7 @@
         "group": "a9df5341a2cc8e73",
         "order": 8,
         "width": 1,
-        "height": 0,
+        "height": 3,
         "name": "APPS2 RAW",
         "label": "",
         "format": "{{msg.payload}}",
@@ -9156,7 +9364,7 @@
         "color": "#717171",
         "wrapText": false,
         "className": "",
-        "value": "$number(msg.payload.APPS_Normal_Data.APPS2_interpolated)\t",
+        "value": "$number(msg.payload.APPS_NormalData.Apps2Interpolated)\t",
         "valueType": "jsonata",
         "x": 390,
         "y": 380,
@@ -9208,11 +9416,11 @@
         "name": "Brake Pressure",
         "group": "81afc6f934b6762d",
         "order": 1,
-        "value": "msg.payload.BPS.pressure",
+        "value": "msg.payload.RSU_Bps.Pressure",
         "valueType": "jsonata",
         "width": "2",
-        "height": "4",
-        "gtype": "gauge-half",
+        "height": 10,
+        "gtype": "gauge-34",
         "gstyle": "needle",
         "title": "BPS",
         "alwaysShowTitle": false,
@@ -9263,10 +9471,10 @@
         "name": "SuspensionRL",
         "group": "474ddb1c53d8a25c",
         "order": 5,
-        "value": "msg.payload.RSU_data.LSuspension",
+        "value": "msg.payload.RSU_Data.LSuspension",
         "valueType": "jsonata",
         "width": 1,
-        "height": "4",
+        "height": 5,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "RL suspension",
@@ -9318,10 +9526,10 @@
         "name": "SuspensionRR",
         "group": "474ddb1c53d8a25c",
         "order": 6,
-        "value": "msg.payload.RSU_data.RSuspension",
+        "value": "msg.payload.RSU_Data.RSuspension",
         "valueType": "jsonata",
         "width": 1,
-        "height": "4",
+        "height": 5,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "RR suspension",
@@ -9373,10 +9581,10 @@
         "name": "SuspensionFR",
         "group": "474ddb1c53d8a25c",
         "order": 3,
-        "value": "msg.payload.FSU_data.RSuspension",
+        "value": "msg.payload.FSU_Data.RSuspension",
         "valueType": "jsonata",
         "width": 1,
-        "height": "4",
+        "height": 5,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "FR suspension",
@@ -9428,10 +9636,10 @@
         "name": "SuspensionFL",
         "group": "474ddb1c53d8a25c",
         "order": 1,
-        "value": "msg.payload.FSU_data.LSuspension",
+        "value": "msg.payload.FSU_Data.LSuspension",
         "valueType": "jsonata",
         "width": 1,
-        "height": "4",
+        "height": 5,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "FL suspension",
@@ -9486,7 +9694,7 @@
         "value": "payload.average",
         "valueType": "msg",
         "width": 1,
-        "height": "4",
+        "height": 5,
         "gtype": "gauge-half",
         "gstyle": "needle",
         "title": "Average suspension length",
@@ -9576,10 +9784,10 @@
         "name": "SW_connected",
         "group": "8dd08348eb2bb2fb",
         "order": 1,
-        "value": "msg.payload.Dash_status.swheel_connected",
+        "value": "msg.payload.Dash_Status.SwheelConnected",
         "valueType": "jsonata",
-        "width": 2,
-        "height": 4,
+        "width": 3,
+        "height": 3,
         "gtype": "gauge-tile",
         "gstyle": "needle",
         "title": "Steering wheel",
@@ -9613,6 +9821,2114 @@
         "className": "",
         "x": 980,
         "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "543de9dda9e91dbf",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "g": "e206fe5f765ce317",
+        "name": "link in 13",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 835,
+        "y": 460,
+        "wires": [
+            [
+                "7b5ccb7c562c3792"
+            ]
+        ]
+    },
+    {
+        "id": "7b5ccb7c562c3792",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "e206fe5f765ce317",
+        "name": "Steering angle",
+        "group": "3555f15ebe888669",
+        "order": 1,
+        "value": "msg.payload.RSU_Data.SteeringAngle",
+        "valueType": "jsonata",
+        "width": "2",
+        "height": 10,
+        "gtype": "gauge-34",
+        "gstyle": "needle",
+        "title": "Steering angle",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-135",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-135",
+        "max": "135",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 980,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3ff08f6639eb266",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "link in 14",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 215,
+        "y": 820,
+        "wires": [
+            [
+                "5a60542ef318bfaf",
+                "c388397115ca355a",
+                "45b49807ca72b4e4",
+                "2a247ba90d7a7fb1",
+                "880829bab1760855",
+                "ccc8b12682bfa886",
+                "b5a2e2986c1c5801",
+                "f9063fd0a11c3c06"
+            ]
+        ]
+    },
+    {
+        "id": "5a60542ef318bfaf",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "TT_1",
+        "group": "6263dccee89158e8",
+        "order": 1,
+        "value": "msg.payload.FSU_Data.LTireTemp1",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT1",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 350,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c388397115ca355a",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "TT_2",
+        "group": "6263dccee89158e8",
+        "order": 2,
+        "value": "msg.payload.FSU_Data.LTireTemp2",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT2",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 350,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "45b49807ca72b4e4",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "TT_3",
+        "group": "6263dccee89158e8",
+        "order": 3,
+        "value": "msg.payload.FSU_Data.LTireTemp3",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT3",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 350,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a247ba90d7a7fb1",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "TT_4",
+        "group": "6263dccee89158e8",
+        "order": 4,
+        "value": "msg.payload.FSU_Data.LTireTemp4",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT4",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 350,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "880829bab1760855",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "TT_5",
+        "group": "6263dccee89158e8",
+        "order": 5,
+        "value": "msg.payload.FSU_Data.LTireTemp5",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT5",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 350,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccc8b12682bfa886",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "TT_6",
+        "group": "6263dccee89158e8",
+        "order": 6,
+        "value": "msg.payload.FSU_Data.LTireTemp6",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT6",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 350,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5a2e2986c1c5801",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "TT_7",
+        "group": "6263dccee89158e8",
+        "order": 7,
+        "value": "msg.payload.FSU_Data.LTireTemp7",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT7",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 350,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9063fd0a11c3c06",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "f5ea3fe150dc87c2",
+        "name": "TT_8",
+        "group": "6263dccee89158e8",
+        "order": 8,
+        "value": "msg.payload.FSU_Data.LTireTemp8",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT8",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 350,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ef5e3ee3371ecfe",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "link in 15",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 475,
+        "y": 820,
+        "wires": [
+            [
+                "4b5d0b5de3836a40",
+                "27b0641eaedc5a62",
+                "e12d197774e73d0d",
+                "c4b4394f49f0a320",
+                "9449999342050d08",
+                "d7aaa3f52924a054",
+                "46f3a6d8ac4f55ad",
+                "10a4d169e599c3f1"
+            ]
+        ]
+    },
+    {
+        "id": "4b5d0b5de3836a40",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "TT_1",
+        "group": "17feaca16ebeb90f",
+        "order": 2,
+        "value": "msg.payload.FSU_Data.RTireTemp1",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT1",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27b0641eaedc5a62",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "TT_2",
+        "group": "17feaca16ebeb90f",
+        "order": 1,
+        "value": "msg.payload.FSU_Data.RTireTemp2",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT2",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e12d197774e73d0d",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "TT_3",
+        "group": "17feaca16ebeb90f",
+        "order": 3,
+        "value": "msg.payload.FSU_Data.RTireTemp3",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT3",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4b4394f49f0a320",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "TT_4",
+        "group": "17feaca16ebeb90f",
+        "order": 4,
+        "value": "msg.payload.FSU_Data.RTireTemp4",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT4",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9449999342050d08",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "TT_5",
+        "group": "17feaca16ebeb90f",
+        "order": 5,
+        "value": "msg.payload.FSU_Data.RTireTemp5",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT5",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d7aaa3f52924a054",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "TT_6",
+        "group": "17feaca16ebeb90f",
+        "order": 6,
+        "value": "msg.payload.FSU_Data.RTireTemp6",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT6",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46f3a6d8ac4f55ad",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "TT_7",
+        "group": "17feaca16ebeb90f",
+        "order": 7,
+        "value": "msg.payload.FSU_Data.RTireTemp7",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT7",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10a4d169e599c3f1",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "0551647371a24b93",
+        "name": "TT_8",
+        "group": "17feaca16ebeb90f",
+        "order": 8,
+        "value": "msg.payload.FSU_Data.RTireTemp8",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT8",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 610,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "101cbf07874e0727",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "link in 16",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 735,
+        "y": 820,
+        "wires": [
+            [
+                "2f9af4f2c6eafd83",
+                "7b87ea23c1c25bf2",
+                "76c7fc58c1f6af13",
+                "7b35933b89fb57d6",
+                "9f3fe34c866faccc",
+                "fab0f7cdedcf049a",
+                "97b8b370768e40c7",
+                "aab1228ef29d2408"
+            ]
+        ]
+    },
+    {
+        "id": "2f9af4f2c6eafd83",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "TT_1",
+        "group": "3b8c20a16c8cb582",
+        "order": 1,
+        "value": "msg.payload.RSU_Data.LTireTemp1",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT1",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 870,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b87ea23c1c25bf2",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "TT_2",
+        "group": "3b8c20a16c8cb582",
+        "order": 2,
+        "value": "msg.payload.RSU_Data.LTireTemp2",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT2",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 870,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76c7fc58c1f6af13",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "TT_3",
+        "group": "3b8c20a16c8cb582",
+        "order": 3,
+        "value": "msg.payload.RSU_Data.LTireTemp3",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT3",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 870,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b35933b89fb57d6",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "TT_4",
+        "group": "3b8c20a16c8cb582",
+        "order": 4,
+        "value": "msg.payload.RSU_Data.LTireTemp4",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT4",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 870,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f3fe34c866faccc",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "TT_5",
+        "group": "3b8c20a16c8cb582",
+        "order": 5,
+        "value": "msg.payload.RSU_Data.LTireTemp5",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT5",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 870,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fab0f7cdedcf049a",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "TT_6",
+        "group": "3b8c20a16c8cb582",
+        "order": 6,
+        "value": "msg.payload.RSU_Data.LTireTemp6",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT6",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 870,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97b8b370768e40c7",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "TT_7",
+        "group": "3b8c20a16c8cb582",
+        "order": 7,
+        "value": "msg.payload.RSU_Data.LTireTemp7",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT7",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 870,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aab1228ef29d2408",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "cf7cb61c695ba75d",
+        "name": "TT_8",
+        "group": "3b8c20a16c8cb582",
+        "order": 8,
+        "value": "msg.payload.RSU_Data.LTireTemp8",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT8",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 870,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65199ad48c22345c",
+        "type": "link in",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "link in 17",
+        "links": [
+            "a98dc49a88f46c76"
+        ],
+        "x": 995,
+        "y": 820,
+        "wires": [
+            [
+                "1c62bd7dc423ae96",
+                "ef21263dd75ab53f",
+                "6ce345fca10ac159",
+                "ddfe9e07b833455b",
+                "4d1f15b57621adbd",
+                "2d2f3a6adc255cad",
+                "01693fb726e34357",
+                "32299af8f446178f"
+            ]
+        ]
+    },
+    {
+        "id": "1c62bd7dc423ae96",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "TT_1",
+        "group": "55676d3f8cce1f22",
+        "order": 1,
+        "value": "msg.payload.RSU_Data.RTireTemp1",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT1",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef21263dd75ab53f",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "TT_2",
+        "group": "55676d3f8cce1f22",
+        "order": 2,
+        "value": "msg.payload.RSU_Data.RTireTemp2",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT2",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ce345fca10ac159",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "TT_3",
+        "group": "55676d3f8cce1f22",
+        "order": 3,
+        "value": "msg.payload.RSU_Data.RTireTemp3",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT3",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ddfe9e07b833455b",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "TT_4",
+        "group": "55676d3f8cce1f22",
+        "order": 5,
+        "value": "msg.payload.RSU_Data.RTireTemp4",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT4",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d1f15b57621adbd",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "TT_5",
+        "group": "55676d3f8cce1f22",
+        "order": 7,
+        "value": "msg.payload.RSU_Data.RTireTemp5",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT5",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d2f3a6adc255cad",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "TT_6",
+        "group": "55676d3f8cce1f22",
+        "order": 8,
+        "value": "msg.payload.RSU_Data.RTireTemp6",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT6",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "01693fb726e34357",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "TT_7",
+        "group": "55676d3f8cce1f22",
+        "order": 6,
+        "value": "msg.payload.RSU_Data.RTireTemp7",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT7",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32299af8f446178f",
+        "type": "ui-gauge",
+        "z": "7dade78592428d89",
+        "g": "38f224b6461ead5d",
+        "name": "TT_8",
+        "group": "55676d3f8cce1f22",
+        "order": 4,
+        "value": "msg.payload.RSU_Data.RTireTemp8",
+        "valueType": "jsonata",
+        "width": 1,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TT8",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#53b0ea",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 960,
         "wires": [
             []
         ]
@@ -9728,7 +12044,9 @@
             "e7dba28622e6303c",
             "43181be9ce422584",
             "6e6215c6460a9811",
-            "6f19ffd217f7873a"
+            "6f19ffd217f7873a",
+            "543de9dda9e91dbf",
+            "e3ff08f6639eb266"
         ],
         "x": 985,
         "y": 280,
@@ -9970,7 +12288,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"MPCU_modify_system_settings\": {\n        \"index\": 0,\n        \"value\": 11111\n    }\n}",
+        "template": "{\n    \"ModifySettingsReq\": {\n        \"Index\": 0,\n        \"Value\": 11111\n    }\n}",
         "output": "str",
         "x": 620,
         "y": 840,
