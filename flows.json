@@ -7673,7 +7673,7 @@
             },
             {
                 "t": "set",
-                "p": "send.MPCU_modify_system_settings.value",
+                "p": "send.MPCU_ModifySettingsReq.Value",
                 "pt": "msg",
                 "to": "$number(msg.payload)",
                 "tot": "jsonata"
